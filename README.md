@@ -12,6 +12,7 @@ Assignment for the conclusion of the subject of Algorithms and Procedural Progra
     │   ├── include              # Headers folder.
     │   └── src                  # Source folder.
     |       └── CMakeLists.txt   # Project CMake build script.
+    ├── vendor                   # Third-party packages will be here.
     └── CMakeLists.txt           # Main CMake build script.
 ```
 ### How to Use
