@@ -14,3 +14,15 @@ Assignment for the conclusion of the subject of Algorithms and Procedural Progra
     |       └── CMakeLists.txt   # Project CMake build script.
     └── CMakeLists.txt           # Main CMake build script.
 ```
+### How to Use
+ - first download and install CMake [here](https://cmake.org/download/), is highly recommended to read the documentation [here](https://cmake.org/cmake-tutorial/) to extend the project.
+ - execute the following commands
+ 
+     ```
+     git clone https://github.com/thiago-rezende/inventory-manager.git
+     cd invnentory-manager
+     mkdir build
+     cd build
+     cmake .. -G"YOUR-GENERATOR-HERE"
+     make && sudo make install
+     ```
