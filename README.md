@@ -21,7 +21,7 @@ Assignment for the conclusion of the subject of Algorithms and Procedural Progra
  
      ```
      git clone --recurse-submodules https://github.com/thiago-rezende/inventory-manager.git
-     cd invnentory-manager
+     cd inventory-manager
      mkdir build
      cd build
      cmake .. -G"YOUR-GENERATOR-HERE"       # Read the CMake docs and select a generator
