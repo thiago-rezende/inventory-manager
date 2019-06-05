@@ -20,7 +20,7 @@ Assignment for the conclusion of the subject of Algorithms and Procedural Progra
  - Execute the following commands
  
      ```
-     git clone --recursive-submodules https://github.com/thiago-rezende/inventory-manager.git
+     git clone --recursive https://github.com/thiago-rezende/inventory-manager.git
      cd inventory-manager
      mkdir build
      cd build
