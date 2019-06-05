@@ -24,6 +24,6 @@ Assignment for the conclusion of the subject of Algorithms and Procedural Progra
      cd inventory-manager
      mkdir build
      cd build
-     cmake .. -G"YOUR-GENERATOR-HERE"       # Read the CMake docs and select a generator
+     cmake .. -G"GENERATOR-HERE"       # Read the CMake docs and select a generator
      make && sudo make install
      ```
