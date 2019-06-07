@@ -1,4 +1,4 @@
-# Inventory Manager ![](https://img.shields.io/badge/W.I.P--red.svg)
+# Ivy - Inventory Manager ![](https://img.shields.io/badge/W.I.P--red.svg)
 
 ![](https://img.shields.io/badge/build-passing-green.svg) ![](https://img.shields.io/badge/C++-17-orange.svg) ![](https://img.shields.io/badge/CMake-3.14.0-blue.svg) ![](https://img.shields.io/badge/Doxygen-1.8.15-9cf.svg)
 
