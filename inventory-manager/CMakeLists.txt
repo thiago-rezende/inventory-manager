@@ -12,13 +12,9 @@ PUBLIC
 target_include_directories(inventory-manager
 PUBLIC 
     "include"
-#    ${YAML_CPP_SOURCE_DIR}/include
 )
 
-# YAML_CPP lib
-#target_link_libraries(inventory-manager
-#PUBLIC 
-#    yaml-cpp
-#)
+
+target_link_libraries(inventory-manager PUBLIC)
 
 install(TARGETS inventory-manager RUNTIME DESTINATION bin)
