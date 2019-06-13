@@ -11,6 +11,15 @@ Produto::Produto(std::string nNome, std::string nMarca, float nValor, int nQtd, 
     this->m_garantia = nGarantia;
 }
 
+Produto::Produto()
+{
+    this->m_nome = "UNKNOWN";
+    this->m_marca = "UNKNOWN";
+    this->m_valor = 0.0f;
+    this->m_quantidade = 0;
+    this->m_garantia = false;
+}
+
 Produto::~Produto() {}
 
 int Produto::get_id() const

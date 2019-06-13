@@ -1,5 +1,5 @@
 #pragma once
-#include "../ivy_include.hpp"
+#include <iostream>
 
 namespace ivy
 {
@@ -27,6 +27,17 @@ public:
      * @param nGarantia possui garantia
      */
     Produto(std::string nNome, std::string nMarca, float nValor, int nQtd, bool nGarantia);
+
+    /**
+     * @brief Construtor
+     * 
+     */
+    Produto();
+
+    /**
+     * @brief Destrutor
+     * 
+     */
     ~Produto();
 
     /**
@@ -35,6 +46,7 @@ public:
      * @return int id do produto
      */
     int get_id() const;
+
     /**
      * @brief Define o ID do produto
      * 
@@ -48,6 +60,7 @@ public:
      * @return std::string nome do produto
      */
     std::string get_nome() const;
+
     /**
      * @brief Define o nome do produto
      * 
@@ -61,6 +74,7 @@ public:
      * @return std::string marca do produto
      */
     std::string get_marca() const;
+
     /**
      * @brief Define a marca do produto
      * 
@@ -74,6 +88,7 @@ public:
      * @return int quantidade do produto
      */
     int get_quantidade() const;
+
     /**
      * @brief Define a quantidade do produto
      * 

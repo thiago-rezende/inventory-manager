@@ -7,6 +7,7 @@ PUBLIC
     "src/main.cpp"
     "src/ivy/ivy.cpp"
     "src/ivy/produto/Produto.cpp"
+    "src/ivy/vetor/Vetor.cpp"
 )
 
 target_include_directories(inventory-manager
