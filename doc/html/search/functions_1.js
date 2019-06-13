@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['expandir',['expandir',['../classivy_1_1_vetor.html#a01b6ee95fc81df62d94ebe7c4cf413b4',1,'ivy::Vetor']]]
+  ['expandir',['expandir',['../classivy_1_1_vetor.html#ab3a5ed78f08c5c89096e86e0c2d9e7fa',1,'ivy::Vetor']]]
 ];
