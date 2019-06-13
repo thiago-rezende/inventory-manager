@@ -8,6 +8,7 @@ Assignment for the conclusion of the subject of Algorithms and Procedural Progra
  ```
     .
     ├── bin                      # Binaries will be here.
+    ├── doc                      # The documentation will be here.
     ├── inventory-manager        # The main project.
     │   └── src                  # Source folder.
     |       └── CMakeLists.txt   # Project CMake build script.
