@@ -44,11 +44,44 @@ void Vetor::adicionar(Produto nProduto)
     this->m_dados[this->m_tamanho++] = new Produto(nProduto);
 }
 
+void Vetor::remover(int indice)
+{
+    if (indice >= this->m_tamanho || indice < 0)
+        throw "Out of Bounds!";
+
+    Produto **rmv_dados = new Produto *[this->m_capacidade];
+
+    for (int i = 0; i < this->m_tamanho - 1; i++)
+    {
+        if (i < indice)
+            rmv_dados[i] = new Produto(*this->m_dados[i]);
+        else
+            rmv_dados[i] = new Produto(*this->m_dados[i + 1]);
+    }
+
+    for (int i = 0; i < this->m_tamanho; i++)
+        delete this->m_dados[i];
+
+    delete this->m_dados;
+
+    this->m_tamanho--;
+
+    this->m_dados = rmv_dados;
+
+    std::cout << indice << " : Removido" << std::endl;
+}
+
 Produto &Vetor::get(int indice) const
 {
-    if (indice >= this->m_tamanho)
+    if (indice >= this->m_tamanho || indice < 0)
         throw "Out of Bounds!";
 
     return *this->m_dados[indice];
 }
+
+const int &Vetor::get_tamanho() const
+{
+    return this->m_tamanho;
+}
+
 } // namespace ivy

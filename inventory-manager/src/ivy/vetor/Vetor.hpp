@@ -17,6 +17,8 @@ public:
     ~Vetor();
 
     void adicionar(Produto nProduto);
-    Produto &get(int id) const;
+    void remover(int indice);
+    Produto &get(int indice) const;
+    const int &get_tamanho() const;
 };
 } // namespace ivy
