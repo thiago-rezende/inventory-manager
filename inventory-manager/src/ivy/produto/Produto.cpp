@@ -22,7 +22,7 @@ Produto::Produto()
 
 Produto::~Produto() {}
 
-int Produto::get_id() const
+const int &Produto::get_id() const
 {
     return this->m_id;
 }
@@ -32,7 +32,7 @@ void Produto::set_id(int nId)
     this->m_id = nId;
 }
 
-std::string Produto::get_nome() const
+const std::string &Produto::get_nome() const
 {
     return this->m_nome;
 }
@@ -42,7 +42,7 @@ void Produto::set_nome(std::string nNome)
     this->m_nome = nNome;
 }
 
-std::string Produto::get_marca() const
+const std::string &Produto::get_marca() const
 {
     return this->m_marca;
 }
@@ -52,7 +52,7 @@ void Produto::set_marca(std::string nMarca)
     this->m_marca = nMarca;
 }
 
-int Produto::get_quantidade() const
+const int &Produto::get_quantidade() const
 {
     return this->m_quantidade;
 }
@@ -62,7 +62,7 @@ void Produto::set_quantidade(int nQuantidade)
     this->m_quantidade = nQuantidade;
 }
 
-bool Produto::get_garantia() const
+const bool &Produto::get_garantia() const
 {
     return this->m_garantia;
 }

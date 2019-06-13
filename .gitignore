@@ -1,6 +1,9 @@
 # Created by https://www.gitignore.io/api/cmake,windows,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=cmake,windows,visualstudiocode
 
+### Docs ###
+#doc
+
 ### Binaries ###
 bin
 build

@@ -10,10 +10,40 @@ namespace ivy
 class Produto
 {
 private:
+    /**
+     * @brief Nome do Produto
+     * 
+     */
     std::string m_nome;
+
+    /**
+     * @brief Marca do Produto
+     * 
+     */
     std::string m_marca;
+
+    /**
+     * @brief Valor do Produto
+     * 
+     */
     float m_valor;
-    int m_id, m_quantidade;
+
+    /**
+     * @brief Numero de dentificacao do Produto
+     * 
+     */
+    int m_id;
+
+    /**
+     * @brief Quantidade do Produto
+     * 
+     */
+    int m_quantidade;
+
+    /**
+     * @brief Garantia do Produto
+     * 
+     */
     bool m_garantia;
 
 public:
@@ -45,7 +75,7 @@ public:
      * 
      * @return int id do produto
      */
-    int get_id() const;
+    const int &get_id() const;
 
     /**
      * @brief Define o ID do produto
@@ -59,7 +89,7 @@ public:
      * 
      * @return std::string nome do produto
      */
-    std::string get_nome() const;
+    const std::string &get_nome() const;
 
     /**
      * @brief Define o nome do produto
@@ -73,7 +103,7 @@ public:
      * 
      * @return std::string marca do produto
      */
-    std::string get_marca() const;
+    const std::string &get_marca() const;
 
     /**
      * @brief Define a marca do produto
@@ -87,7 +117,7 @@ public:
      * 
      * @return int quantidade do produto
      */
-    int get_quantidade() const;
+    const int &get_quantidade() const;
 
     /**
      * @brief Define a quantidade do produto
@@ -102,7 +132,7 @@ public:
      * @return true tem garantia
      * @return false nao tem garantia
      */
-    bool get_garantia() const;
+    const bool &get_garantia() const;
 
     /**
      * @brief Define a garantia do produto
