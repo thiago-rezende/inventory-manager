@@ -8,6 +8,7 @@ namespace ivy
  * @brief Classe Vetor para manipulacao de vetores
  * 
  */
+template <typename _Tipo>
 class Vetor
 {
 private:
@@ -27,7 +28,7 @@ private:
      * @brief Dados do Vetor
      * 
      */
-    Produto **m_dados;
+    _Tipo **m_dados;
 
     /**
      * @brief Aumenta a capacidade do Vetor em 5
@@ -51,9 +52,9 @@ public:
     /**
      * @brief Adiciona um novo elemento no Vetor
      * 
-     * @param nProduto elemento a ser adicionado
+     * @param nElemento elemento a ser adicionado
      */
-    void adicionar(Produto nProduto);
+    void adicionar(_Tipo nElemento);
 
     /**
      * @brief Remove um elemento do Vetor
@@ -68,7 +69,7 @@ public:
      * @param indice posicao do elemento a ser removido
      * @return Produto& elemento do vetor
      */
-    Produto &get(int indice) const;
+    _Tipo &get(int indice) const;
 
     /**
      * @brief Pega o tamanho do vetor
