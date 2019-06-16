@@ -62,6 +62,14 @@ public:
     int buscar_nome(std::string nNome);
 
     /**
+     * @brief Busca um produto pela marca
+     * 
+     * @param nMarca marca do produto
+     * @return int indice do produto no estoque
+     */
+    int buscar_marca(std::string nMarca);
+
+    /**
      * @brief Busca um produto pelo valor
      * 
      * @param nValor valor do produto

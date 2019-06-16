@@ -156,16 +156,127 @@ void InterfaceCLI::cadastrar()
 
 void InterfaceCLI::editar()
 {
+    std::cout << std::endl;
+    std::cout << std::endl;
 }
 void InterfaceCLI::buscar()
 {
+    std::cout << std::endl;
+
+    std::string str_busca;
+
+    while (true)
+    {
+        std::cout << "Buscar por [marca/valor/quantidade]: ";
+        std::getline(std::cin, str_busca);
+        /* Transforma a opcao entrada em letras minusculas */
+        std::transform(str_busca.begin(), str_busca.end(), str_busca.begin(), ::tolower);
+        if (str_busca != "marca" && str_busca != "valor" && str_busca != "quantidade")
+            continue;
+        else
+            break;
+    }
+    if (str_busca == "marca")
+    {
+        std::string nMarca;
+        std::cout << "Informe a marca: ";
+        std::getline(std::cin, nMarca);
+        int index = this->ivy_manager.buscar_marca(nMarca);
+        if (index != -1)
+            std::cout << this->ivy_manager.get_estoque().get(index).get_nome() << std::endl;
+        else
+            std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+    }
+    else if (str_busca == "valor")
+    {
+        float nValor;
+        std::cout << "Informe o valor: ";
+        /* Checa se a entrada e valida */
+        while (!(std::cin >> nValor))
+        {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Somente numeros!" << std::endl;
+        }
+        int index = this->ivy_manager.buscar_valor(nValor);
+        if (index != -1)
+            std::cout << this->ivy_manager.get_estoque().get(index).get_nome() << std::endl;
+        else
+            std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+    }
+    else if (str_busca == "quantidade")
+    {
+        int nQuantidade;
+        std::cout << "Informe a quantidade: ";
+        /* Checa se a entrada e valida */
+        while (!(std::cin >> nQuantidade))
+        {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Somente numeros!" << std::endl;
+        }
+        int index = this->ivy_manager.buscar_quantidade(nQuantidade);
+        if (index != -1)
+            std::cout << this->ivy_manager.get_estoque().get(index).get_nome() << std::endl;
+        else
+            std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+    }
+
+    std::cout << std::endl;
 }
 
 void InterfaceCLI::vender()
 {
+    std::cout << std::endl;
+
+    int nId, nQuantidade;
+
+    std::cout << "Numero de identificacao: ";
+    /* Checa se a entrada e valida */
+    while (!(std::cin >> nId))
+    {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Somente numeros!" << std::endl;
+    }
+    std::cout << "Quantidade: ";
+    /* Checa se a entrada e valida */
+    while (!(std::cin >> nQuantidade))
+    {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Somente numeros!" << std::endl;
+    }
+
+    this->ivy_manager.vender(nId, nQuantidade);
+
+    std::cout << std::endl;
 }
 
 void InterfaceCLI::comprar()
 {
+    std::cout << std::endl;
+
+    int nId, nQuantidade;
+
+    std::cout << "Numero de identificacao: ";
+    /* Checa se a entrada e valida */
+    while (!(std::cin >> nId))
+    {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Somente numeros!" << std::endl;
+    }
+    std::cout << "Quantidade: ";
+    /* Checa se a entrada e valida */
+    while (!(std::cin >> nQuantidade))
+    {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Somente numeros!" << std::endl;
+    }
+
+    this->ivy_manager.comprar(nId, nQuantidade);
+    std::cout << std::endl;
 }
 } // namespace ivy

@@ -68,6 +68,23 @@ int IvyManager::buscar_nome(std::string nNome)
     }
 }
 
+int IvyManager::buscar_marca(std::string nMarca)
+{
+    int index = -1;
+
+    for (int i = 0; i < this->m_estoque.get_tamanho(); i++)
+        if (this->m_estoque.get(i).get_marca() == nMarca)
+            index = i;
+
+    if (index != -1)
+        return index;
+    else
+    {
+        std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+        return index;
+    }
+}
+
 int IvyManager::buscar_valor(float nValor)
 {
     int index = -1;
