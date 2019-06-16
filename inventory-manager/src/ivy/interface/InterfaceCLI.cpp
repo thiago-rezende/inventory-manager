@@ -198,6 +198,7 @@ void InterfaceCLI::buscar()
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::cout << "Somente numeros!" << std::endl;
         }
+        std::cin.ignore();
         int index = this->ivy_manager.buscar_valor(nValor);
         if (index != -1)
             std::cout << this->ivy_manager.get_estoque().get(index).get_nome() << std::endl;
@@ -215,6 +216,7 @@ void InterfaceCLI::buscar()
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::cout << "Somente numeros!" << std::endl;
         }
+        std::cin.ignore();
         int index = this->ivy_manager.buscar_quantidade(nQuantidade);
         if (index != -1)
             std::cout << this->ivy_manager.get_estoque().get(index).get_nome() << std::endl;
