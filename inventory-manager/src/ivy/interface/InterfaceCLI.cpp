@@ -249,7 +249,7 @@ void InterfaceCLI::vender()
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::cout << "Somente numeros!" << std::endl;
     }
-
+    std::cin.ignore();
     this->ivy_manager.vender(nId, nQuantidade);
 
     std::cout << std::endl;
@@ -277,7 +277,7 @@ void InterfaceCLI::comprar()
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::cout << "Somente numeros!" << std::endl;
     }
-
+    std::cin.ignore();
     this->ivy_manager.comprar(nId, nQuantidade);
     std::cout << std::endl;
 }
