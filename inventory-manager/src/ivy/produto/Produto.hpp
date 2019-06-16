@@ -73,7 +73,7 @@ public:
     /**
      * @brief Retorna o ID do produto
      * 
-     * @return int id do produto
+     * @return int& id do produto
      */
     const int &get_id() const;
 
@@ -87,7 +87,7 @@ public:
     /**
      * @brief Retorna o nome do produto
      * 
-     * @return std::string nome do produto
+     * @return std::string& nome do produto
      */
     const std::string &get_nome() const;
 
@@ -101,7 +101,7 @@ public:
     /**
      * @brief Retorna a marca do produto
      * 
-     * @return std::string marca do produto
+     * @return std::string& marca do produto
      */
     const std::string &get_marca() const;
 
@@ -115,7 +115,7 @@ public:
     /**
      * @brief Retorna a quantidade do produto
      * 
-     * @return int quantidade do produto
+     * @return int& quantidade do produto
      */
     const int &get_quantidade() const;
 
@@ -140,5 +140,19 @@ public:
      * @param nGarantia garantia do produto
      */
     void set_garantia(bool nGarantia);
+
+    /**
+     * @brief Retorna o valor do objeto
+     * 
+     * @return const float& valor do objeto
+     */
+    const float &get_valor() const;
+
+    /**
+     * @brief Defino o valor do objeto
+     * 
+     * @param nValor valor do objeto
+     */
+    void set_valor(float nValor);
 };
 } // namespace ivy
