@@ -91,6 +91,61 @@ void InterfaceCLI::ajuda()
 
 void InterfaceCLI::cadastrar()
 {
+    std::cout << std::endl;
+    Produto nProduto;
+
+    std::string nNome;
+    std::string nMarca;
+    std::string str_nGarantia;
+    int nId;
+    float nValor;
+    int nQuantidade;
+    bool nGarantia;
+
+    std::cout << "Numero de identificacao: ";
+    while (!(std::cin >> nId))
+    {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Somente numeros!" << std::endl;
+    }
+    std::cin.ignore();
+    std::cout << "Nome do Produto: ";
+    std::getline(std::cin, nNome);
+    std::cout << "Marca do Produto: ";
+    std::getline(std::cin, nMarca);
+    std::cout << "Valor do Produto: ";
+    while (!(std::cin >> nValor))
+    {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Somente numeros!" << std::endl;
+    }
+    std::cout << "Quantidade do Produto: ";
+    while (!(std::cin >> nQuantidade))
+    {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Somente numeros!" << std::endl;
+    }
+    std::cin.ignore();
+    std::cout << "Garantia do Produto [sim/nao]: ";
+    std::getline(std::cin, str_nGarantia);
+    std::transform(str_nGarantia.begin(), str_nGarantia.end(), str_nGarantia.begin(), ::tolower);
+    if (str_nGarantia == "sim")
+        nGarantia = true;
+    else
+        nGarantia = false;
+
+    nProduto.set_id(nId);
+    nProduto.set_nome(nNome);
+    nProduto.set_marca(nMarca);
+    nProduto.set_valor(nValor);
+    nProduto.set_quantidade(nQuantidade);
+    nProduto.set_garantia(nGarantia);
+
+    this->ivy_manager.cadastrar(nProduto);
+    std::cout << std::endl;
 }
 
 void InterfaceCLI::editar()
