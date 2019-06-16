@@ -72,12 +72,12 @@ void Produto::set_garantia(bool nGarantia)
     this->m_garantia = nGarantia;
 }
 
-const float &get_valor() const
+const float &Produto::get_valor() const
 {
     return this->m_valor;
 }
 
-void set_valor(float nValor)
+void Produto::set_valor(float nValor)
 {
     this->m_valor = nValor;
 }

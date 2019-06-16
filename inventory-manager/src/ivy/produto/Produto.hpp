@@ -152,7 +152,7 @@ public:
      * @brief Defino o valor do objeto
      * 
      * @param nValor valor do objeto
-     */
+    */
     void set_valor(float nValor);
 };
 } // namespace ivy
