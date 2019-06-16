@@ -3,6 +3,7 @@ var classivy_1_1_ivy_manager =
     [ "IvyManager", "classivy_1_1_ivy_manager.html#a40a1420880e16e1acc2f0e53007697f5", null ],
     [ "~IvyManager", "classivy_1_1_ivy_manager.html#a47c9763110e866c11b4f5bbabad968f8", null ],
     [ "buscar_id", "classivy_1_1_ivy_manager.html#a9266231d627a49b6ff5cc1b31013d516", null ],
+    [ "buscar_marca", "classivy_1_1_ivy_manager.html#aba2ece6983d610f1acd2308d820d1964", null ],
     [ "buscar_nome", "classivy_1_1_ivy_manager.html#aa6f15b794671fda4f01c9d16fd275dac", null ],
     [ "buscar_quantidade", "classivy_1_1_ivy_manager.html#a8fe8d15d8cdfd40247622a762ea51904", null ],
     [ "buscar_valor", "classivy_1_1_ivy_manager.html#aa8e2bc564a58f2a3dfc6d5f2d3fe7667", null ],

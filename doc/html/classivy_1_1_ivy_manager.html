@@ -106,7 +106,7 @@ Collaboration diagram for ivy::IvyManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classivy_1_1_ivy_manager__coll__graph.png" border="0" usemap="#ivy_1_1_ivy_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="ivy_1_1_ivy_manager_coll__map" id="ivy_1_1_ivy_manager_coll__map">
-<area shape="rect"  title="Classe IvyManager." alt="" coords="73,667,223,891"/>
+<area shape="rect"  title="Classe IvyManager." alt="" coords="73,667,223,905"/>
 <area shape="rect"  href="classivy_1_1_vetor.html" title=" " alt="" coords="64,424,232,604"/>
 <area shape="rect"  href="classivy_1_1_produto.html" title="Classe Produto, define um produto para o sistema de estoque Ivy." alt="" coords="5,5,136,361"/>
 <area shape="rect"  href="classivy_1_1_vetor.html" title="Classe Vetor para manipulacao de vetores." alt="" coords="160,86,291,281"/>
@@ -133,6 +133,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa6f15b794671fda4f01c9d16fd275dac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1_ivy_manager.html#aa6f15b794671fda4f01c9d16fd275dac">buscar_nome</a> (std::string nNome)</td></tr>
 <tr class="memdesc:aa6f15b794671fda4f01c9d16fd275dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca um produto pelo nome.  <a href="#aa6f15b794671fda4f01c9d16fd275dac">More...</a><br /></td></tr>
 <tr class="separator:aa6f15b794671fda4f01c9d16fd275dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba2ece6983d610f1acd2308d820d1964"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1_ivy_manager.html#aba2ece6983d610f1acd2308d820d1964">buscar_marca</a> (std::string nMarca)</td></tr>
+<tr class="memdesc:aba2ece6983d610f1acd2308d820d1964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca um produto pela marca.  <a href="#aba2ece6983d610f1acd2308d820d1964">More...</a><br /></td></tr>
+<tr class="separator:aba2ece6983d610f1acd2308d820d1964"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8e2bc564a58f2a3dfc6d5f2d3fe7667"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1_ivy_manager.html#aa8e2bc564a58f2a3dfc6d5f2d3fe7667">buscar_valor</a> (float nValor)</td></tr>
 <tr class="memdesc:aa8e2bc564a58f2a3dfc6d5f2d3fe7667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca um produto pelo valor.  <a href="#aa8e2bc564a58f2a3dfc6d5f2d3fe7667">More...</a><br /></td></tr>
 <tr class="separator:aa8e2bc564a58f2a3dfc6d5f2d3fe7667"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +220,33 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nId</td><td>numero de identificacao do produto </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int indice do produto no estoque </dd></dl>
+
+</div>
+</div>
+<a id="aba2ece6983d610f1acd2308d820d1964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba2ece6983d610f1acd2308d820d1964">&#9670;&nbsp;</a></span>buscar_marca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ivy::IvyManager::buscar_marca </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>nMarca</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca um produto pela marca. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nMarca</td><td>marca do produto </td></tr>
   </table>
   </dd>
 </dl>
