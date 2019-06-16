@@ -8,9 +8,8 @@ Assignment for the conclusion of the subject of Algorithms and Procedural Progra
  ```
     .
     ├── bin                      # Binaries will be here.
-    ├── doc                      # The documentation will be here.
-    ├── inventory-manager        # The main project.
-    │   └── src                  # Source folder.
+    ├── docs                     # The documentation will be here.
+    ├── src                      # Source folder.
     |       └── CMakeLists.txt   # Project CMake build script.
     ├── vendor                   # Third-party packages will be here.
     └── CMakeLists.txt           # Main CMake build script.
@@ -25,5 +24,5 @@ Assignment for the conclusion of the subject of Algorithms and Procedural Progra
      mkdir build
      cd build
      cmake .. -G"GENERATOR-HERE"       # Read the CMake docs and select a generator
-     make && sudo make install
+     make && make install
      ```
