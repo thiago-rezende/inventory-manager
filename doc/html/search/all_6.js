@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['remover',['remover',['../classivy_1_1_vetor.html#af00ca23144d8d9eb9484d435428762a0',1,'ivy::Vetor']]]
+  ['logo',['logo',['../classivy_1_1_interface_c_l_i.html#ac0d99448f2c0e42e6d85acc21671dd5f',1,'ivy::InterfaceCLI']]]
 ];

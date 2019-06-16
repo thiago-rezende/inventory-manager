@@ -2,8 +2,9 @@
 
 namespace ivy
 {
-InterfaceCLI::InterfaceCLI(IvyManager *nIvy_manager)
+InterfaceCLI::InterfaceCLI(IvyManager &nIvy_manager)
 {
+    this->ivy_manager = nIvy_manager;
     this->sair = false;
 }
 
@@ -15,6 +16,7 @@ void InterfaceCLI::run()
 {
     this->logo();
 
+    /* Looping principal */
     while (!this->sair)
     {
         this->menu();
@@ -48,6 +50,7 @@ void InterfaceCLI::menu()
     std::cout << "IvyManeger > ";
 
     std::getline(std::cin, this->opt);
+    /* Transforma a opcao entrada em letras minusculas */
     std::transform(this->opt.begin(), this->opt.end(), this->opt.begin(), ::tolower);
     std::cout << std::endl;
 }
@@ -103,6 +106,7 @@ void InterfaceCLI::cadastrar()
     bool nGarantia;
 
     std::cout << "Numero de identificacao: ";
+    /* Checa se a entrada e valida */
     while (!(std::cin >> nId))
     {
         std::cin.clear();
@@ -115,6 +119,7 @@ void InterfaceCLI::cadastrar()
     std::cout << "Marca do Produto: ";
     std::getline(std::cin, nMarca);
     std::cout << "Valor do Produto: ";
+    /* Checa se a entrada e valida */
     while (!(std::cin >> nValor))
     {
         std::cin.clear();
@@ -122,6 +127,7 @@ void InterfaceCLI::cadastrar()
         std::cout << "Somente numeros!" << std::endl;
     }
     std::cout << "Quantidade do Produto: ";
+    /* Checa se a entrada e valida */
     while (!(std::cin >> nQuantidade))
     {
         std::cin.clear();

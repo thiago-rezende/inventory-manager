@@ -106,7 +106,7 @@ Collaboration diagram for ivy::Produto:</div>
 <div class="dyncontent">
 <div class="center"><img src="classivy_1_1_produto__coll__graph.png" border="0" usemap="#ivy_1_1_produto_coll__map" alt="Collaboration graph"/></div>
 <map name="ivy_1_1_produto_coll__map" id="ivy_1_1_produto_coll__map">
-<area shape="rect"  title="Classe Produto, define um produto para o sistema de estoque Ivy." alt="" coords="5,5,136,332"/>
+<area shape="rect"  title="Classe Produto, define um produto para o sistema de estoque Ivy." alt="" coords="5,5,136,361"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -151,6 +151,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a770c9e7fca8fa9ee28db0f9096dbceb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1_produto.html#a770c9e7fca8fa9ee28db0f9096dbceb9">set_garantia</a> (bool nGarantia)</td></tr>
 <tr class="memdesc:a770c9e7fca8fa9ee28db0f9096dbceb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a garantia do produto.  <a href="#a770c9e7fca8fa9ee28db0f9096dbceb9">More...</a><br /></td></tr>
 <tr class="separator:a770c9e7fca8fa9ee28db0f9096dbceb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb50eb065749801978a6bfa5e6912ad4"><td class="memItemLeft" align="right" valign="top">const float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1_produto.html#aeb50eb065749801978a6bfa5e6912ad4">get_valor</a> () const</td></tr>
+<tr class="memdesc:aeb50eb065749801978a6bfa5e6912ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o valor do objeto.  <a href="#aeb50eb065749801978a6bfa5e6912ad4">More...</a><br /></td></tr>
+<tr class="separator:aeb50eb065749801978a6bfa5e6912ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4725def2386a2caec478b40f1988b0c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1_produto.html#a4725def2386a2caec478b40f1988b0c1">set_valor</a> (float nValor)</td></tr>
+<tr class="memdesc:a4725def2386a2caec478b40f1988b0c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defino o valor do objeto.  <a href="#a4725def2386a2caec478b40f1988b0c1">More...</a><br /></td></tr>
+<tr class="separator:a4725def2386a2caec478b40f1988b0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -311,7 +317,7 @@ false nao tem garantia </dd></dl>
 </div><div class="memdoc">
 
 <p>Retorna o ID do produto. </p>
-<dl class="section return"><dt>Returns</dt><dd>int id do produto </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int&amp; id do produto </dd></dl>
 
 </div>
 </div>
@@ -331,7 +337,7 @@ false nao tem garantia </dd></dl>
 </div><div class="memdoc">
 
 <p>Retorna a marca do produto. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::string marca do produto </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string&amp; marca do produto </dd></dl>
 
 </div>
 </div>
@@ -351,7 +357,7 @@ false nao tem garantia </dd></dl>
 </div><div class="memdoc">
 
 <p>Retorna o nome do produto. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::string nome do produto </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string&amp; nome do produto </dd></dl>
 
 </div>
 </div>
@@ -371,7 +377,27 @@ false nao tem garantia </dd></dl>
 </div><div class="memdoc">
 
 <p>Retorna a quantidade do produto. </p>
-<dl class="section return"><dt>Returns</dt><dd>int quantidade do produto </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int&amp; quantidade do produto </dd></dl>
+
+</div>
+</div>
+<a id="aeb50eb065749801978a6bfa5e6912ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb50eb065749801978a6bfa5e6912ad4">&#9670;&nbsp;</a></span>get_valor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float &amp; ivy::Produto::get_valor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o valor do objeto. </p>
+<dl class="section return"><dt>Returns</dt><dd>const float&amp; valor do objeto </dd></dl>
 
 </div>
 </div>
@@ -499,6 +525,32 @@ false nao tem garantia </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">qtd</td><td>quantidade do porduto </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4725def2386a2caec478b40f1988b0c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4725def2386a2caec478b40f1988b0c1">&#9670;&nbsp;</a></span>set_valor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ivy::Produto::set_valor </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>nValor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defino o valor do objeto. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nValor</td><td>valor do objeto </td></tr>
   </table>
   </dd>
 </dl>
