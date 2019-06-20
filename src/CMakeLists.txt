@@ -14,6 +14,8 @@ PUBLIC
     "ivy/produto/Produto.cpp"
     "ivy/vetor/Vetor.hpp"
     "ivy/vetor/Vetor.cpp"
+    # resources
+    "CMakeSetup.rc"
 )
 
 target_include_directories(ivy-manager
@@ -26,5 +28,9 @@ PUBLIC
 )
 
 target_link_libraries(ivy-manager PRIVATE nana)
+
+add_custom_target(copy_resources ALL
+    COMMAND cmake -E copy_directory ${CMAKE_SOURCE_DIR}/src/res ${CMAKE_BINARY_DIR}/bin/res
+    DEPENDS ivy-manager)
 
 install(TARGETS ivy-manager RUNTIME DESTINATION bin)
