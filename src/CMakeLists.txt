@@ -18,12 +18,13 @@ PUBLIC
 
 target_include_directories(ivy-manager
 PUBLIC 
-    "include"
+    ${NANA_INCLUDE_DIR}
     "ivy"
     "ivy/ivy_manager"
     "ivy/produto"
     "ivy/vetor"
 )
 
+target_link_libraries(ivy-manager PRIVATE nana)
 
 install(TARGETS ivy-manager RUNTIME DESTINATION bin)

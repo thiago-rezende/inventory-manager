@@ -17,6 +17,7 @@ Assignment for the conclusion of the subject of Algorithms and Procedural Progra
 ### How to Use
  - First download and install CMake [here](https://cmake.org/download/), is highly recommended to read the documentation [here](https://cmake.org/cmake-tutorial/) to extend the project.
  - Execute the following commands
+ > NOTE: When compiling for the first time may take some time due to nano library compilation, do not worry, it's not stuck.
  
      ```
      git clone --recursive https://github.com/thiago-rezende/inventory-manager.git
