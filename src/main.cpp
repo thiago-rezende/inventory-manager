@@ -1,3 +1,4 @@
+#include "ivy/cli/cli.hpp"
 #include "ivy/ivy.hpp"
 
 #include <nana/gui/wvl.hpp>
@@ -5,9 +6,19 @@
 #include <nana/gui/widgets/button.hpp>
 #include <nana/gui/widgets/textbox.hpp>
 
-int main(int argc, char **argv)
+int main(int argc, const char **argv)
 {
-    if ((std::string)argv[1] == "-cli")
+    cli::Parser parser(argc, argv);
+
+    bool use_cli = parser.flag("cli")
+                       .alias("cli")
+                       .description("Run Ivy Manager in CLI mode")
+                       .getValue();
+
+    if (parser.hasErrors())
+        return EXIT_FAILURE;
+
+    if (use_cli)
     {
         ivy::IvyManager ivy;
         ivy::InterfaceCLI cli(ivy);
@@ -60,5 +71,5 @@ int main(int argc, char **argv)
         nana::exec();
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
