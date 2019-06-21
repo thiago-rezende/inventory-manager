@@ -31,7 +31,7 @@ void Vetor<_Tipo>::expandir()
     for (int i = 0; i < this->m_tamanho; i++)
         delete this->m_dados[i];
 
-    delete this->m_dados;
+    delete[] this->m_dados;
 
     this->m_dados = tmp_dados;
 
@@ -67,7 +67,7 @@ void Vetor<_Tipo>::remover(int indice)
     for (int i = 0; i < this->m_tamanho; i++)
         delete this->m_dados[i];
 
-    delete this->m_dados;
+    delete[] this->m_dados;
 
     this->m_tamanho--;
 
