@@ -2,9 +2,11 @@
 #include "ivy/ivy.hpp"
 
 #include <nana/gui/wvl.hpp>
+#include <nana/gui/widgets/group.hpp>
 #include <nana/gui/place.hpp>
 #include <nana/gui/widgets/button.hpp>
-#include <nana/gui/widgets/textbox.hpp>
+#include <nana/gui/widgets/form.hpp>
+#include <nana/gui/widgets/label.hpp>
 
 int main(int argc, const char **argv)
 {
@@ -26,47 +28,55 @@ int main(int argc, const char **argv)
     }
     else
     {
-        /* Define widgets */
-        nana::form fm{nana::API::make_center(300, 200)};
-        nana::textbox usr{fm}, pswd{fm};
-        nana::button login{fm, "Login"}, cancel{fm, "Cancel"};
+        nana::form fm{nana::API::make_center(600, 400)};
 
-        login.events().click([&usr, &pswd]() {
-            std::string usr_str;
-            std::string usr_pswd;
-            usr.getline(0, usr_str);
-            pswd.getline(0, usr_pswd);
-            nana::msgbox m("Hello");
-            m << usr_str << "\n"
-              << usr_pswd;
-            m();
+        /* fm.bgcolor(colors::mint_cream ); */
+        nana::place plc(fm);
+        std::vector<std::unique_ptr<nana::button>> btns;
+
+        /* the most external widgets */
+        nana::label out{fm, "This label is out of any group"};
+        nana::group ext_gr{fm, "An external <bold=true, color=blue>Group:</>", true};
+        plc.div("vert gap=10 margin=5 <lab weight=30><all> ");
+        plc["lab"] << out;
+        plc["all"] << ext_gr;
+
+        /* the external group contain: */
+        nana::group grp_left{ext_gr, ("A new <bold=true, color=0xff0000, font=\"Consolas\">Group:</>"), true};
+        nana::group grp_right{ext_gr, ("A right <bold=true, color=0xff0000, font=\"Consolas\">Group:</>"), true};
+        ext_gr.div("horizontal gap=3 margin=20  < <left_field> | 70% <right_field>> ");
+        ext_gr["left_field"] << grp_left;
+        ext_gr["right_field"] << grp_right;
+
+        /* the left group */
+        grp_left.div("buttons vert gap=5 margin=3");
+
+        /* the right group */
+        nana::group nested(grp_right.handle());
+        nana::label lab{grp_right, "A simple label "};
+        nana::button b1{grp_right, "Adicionar Botao"};
+        b1.events().click([&grp_left, &btns] {
+            btns.emplace_back(new nana::button(grp_left, "Button"));
+            grp_left["buttons"] << *btns.back();
+            grp_left.collocate();
+            std::cout << "Botao adicionado!\n";
         });
+        nana::button b2{grp_right, "Botao => 2"};
+        nana::button b3{grp_right, "Botao => 3"};
+        grp_right.div("<vertical margin=2 gap= 2 <vert lab> | 40% < <left_field> | 70% <right_field>> >");
+        grp_right["lab"] << lab.text_align(nana::align::right) << nested;
+        grp_right["left_field"] << b1;
+        grp_right["right_field"] << b2 << b3;
 
-        cancel.events().click([&fm] {
-            fm.close();
-        });
-
-        usr.tip_string("User:").multi_lines(false);
-        pswd.tip_string("Password:").multi_lines(false).mask('*');
-
-        /* Define a place for the form. */
-        nana::place plc{fm};
-
-        /* Divide the form into fields */
-        plc.div("<><weight=80% vertical<><weight=70% vertical <vertical gap=10 textboxes arrange=[25,25]>  <weight=25 gap=10 buttons> ><>><>");
-
-        /* Insert widgets */
-
-        /* The field textboxes is vertical. It automatically adjusts the widgets' top and height attributes. */
-        plc.field("textboxes") << usr << pswd;
-
-        plc["buttons"] << login << cancel;
-
-        /* Finially, the widgets should be collocated.
-        Do not miss this line! Otherwise, the widgets will not be collocated
-        until the form is resized. */
+        /* the nested (rigth up) group */
+        nana::label lab1{nested, "A very simple group:"};
+        nana::button b4{nested, "Botao => 4"};
+        nana::button b5{nested, "Botao => 5"};
+        nana::button b6{nested, "Botao => 6"};
+        nested.div(" margin=3 min=30 gap= 2 all");
+        nested["all"] << lab1 << b4 << b5 << b6;
         plc.collocate();
-
+        /* grp1.plc.collocate(); */
         fm.show();
         nana::exec();
     }
