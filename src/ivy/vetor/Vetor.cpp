@@ -91,6 +91,21 @@ const int &Vetor<_Tipo>::get_tamanho() const
     return this->m_tamanho;
 }
 
+template <typename _Tipo>
+Vetor<_Tipo> &Vetor<_Tipo>::operator=(const Vetor<_Tipo> &other)
+{
+    if (this != &other)
+    {
+        _Tipo **nDados = new _Tipo *[other.m_capacidade];
+        std::copy(other.m_dados, other.m_dados + other.m_tamanho, nDados);
+        delete[] this->m_dados;
+        this->m_dados = nDados;
+        this->m_tamanho = other.m_tamanho;
+    }
+
+    return *this;
+}
+
 template class Vetor<int>;
 template class Vetor<float>;
 template class Vetor<double>;

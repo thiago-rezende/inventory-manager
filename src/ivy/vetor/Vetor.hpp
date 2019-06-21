@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "../produto/Produto.hpp"
+#include "produto/Produto.hpp"
 
 namespace ivy
 {
@@ -77,5 +77,13 @@ public:
      * @return const int& tamanho do vetor
      */
     const int &get_tamanho() const;
+
+    /**
+     * @brief Operador de atribuicao
+     * 
+     * @param other Vetor a ser atribuido
+     * @return Vetor<_Tipo>& Vetor a receber a atribuicao
+     */
+    Vetor<_Tipo> &operator=(const Vetor<_Tipo> &other);
 };
 } // namespace ivy
