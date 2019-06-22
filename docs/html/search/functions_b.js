@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['operator_3d',['operator=',['../classivy_1_1_vetor.html#a3e9974fc5eba88ccada11d373edd3f28',1,'ivy::Vetor']]],
-  ['option',['option',['../classcli_1_1_basic_parser.html#a30ea2561a37272b313bac725a00b29cd',1,'cli::BasicParser::option()'],['../classcli_1_1_option.html#a944b783efc2868bde75503cf70ac5bce',1,'cli::Option::Option()']]],
-  ['option_5fhandler',['option_handler',['../classivy_1_1_interface_c_l_i.html#a5e8ba431daf3cf4a14f4d31a7919a38a',1,'ivy::InterfaceCLI']]]
+  ['set_5fgarantia',['set_garantia',['../classivy_1_1_produto.html#a770c9e7fca8fa9ee28db0f9096dbceb9',1,'ivy::Produto']]],
+  ['set_5fid',['set_id',['../classivy_1_1_produto.html#a2d44dd36b57b42b4ac9245c54a17901f',1,'ivy::Produto']]],
+  ['set_5fmarca',['set_marca',['../classivy_1_1_produto.html#a9cd0bdf70312736d3db7d51a137b2e98',1,'ivy::Produto']]],
+  ['set_5fnome',['set_nome',['../classivy_1_1_produto.html#acaec5296bcca78bec3bad143f93ecb6c',1,'ivy::Produto']]],
+  ['set_5fquantidade',['set_quantidade',['../classivy_1_1_produto.html#a741f6a234a3f8ebffd09d0694fec985a',1,'ivy::Produto']]],
+  ['set_5fvalor',['set_valor',['../classivy_1_1_produto.html#a4725def2386a2caec478b40f1988b0c1',1,'ivy::Produto']]]
 ];

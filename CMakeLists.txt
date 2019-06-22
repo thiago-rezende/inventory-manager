@@ -13,6 +13,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR})
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
+option(BUILD_SHARED_LIBS "Compile nana as a shared library." OFF)
+set(BUILD_SHARED_LIBS ON)
 add_subdirectory(vendor/nana)
 add_subdirectory(src)
 

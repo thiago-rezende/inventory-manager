@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['list_5ft',['list_t',['../namespacecli.html#abd33db8d40f7f098437cd51538e1ba89',1,'cli']]],
-  ['logo',['logo',['../classivy_1_1_interface_c_l_i.html#ac0d99448f2c0e42e6d85acc21671dd5f',1,'ivy::InterfaceCLI']]]
+  ['remover',['remover',['../classivy_1_1_vetor.html#af00ca23144d8d9eb9484d435428762a0',1,'ivy::Vetor']]],
+  ['run',['run',['../classivy_1_1_interface_c_l_i.html#a1d9c84216def96675b6a60fb3ca6d201',1,'ivy::InterfaceCLI']]]
 ];

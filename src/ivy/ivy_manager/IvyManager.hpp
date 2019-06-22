@@ -1,7 +1,7 @@
 #pragma once
-#include <iostream>
 #include "produto/Produto.hpp"
 #include "vetor/Vetor.hpp"
+#include "log/IvyLog.hpp"
 
 namespace ivy
 {

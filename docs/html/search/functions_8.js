@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['interfacecli',['InterfaceCLI',['../classivy_1_1_interface_c_l_i.html#aef9d3a8136593e6b9441f158ca403dc6',1,'ivy::InterfaceCLI']]],
-  ['ivymanager',['IvyManager',['../classivy_1_1_ivy_manager.html#a40a1420880e16e1acc2f0e53007697f5',1,'ivy::IvyManager']]]
+  ['operator_3d',['operator=',['../classivy_1_1_vetor.html#a3e9974fc5eba88ccada11d373edd3f28',1,'ivy::Vetor']]],
+  ['option_5fhandler',['option_handler',['../classivy_1_1_interface_c_l_i.html#a5e8ba431daf3cf4a14f4d31a7919a38a',1,'ivy::InterfaceCLI']]]
 ];

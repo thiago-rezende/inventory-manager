@@ -1,6 +1,6 @@
 #pragma once
-#include <iostream>
 #include "produto/Produto.hpp"
+#include "log/IvyLog.hpp"
 
 namespace ivy
 {

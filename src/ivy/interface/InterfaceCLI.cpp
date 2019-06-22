@@ -82,13 +82,13 @@ void InterfaceCLI::ajuda()
 {
     std::cout << std::endl;
     std::cout << "Comandos: " << std::endl;
-    std::cout << "ajuda => Exibe os comandos disponiveis." << std::endl;
-    std::cout << "cadastrar => Cadastrar um novo Produto." << std::endl;
-    std::cout << "editar => Editar um Produto." << std::endl;
-    std::cout << "buscar => Buscar um Produto." << std::endl;
-    std::cout << "vender => Vender um Produto." << std::endl;
-    std::cout << "comprar => Compror um Produto." << std::endl;
-    std::cout << "sair => Sair do programa." << std::endl;
+    std::cout << "  ajuda => Exibe os comandos disponiveis." << std::endl;
+    std::cout << "  cadastrar => Cadastrar um novo Produto." << std::endl;
+    std::cout << "  editar => Editar um Produto." << std::endl;
+    std::cout << "  buscar => Buscar um Produto." << std::endl;
+    std::cout << "  vender => Vender um Produto." << std::endl;
+    std::cout << "  comprar => Compror um Produto." << std::endl;
+    std::cout << "  sair => Sair do programa." << std::endl;
     std::cout << std::endl;
 }
 

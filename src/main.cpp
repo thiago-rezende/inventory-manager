@@ -1,4 +1,4 @@
-#include "ivy/cli/cli.hpp"
+#include <cli/cli.hpp>
 #include "ivy/ivy.hpp"
 
 #include <nana/gui/wvl.hpp>
@@ -10,6 +10,10 @@
 
 int main(int argc, const char **argv)
 {
+    ivy::IvyLog::init();
+
+    IVY_WARN("Why are you {}?", "RUNNING");
+
     cli::Parser parser(argc, argv);
 
     bool use_cli = parser.flag("cli")

@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <limits>
 #include "ivy_manager/IvyManager.hpp"
+#include "log/IvyLog.hpp"
 
 namespace ivy
 {

@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['interfacecli_2ecpp',['InterfaceCLI.cpp',['../_interface_c_l_i_8cpp.html',1,'']]],
-  ['interfacecli_2ehpp',['InterfaceCLI.hpp',['../_interface_c_l_i_8hpp.html',1,'']]],
-  ['ivy_2ehpp',['ivy.hpp',['../ivy_8hpp.html',1,'']]],
-  ['ivymanager_2ecpp',['IvyManager.cpp',['../_ivy_manager_8cpp.html',1,'']]],
-  ['ivymanager_2ehpp',['IvyManager.hpp',['../_ivy_manager_8hpp.html',1,'']]]
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mainpage_2emd',['mainpage.md',['../mainpage_8md.html',1,'']]]
 ];

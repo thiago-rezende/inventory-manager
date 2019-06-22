@@ -1,15 +1,17 @@
 var searchData=
 [
-  ['get',['get',['../classivy_1_1_vetor.html#a89ed12195e38f0c4e971505fb5e69b69',1,'ivy::Vetor']]],
-  ['get_5festoque',['get_estoque',['../classivy_1_1_ivy_manager.html#a8bba050a38b7ce47833722d6b055e5ca',1,'ivy::IvyManager']]],
-  ['get_5fgarantia',['get_garantia',['../classivy_1_1_produto.html#ad4f717ddb959a52770b54ab73d1b9ca3',1,'ivy::Produto']]],
-  ['get_5fid',['get_id',['../classivy_1_1_produto.html#a01f030970068bd9a20fb745090535262',1,'ivy::Produto']]],
-  ['get_5fmarca',['get_marca',['../classivy_1_1_produto.html#ac1a8081ce0efb416870ffdd0193b537f',1,'ivy::Produto']]],
-  ['get_5fnome',['get_nome',['../classivy_1_1_produto.html#aba71ba5dfa51997be4f7f879945dda8e',1,'ivy::Produto']]],
-  ['get_5fquantidade',['get_quantidade',['../classivy_1_1_produto.html#a24dbf6e00d6320e7325a57048f1ac2de',1,'ivy::Produto']]],
-  ['get_5ftamanho',['get_tamanho',['../classivy_1_1_vetor.html#aad38fbf3c6e57e3e6f0bece584995f1a',1,'ivy::Vetor']]],
-  ['get_5fvalor',['get_valor',['../classivy_1_1_produto.html#aeb50eb065749801978a6bfa5e6912ad4',1,'ivy::Produto']]],
-  ['getremainingarguments',['getRemainingArguments',['../classcli_1_1_basic_parser.html#a907798c3ea42d10eb1923aba181b0e5c',1,'cli::BasicParser']]],
-  ['getvalue',['getValue',['../classcli_1_1_flag.html#ac737336e3a328764310b010dc6b51530',1,'cli::Flag::getValue()'],['../classcli_1_1_option.html#afb6e7ad71314a3d9caa53cadda188bc5',1,'cli::Option::getValue()']]],
-  ['getvalueas',['getValueAs',['../classcli_1_1_option.html#af77c2e6557548920aa14da18d1ab181d',1,'cli::Option']]]
+  ['m_5fcapacidade',['m_capacidade',['../classivy_1_1_vetor.html#af029e5eb9558b84853a8891607619a40',1,'ivy::Vetor']]],
+  ['m_5fdados',['m_dados',['../classivy_1_1_vetor.html#a5c79527e9fbfbb0fc135dc8c11ccd5f8',1,'ivy::Vetor']]],
+  ['m_5festoque',['m_estoque',['../classivy_1_1_ivy_manager.html#a8f7d90a81e49c07063f6e4cff151a324',1,'ivy::IvyManager']]],
+  ['m_5fgarantia',['m_garantia',['../classivy_1_1_produto.html#a5c0a5d572aeedb28033ee96f99992f54',1,'ivy::Produto']]],
+  ['m_5fid',['m_id',['../classivy_1_1_produto.html#a3b1bcc0d35ba76eaaac04d56b07e1539',1,'ivy::Produto']]],
+  ['m_5fmarca',['m_marca',['../classivy_1_1_produto.html#a1a28dfd1508946c647a58ebea46fcd44',1,'ivy::Produto']]],
+  ['m_5fnome',['m_nome',['../classivy_1_1_produto.html#ac1a4f37d11514ba9726009e0a8c86f5b',1,'ivy::Produto']]],
+  ['m_5fquantidade',['m_quantidade',['../classivy_1_1_produto.html#a09fa64660e2b6c6378bc9b280905f6fb',1,'ivy::Produto']]],
+  ['m_5ftamanho',['m_tamanho',['../classivy_1_1_vetor.html#ab3dad9abc3295a7a3a671c2e4a4f5860',1,'ivy::Vetor']]],
+  ['m_5fvalor',['m_valor',['../classivy_1_1_produto.html#a3c4515d78b580fa213ba71494c529d44',1,'ivy::Produto']]],
+  ['main',['main',['../main_8cpp.html#a217dbf8b442f20279ea00b898af96f52',1,'main.cpp']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mainpage_2emd',['mainpage.md',['../mainpage_8md.html',1,'']]],
+  ['menu',['menu',['../classivy_1_1_interface_c_l_i.html#ad3a851b780a15f6c67428c59b5b1fe5b',1,'ivy::InterfaceCLI']]]
 ];

@@ -35,7 +35,7 @@ void Vetor<_Tipo>::expandir()
 
     this->m_dados = tmp_dados;
 
-    std::cout << "Vetor Expandido : capacidade -> " << this->m_capacidade << std::endl;
+    IVY_INFO("Vetor Expandido : capacidade -> {}", this->m_capacidade);
 }
 
 template <typename _Tipo>
@@ -44,8 +44,8 @@ void Vetor<_Tipo>::adicionar(_Tipo nElemento)
     if (this->m_tamanho >= this->m_capacidade)
         this->expandir();
 
-    std::cout << this->m_tamanho << " : Adicionado" << std::endl;
     this->m_dados[this->m_tamanho++] = new _Tipo(nElemento);
+    IVY_INFO("{} : Adicionado", this->m_tamanho - 1);
 }
 
 template <typename _Tipo>
@@ -73,7 +73,7 @@ void Vetor<_Tipo>::remover(int indice)
 
     this->m_dados = rmv_dados;
 
-    std::cout << indice << " : Removido" << std::endl;
+    IVY_INFO("{} : Removido", indice);
 }
 
 template <typename _Tipo>

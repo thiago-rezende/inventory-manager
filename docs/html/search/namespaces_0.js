@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cli',['cli',['../namespacecli.html',1,'']]]
+  ['ivy',['ivy',['../namespaceivy.html',1,'']]]
 ];

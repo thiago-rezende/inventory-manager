@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['haserrors',['hasErrors',['../classcli_1_1_basic_parser.html#aafd9f3d8c4cfe02782b51e385350bb77',1,'cli::BasicParser']]],
-  ['help',['help',['../classcli_1_1_basic_parser.html#a98df43d06c0dfb6fd72b394e032287c1',1,'cli::BasicParser::help(bool showHelp)'],['../classcli_1_1_basic_parser.html#afba5816076c00d45b7f3616af68d2bce',1,'cli::BasicParser::help(flag_t &amp;showHelp)'],['../classcli_1_1_basic_parser.html#a0397bbae225615add68ecb222d431832',1,'cli::BasicParser::help()']]]
+  ['main',['main',['../main_8cpp.html#a217dbf8b442f20279ea00b898af96f52',1,'main.cpp']]],
+  ['menu',['menu',['../classivy_1_1_interface_c_l_i.html#ad3a851b780a15f6c67428c59b5b1fe5b',1,'ivy::InterfaceCLI']]]
 ];

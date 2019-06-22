@@ -1,5 +1,5 @@
 #pragma once
-#include <iostream>
+#include "log/IvyLog.hpp"
 
 namespace ivy
 {

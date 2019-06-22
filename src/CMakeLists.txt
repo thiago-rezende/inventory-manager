@@ -2,17 +2,15 @@ project(ivy-manager)
 
 add_executable(ivy-manager ${SOURCES})
 set_property(TARGET ivy-manager PROPERTY CXX_STANDARD 17)
+target_compile_definitions(ivy-manager PRIVATE -DIVY_DEBUG)
 
 target_sources(ivy-manager
 PUBLIC 
     "main.cpp"
-    "ivy/ivy_manager/IvyManager.hpp"
+    "ivy/log/IvyLog.cpp"
     "ivy/ivy_manager/IvyManager.cpp"
-    "ivy/interface/InterfaceCLI.hpp"
     "ivy/interface/InterfaceCLI.cpp"
-    "ivy/produto/Produto.hpp"
     "ivy/produto/Produto.cpp"
-    "ivy/vetor/Vetor.hpp"
     "ivy/vetor/Vetor.cpp"
     # resources
     "CMakeSetup.rc"
@@ -21,7 +19,10 @@ PUBLIC
 target_include_directories(ivy-manager
 PUBLIC 
     ${NANA_INCLUDE_DIR}
+    ${CMAKE_SOURCE_DIR}/vendor/cli/include
+    ${CMAKE_SOURCE_DIR}/vendor/spdlog/include
     "ivy"
+    "ivy/log"
     "ivy/ivy_manager"
     "ivy/produto"
     "ivy/vetor"

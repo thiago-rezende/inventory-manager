@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['defaultcommand',['defaultCommand',['../classcli_1_1_basic_parser.html#adfb2230c9e53d590dc75f1553bbcf6f2',1,'cli::BasicParser']]],
-  ['defaulthelpflag',['defaultHelpFlag',['../classcli_1_1_basic_parser.html#a46cf4c1111bfbde87e830d0ef96201db',1,'cli::BasicParser']]],
-  ['defaultvalue',['defaultValue',['../classcli_1_1_option.html#abcae736a57902901adccef722c4ed182',1,'cli::Option']]],
-  ['description',['description',['../classcli_1_1_command.html#acd9e6b4d1c7978760e62d354d8382fe2',1,'cli::Command::description()'],['../classcli_1_1_flag.html#ab11f264c597704c3b738365e05bec04e',1,'cli::Flag::description()'],['../classcli_1_1_option.html#a3d48efaba84161816b95bdbe32d16721',1,'cli::Option::description()']]]
+  ['editar',['editar',['../classivy_1_1_interface_c_l_i.html#a41599a3c68b2fea24d429ce198d16ffb',1,'ivy::InterfaceCLI::editar()'],['../classivy_1_1_ivy_manager.html#ad0e743c6bf2fad8fd1a6647441ad2229',1,'ivy::IvyManager::editar()']]],
+  ['expandir',['expandir',['../classivy_1_1_vetor.html#ab3a5ed78f08c5c89096e86e0c2d9e7fa',1,'ivy::Vetor']]]
 ];

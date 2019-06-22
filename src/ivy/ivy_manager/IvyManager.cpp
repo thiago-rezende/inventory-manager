@@ -34,7 +34,7 @@ void IvyManager::editar(int nId, Produto nProduto)
         this->m_estoque.get(index).set_garantia(nProduto.get_garantia());
     }
     else
-        std::cout << "EDITAR::PRODUTO_NAO_ENCONTRADO" << std::endl;
+        IVY_INFO("EDITAR::PRODUTO_NAO_ENCONTRADO");
 }
 
 int IvyManager::buscar_id(int nId)
@@ -49,7 +49,7 @@ int IvyManager::buscar_id(int nId)
         return index;
     else
     {
-        std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+        IVY_INFO("BUSCA::PRODUTO_NAO_ENCONTRADO");
         return index;
     }
 }
@@ -66,7 +66,7 @@ int IvyManager::buscar_nome(std::string nNome)
         return index;
     else
     {
-        std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+        IVY_INFO("BUSCA::PRODUTO_NAO_ENCONTRADO");
         return index;
     }
 }
@@ -83,7 +83,7 @@ int IvyManager::buscar_marca(std::string nMarca)
         return index;
     else
     {
-        std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+        IVY_INFO("BUSCA::PRODUTO_NAO_ENCONTRADO");
         return index;
     }
 }
@@ -100,7 +100,7 @@ int IvyManager::buscar_valor(float nValor)
         return index;
     else
     {
-        std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+        IVY_INFO("BUSCA::PRODUTO_NAO_ENCONTRADO");
         return index;
     }
 }
@@ -117,7 +117,7 @@ int IvyManager::buscar_quantidade(int nQuantidade)
         return index;
     else
     {
-        std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+        IVY_INFO("BUSCA::PRODUTO_NAO_ENCONTRADO");
         return index;
     }
 }
@@ -132,7 +132,7 @@ void IvyManager::vender(int nId, int nQuantidade)
         this->m_estoque.get(index).set_garantia(tmp_qtd - nQuantidade);
     }
     else
-        std::cout << "VENDA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+        IVY_INFO("VENDA::PRODUTO_NAO_ENCONTRADO");
 }
 
 void IvyManager::comprar(int nId, int nQuantidade)
@@ -145,6 +145,6 @@ void IvyManager::comprar(int nId, int nQuantidade)
         this->m_estoque.get(index).set_quantidade(tmp_qtd + nQuantidade);
     }
     else
-        std::cout << "COMPRA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+        IVY_INFO("COMPRA::PRODUTO_NAO_ENCONTRADO");
 }
 } // namespace ivy
