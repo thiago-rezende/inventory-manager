@@ -12,7 +12,7 @@ int main(int argc, const char **argv)
 {
     ivy::IvyLog::init();
 
-    IVY_WARN("Why are you {}?", "RUNNING");
+    IVY_INFO("Ivy - Inventory Manager");
 
     cli::Parser parser(argc, argv);
 
