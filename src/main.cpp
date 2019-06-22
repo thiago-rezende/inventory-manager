@@ -28,7 +28,7 @@ int main(int argc, const char **argv)
     }
     else
     {
-        nana::form fm{nana::API::make_center(600, 400)};
+        nana::form fm{nana::API::make_center(1000, 900)};
 
         /* fm.bgcolor(colors::mint_cream ); */
         nana::place plc(fm);
@@ -37,7 +37,7 @@ int main(int argc, const char **argv)
         /* the most external widgets */
         nana::label out{fm, "This label is out of any group"};
         nana::group ext_gr{fm, "An external <bold=true, color=blue>Group:</>", true};
-        plc.div("vert gap=10 margin=5 <lab weight=30><all> ");
+        plc.div("vert gap=20 margin=180 <lab weight=30><all> ");
         plc["lab"] << out;
         plc["all"] << ext_gr;
 
@@ -78,6 +78,18 @@ int main(int argc, const char **argv)
         plc.collocate();
         /* grp1.plc.collocate(); */
         fm.show();
+
+        nana::paint::image img("res/background.bmp");
+        nana::drawing dw(fm);
+        dw.draw([&img](nana::paint::graphics &graph) {
+            if (img.empty())
+            {
+                std::cout << "IMAGEM DE FUNDO NÃO EXISTE!" << std::endl;
+                return;
+            }
+            img.paste(graph, nana::point{});
+        });
+        dw.update();
         nana::exec();
     }
 
