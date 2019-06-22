@@ -3,7 +3,7 @@
 #include <string>
 #include <algorithm>
 #include <limits>
-#include "../ivy_manager/IvyManager.hpp"
+#include "ivy_manager/IvyManager.hpp"
 
 namespace ivy
 {
