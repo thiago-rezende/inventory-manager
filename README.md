@@ -29,5 +29,5 @@ Assignment for the conclusion of the subject of Algorithms and Procedural Progra
      mkdir build
      cd build
      cmake .. -G"GENERATOR-HERE" -DBUILD_SHARED_LIBS=ON     # Read the CMake docs and select a generator
-     make && make install
+     make && make install                                   # Now run your preferred compiler
      ```
