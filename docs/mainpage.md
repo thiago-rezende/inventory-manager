@@ -2,13 +2,13 @@ O software [**Ivy - Inventory Manager**](https://github.com/thiago-rezende/inven
 para a conclusão da materia de Algoritimos e Programacao Procedimental
 no curso de graduação em sistemas de informação no Instituto Federal de Minas Gerais - Ouro Branco.
 
-O software [**Ivy - Inventory Manager**](https://github.com/thiago-rezende/inventory-manager) tem co objetivo gerenciar o estoque de uma loja de informatica, contendo as seguintes funcionalidade:
+O software [**Ivy - Inventory Manager**](https://github.com/thiago-rezende/inventory-manager) tem como objetivo gerenciar o estoque de uma loja de informatica, contendo as seguintes funcionalidades:
  - Cadastrar novos produtos contedo [id, nome, marca, valor, quantidade, garantia].
  - Comprar/Vender produtos [Adicionar/Remover produtos do estoque].
  - Buscar produtos por [nome, marca, valor, quantidade].
  - Editar produtos.
 
-Como funcionalidade adicional o software O software [**Ivy - Inventory Manager**](https://github.com/thiago-rezende/inventory-manager) oferece dois tipos de interface [GUI, CLI]:
+Como funcionalidade adicional o software o software [**Ivy - Inventory Manager**](https://github.com/thiago-rezende/inventory-manager) oferece dois tipos de interface [GUI, CLI]:
  * Para usar a interface GUI [Padrao] basta executar o software normalmente.
    - ``` ivy-manager ```
  * Para usar a interface CLI [Alternativa] basta executar o software com a flag -cli.
