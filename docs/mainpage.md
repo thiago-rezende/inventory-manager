@@ -1,6 +1,3 @@
-/**
-\mainpage
-
 O software [**Ivy - Inventory Manager**](https://github.com/thiago-rezende/inventory-manager) foi desenvolvido como um trabalho
 para a conclusão da materia de Algoritimos e Programacao Procedimental
 no curso de graduação em sistemas de informação no Instituto Federal de Minas Gerais - Ouro Branco.
@@ -22,5 +19,3 @@ Time de desenvolvimento:
  - Giovane Cardoso [(GitHub Page)](https://novout.github.io/)
  - João Guilherme [(GitHub Page)](https://github.com/guigadj)
  - João Vitor [(GitHub Page)](https://github.com/MachineBR)
-
-*/
