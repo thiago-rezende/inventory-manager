@@ -7,6 +7,9 @@
 #include <nana/gui/widgets/button.hpp>
 #include <nana/gui/widgets/form.hpp>
 #include <nana/gui/widgets/label.hpp>
+#include <nana/gui/widgets/textbox.hpp>
+#include <nana/gui/widgets/combox.hpp>
+#include <nana/paint/graphics.hpp>
 
 int main(int argc, const char **argv)
 {
@@ -32,68 +35,158 @@ int main(int argc, const char **argv)
     }
     else
     {
+        /**
+         * @brief Criacao do form fm abrindo a tela inicialmente com 1000x900
+         * 
+         */
         nana::form fm{nana::API::make_center(1000, 900)};
 
-        /* fm.bgcolor(colors::mint_cream ); */
-        nana::place plc(fm);
-        std::vector<std::unique_ptr<nana::button>> btns;
+        /**
+         * @brief Nome do ivymanager.exe
+         * 
+         */
+        fm.caption(("IvyManager"));
 
-        /* the most external widgets */
-        nana::label out{fm, "This label is out of any group"};
-        nana::group ext_gr{fm, "An external <bold=true, color=blue>Group:</>", true};
-        plc.div("vert gap=20 margin=180 <lab weight=30><all> ");
-        plc["lab"] << out;
-        plc["all"] << ext_gr;
+        /**
+         * @brief Criacao dos textos de input : nome, marca, valor, Id e quantidade
+         * 
+         */
+        nana::textbox innome{fm}, inmarca{fm}, invalor{fm}, inid{fm}, inquantidade{fm};
 
-        /* the external group contain: */
-        nana::group grp_left{ext_gr, ("A new <bold=true, color=0xff0000, font=\"Consolas\">Group:</>"), true};
-        nana::group grp_right{ext_gr, ("A right <bold=true, color=0xff0000, font=\"Consolas\">Group:</>"), true};
-        ext_gr.div("horizontal gap=3 margin=20  < <left_field> | 70% <right_field>> ");
-        ext_gr["left_field"] << grp_left;
-        ext_gr["right_field"] << grp_right;
+        /**
+         * @brief Criacao dos botoes de enviar e cancelar o cadastro de produto
+         * 
+         */
+        nana::button env{fm, "Enviar"}, cancel{fm, "Cancelar"};
 
-        /* the left group */
-        grp_left.div("buttons vert gap=5 margin=3");
+        /**
+         * @brief Criacao dos botoes de buscar, editar, comprar ,vender
+         * 
+         */
+        nana::button buscar{fm, "Buscar"}, editar{fm, "Editar"}, comprar{fm, "Comprar"}, vender{fm, "Vender"};
 
-        /* the right group */
-        nana::group nested(grp_right.handle());
-        nana::label lab{grp_right, "A simple label "};
-        nana::button b1{grp_right, "Adicionar Botao"};
-        b1.events().click([&grp_left, &btns] {
-            btns.emplace_back(new nana::button(grp_left, "Button"));
-            grp_left["buttons"] << *btns.back();
-            grp_left.collocate();
-            std::cout << "Botao adicionado!\n";
-        });
-        nana::button b2{grp_right, "Botao => 2"};
-        nana::button b3{grp_right, "Botao => 3"};
-        grp_right.div("<vertical margin=2 gap= 2 <vert lab> | 40% < <left_field> | 70% <right_field>> >");
-        grp_right["lab"] << lab.text_align(nana::align::right) << nested;
-        grp_right["left_field"] << b1;
-        grp_right["right_field"] << b2 << b3;
+        /**
+         * @brief Criacao da escolha de garantia (Sim ou Nao)
+         * 
+         */
+        nana::combox ingarantia(fm, nana::rectangle(20, 3, 150, 30), "Garantia");
 
-        /* the nested (rigth up) group */
-        nana::label lab1{nested, "A very simple group:"};
-        nana::button b4{nested, "Botao => 4"};
-        nana::button b5{nested, "Botao => 5"};
-        nana::button b6{nested, "Botao => 6"};
-        nested.div(" margin=3 min=30 gap= 2 all");
-        nested["all"] << lab1 << b4 << b5 << b6;
+        /**
+         * @brief Menu de escolha de garantia
+         * 
+         */
+        ingarantia.caption(("Possui Garantia?"));
+        ingarantia.push_back("Sim");
+        ingarantia.push_back("Nao");
+
+        /**
+         * @brief Base para o Input dos dados de um novo produto
+         * 
+         */
+        innome.tip_string("Nome:").multi_lines(false);
+        inmarca.tip_string("Marca:").multi_lines(false);
+        invalor.tip_string("Valor:").multi_lines(false);
+        inid.tip_string("Id:").multi_lines(false);
+        inquantidade.tip_string("Quantidade:").multi_lines(false);
+
+        /**
+         * @brief Base plc do form
+         * 
+         */
+        nana::place plc{fm};
+
+        /**
+         * @brief Cabecalho do Cadastro
+         * 
+         */
+        nana::label input{fm, ""};
+        input.format(true);
+        input.caption("<bold color=0x0080FF size=16 center>Cadastrar Produto</>");
+
+        /**
+         * @brief Grupo dos botoes buscar, editar, comprar e vender
+         * 
+         */
+        nana::group buttons{fm, "<bold=true, color=blue>Menu:</>", true};
+
+        /**
+         * @brief Divisao contento as dimensoes da interface de cadastro
+         * @param <><weight=70% vertical<> Larguta da divisao
+         * @param <weight=37% vertical> Deslocamento da altura entre o formulário e os botoes do grupo buttons
+         * @param <vertical gap=10 textboxs arrange=[50,25,25,25,25,25,25]> Arrange determinando o tamanho de cada textbox dos input.
+         *        Gap determinando a separação de cada input
+         * @param <weight=40 gap=60 buttons> Tamanho. Separacao dos botoes de enviar e cancelar dos input de cadastro
+         * @param <todo weight=70 margin=20 gap=10> Barra das opcoes de buscar, editar, comprar, vender
+         * 
+         */
+        plc.div("<><weight=70% vertical<><weight=37% vertical <vertical gap=10 textboxs arrange=[50,25,25,25,25,25,25]> <weight=40 gap=60 buttons> ><todo weight=70 margin=20 gap=10><>><>");
+
+        /**
+         * @brief Coloca a barra "todo" na base plc
+         * 
+         */
+        plc["todo"] << buscar << editar << comprar << vender;
+
+        /**
+         * @brief Coloca os input de produtos na base plc
+         * 
+         */
+        plc.field("textboxs") << input << innome << inmarca << invalor << inid << inquantidade << ingarantia;
+
+        /**
+         * @brief Coloca os botoes de enviar e cancelar o input na base plc
+         * 
+         */
+        plc.field("buttons") << env << cancel;
+        /**
+         * @brief Coloca o place plc
+         * 
+         */
         plc.collocate();
-        /* grp1.plc.collocate(); */
+
+        /**
+         * @brief Exibe o form fm
+         * 
+         */
         fm.show();
 
+        /**
+         * @brief Busca a imagem de fundo na pasta res
+         * 
+         */
         nana::paint::image img("res/background.bmp");
+
+        /**
+         * @brief Chama a funcao de desenhar
+         * 
+         * @return nana::drawing 
+         */
         nana::drawing dw(fm);
+
+        /**
+         * @brief Pega a imagem de fundo e coloca no dw
+         * @param Grafico graph
+         * 
+         */
         dw.draw([&img](nana::paint::graphics &graph) {
             if (img.empty())
             {
-                std::cout << "IMAGEM DE FUNDO NÃO EXISTE!" << std::endl;
+                std::cout << "IMAGEM DE FUNDO NAO EXISTE!" << std::endl;
                 return;
             }
             img.paste(graph, nana::point{});
         });
+
+        /**
+         * @brief Mostra a imagem de fundo
+         * 
+         */
         dw.update();
+
+        /**
+         * @brief Constroi um novo nana::exec objeto
+         * 
+         */
         nana::exec();
     }
 
