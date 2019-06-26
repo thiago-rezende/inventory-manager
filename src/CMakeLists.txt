@@ -19,8 +19,8 @@ PUBLIC
 target_include_directories(ivy-manager
 PUBLIC 
     ${NANA_INCLUDE_DIR}
-    ${CMAKE_SOURCE_DIR}/vendor/cli/include
-    ${CMAKE_SOURCE_DIR}/vendor/spdlog/include
+    ${CMAKE_SOURCE_DIR}/vendor/cli/include/
+    ${CMAKE_SOURCE_DIR}/vendor/spdlog/include/
     "ivy"
     "ivy/log"
     "ivy/ivy_manager"
