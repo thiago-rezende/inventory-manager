@@ -234,28 +234,64 @@ int main(int argc, const char **argv)
         *
         */
         btn_buscar.events().click([&fm_init] {
+            /**
+             * @brief Criacao do form fm_buscar_inicial com 400x400
+             * 
+             */
             nana::form fm_buscar_inicial{nana::API::make_center(400, 400)}, (fm_init);
             fm_buscar_inicial.caption(("IvyManager - Buscar"));
 
+            /**
+             * @brief Grupo grp_opc relacionado com o form fm_buscar_inicial
+             * @brief Botoes btn_buscar_marca relacionado com o gurpo grp_opc,superior
+             * @brief Botoes btn_buscar_sair relacionado com o grupo grp_opc,inferior
+             */
             nana::group grp_opc{fm_buscar_inicial, "", true};
             nana::button btn_buscar_marca{grp_opc, "Marca"}, btn_buscar_valor{grp_opc, "Valor"}, btn_buscar_quantidade{grp_opc, "Quantidade"};
             nana::button btn_buscar_sair{grp_opc, "Sair"};
 
+            /**
+             * @brief Cabecalho label lab_buscar e sua formatacao
+             * 
+             */
             nana::label lab_buscar{fm_buscar_inicial, ""};
             lab_buscar.format(true);
             lab_buscar.caption("<bold color=0xff0000 size=16 center>Buscar por:</>");
             lab_buscar.text_align(nana::align::center, nana::align_v::center);
 
+            /**
+             * @brief Criacao do place plc_buscar
+             * @param form fm_buscar_inicial
+             * 
+             * @return nana::place 
+             */
             nana::place plc_buscar(fm_buscar_inicial);
 
+            /**
+             * @brief Divisao contendo o espacamento entre o cabecalho e o conteudo de grp_opc
+             * @param vert gap=10 margin=5 espacamento do plc_buscar
+             * @param <lab_grupo weight=30> tamanho do cabecalho e sua posicao
+             * @param <btn_todo>
+             */
             plc_buscar.div("vert gap=10 margin=5 <lab_grupo weight=30><btn_todo>");
             plc_buscar["lab_grupo"] << lab_buscar;
             plc_buscar["btn_todo"] << grp_opc;
 
+            /**
+             * @brief Divisao contendo os botoes superiores e inferior
+             * @param vertical margin=5 Margem do grp_opc
+             * @param <opc vertical gap=5 margin 5 arrange=[50,50,50]> Contendo os espacamentos e posicoes dos botoes btn_buscar_marca, btn_buscar_valor e btn_buscar_quantidade
+             * @param | widht=70% espacamento entre os grupos de botoes
+             * @param <sair vertical margin=50 gap=10 arrange=[40]> Formatacao e posicionamento do botao btn_buscar_sair
+             */
             grp_opc.div("vertical margin=5<opc vertical gap=5 margin=5 arrange=[50,50,50]> | widht=70% <sair vertical margin=50 gap=10 arrange=[40]>");
             grp_opc["opc"] << btn_buscar_marca << btn_buscar_valor << btn_buscar_quantidade;
             grp_opc["sair"] << btn_buscar_sair;
 
+            /**
+             * @brief Posicionamento do plc_buscar no form fm_buscar_inicial
+             * 
+             */
             plc_buscar.collocate();
 
             /**
