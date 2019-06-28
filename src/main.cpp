@@ -217,12 +217,6 @@ int main(int argc, const char **argv)
             plc.collocate();
 
             /**
-             * @brief Exibe o form fm
-             * 
-             */
-            fm_init.show();
-
-            /**
              * @brief fm_modal entra em rotina
              * 
              */
