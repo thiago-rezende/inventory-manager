@@ -87,24 +87,40 @@ int main(int argc, const char **argv)
          */
         nana::group grp_tela_produto{grp_geral_principal, ("<bold=true, color=0xff0000, font=\"Consolas\">LISTA DE PRODUTOS:</>"), true};
         nana::group grp_btn_direita{grp_geral_principal, ("<bold=true, color=0xff0000, font=\"Consolas\">BOTOES:</>"), true};
+
+        /**
+         * @brief Botoes do grupo grp_btn_direita
+         * 
+         */
+        nana::button btn_cadastrar{grp_btn_direita, "Cadastrar"}, btn_buscar{grp_btn_direita, "Buscar"}, btn_editar{grp_btn_direita, "Editar"}, btn_atualizar{grp_btn_direita, "Atualizar"};
+
+        /**
+         * @brief Divisao do grupo da tela de produtos e dos botoes da direita
+         * 
+         */
         grp_geral_principal.div("horizontal gap=3 margin=20  < <tela_esquerda margin=20> | 30% <grupo_direita>> ");
         grp_geral_principal["tela_esquerda"] << grp_tela_produto;
         grp_geral_principal["grupo_direita"] << grp_btn_direita;
-
         grp_tela_produto.div("vert gap=5 margin=3");
 
-        /* grp_btn_direita.div( "<vertical margin=2 gap= 2 <vert lab> | 40% < <left_field> | 70% <right_field>> >");*/
+        /**
+         * @brief Colocar os botoes na grp_btn_direita
+         * 
+         */
+        grp_btn_direita.div("vertical gap=5<botoes vertical margin=30 gap=40>");
+        grp_btn_direita["botoes"] << btn_cadastrar << btn_buscar << btn_editar << btn_atualizar;
+
         /**
         * @brief Tela de cadastro,acionada assim que o btn_cadastrar for clicado
         * @param form fm_init
         *
         */
-        fm_init.events().click([&fm_init] { //No momento nao foi implementado
+        btn_cadastrar.events().click([&fm_init] { //No momento nao foi implementado
             /**
-             * @brief Criacao do form de cadastro
+             * @brief Criacao do form de cadastro 700x700
              *
              */
-            nana::form fm_cadastro{nana::API::make_center(1000, 900)}, (fm_init);
+            nana::form fm_cadastro{nana::API::make_center(700, 700)}, (fm_init);
 
             /**
              * @brief Nome da tela de cadastro
@@ -122,13 +138,7 @@ int main(int argc, const char **argv)
              * @brief Criacao dos botoes de enviar e cancelar o cadastro de produto
              *
              */
-            nana::button env{fm_cadastro, "Enviar"}, cancel{fm_cadastro, "Cancelar"};
-
-            /**
-             * @brief Criacao dos botoes de buscar, editar, comprar ,vender
-             *
-             */
-            nana::button buscar{fm_cadastro, "Buscar"}, editar{fm_cadastro, "Editar"}, comprar{fm_cadastro, "Comprar"}, vender{fm_cadastro, "Vender"};
+            nana::button env{fm_cadastro, "Enviar"}, sair{fm_cadastro, "Sair"};
 
             /**
              * @brief Criacao da escolha de garantia (Sim ou Nao)
@@ -166,7 +176,8 @@ int main(int argc, const char **argv)
              */
             nana::label input{fm_cadastro, ""};
             input.format(true);
-            input.caption("<bold color=0x0080FF size=16 center>Cadastrar Produto</>");
+            input.caption("<bold color=0xff0000 size=16 center>Cadastrar Produto</>");
+            input.text_align(nana::align::center, nana::align_v::center);
 
             /**
              * @brief Grupo dos botoes buscar, editar, comprar e vender
@@ -181,16 +192,10 @@ int main(int argc, const char **argv)
              * @param <vertical gap=10 textboxs arrange=[50,25,25,25,25,25,25]> Arrange determinando o tamanho de cada textbox dos input.
              *        Gap determinando a separação de cada input
              * @param <weight=40 gap=60 buttons> Tamanho. Separacao dos botoes de enviar e cancelar dos input de cadastro
-             * @param <todo weight=70 margin=20 gap=10> Barra das opcoes de buscar, editar, comprar, vender
+             *
              * 
              */
-            plc.div("<><weight=70% vertical<><weight=37% vertical <vertical gap=10 textboxs arrange=[50,25,25,25,25,25,25]> <weight=40 gap=60 buttons> ><todo weight=70 margin=20 gap=10><>><>");
-
-            /**
-             * @brief Coloca a barra "todo" na base plc
-             * 
-             */
-            plc["todo"] << buscar << editar << comprar << vender;
+            plc.div("<><weight=70% vertical<><weight=45% vertical <vertical gap=10 textboxs arrange=[50,25,25,25,25,25,25]> <weight=40 gap=60 buttons>><>><>");
 
             /**
              * @brief Coloca os input de produtos na base plc
@@ -202,7 +207,7 @@ int main(int argc, const char **argv)
              * @brief Coloca os botoes de enviar e cancelar o input na base plc
              * 
              */
-            plc.field("buttons") << env << cancel;
+            plc.field("buttons") << env << sair;
             /**
              * @brief Coloca o place plc
              * 
