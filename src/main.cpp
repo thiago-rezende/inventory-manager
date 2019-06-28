@@ -117,7 +117,7 @@ int main(int argc, const char **argv)
         * @param form fm_init
         *
         */
-        btn_cadastrar.events().click([&fm_init] { //No momento nao foi implementado
+        btn_cadastrar.events().click([&fm_init] {
             /**
              * @brief Criacao do form de cadastro 700x700
              *
@@ -235,7 +235,28 @@ int main(int argc, const char **argv)
         */
         btn_buscar.events().click([&fm_init] {
             nana::form fm_buscar_inicial{nana::API::make_center(400, 400)}, (fm_init);
-            nana::group grp_opc(fm_buscar_inicial);
+            fm_buscar_inicial.caption(("IvyManager - Buscar"));
+
+            nana::group grp_opc{fm_buscar_inicial, "", true};
+            nana::button btn_buscar_marca{grp_opc, "Marca"}, btn_buscar_valor{grp_opc, "Valor"}, btn_buscar_quantidade{grp_opc, "Quantidade"};
+            nana::button btn_buscar_sair{grp_opc, "Sair"};
+
+            nana::label lab_buscar{fm_buscar_inicial, ""};
+            lab_buscar.format(true);
+            lab_buscar.caption("<bold color=0xff0000 size=16 center>Buscar por:</>");
+            lab_buscar.text_align(nana::align::center, nana::align_v::center);
+
+            nana::place plc_buscar(fm_buscar_inicial);
+
+            plc_buscar.div("vert gap=10 margin=5 <lab_grupo weight=30><btn_todo>");
+            plc_buscar["lab_grupo"] << lab_buscar;
+            plc_buscar["btn_todo"] << grp_opc;
+
+            grp_opc.div("vertical margin=5<opc vertical gap=5 margin=5 arrange=[50,50,50]> | widht=70% <sair vertical margin=50 gap=10 arrange=[40]>");
+            grp_opc["opc"] << btn_buscar_marca << btn_buscar_valor << btn_buscar_quantidade;
+            grp_opc["sair"] << btn_buscar_sair;
+
+            plc_buscar.collocate();
 
             /**
              * @brief fm_buscar_inicial entra em rotina
