@@ -9,6 +9,7 @@
 #include <nana/gui/widgets/label.hpp>
 #include <nana/gui/widgets/textbox.hpp>
 #include <nana/gui/widgets/combox.hpp>
+#include <nana/gui/widgets/scroll.hpp>
 #include <nana/paint/graphics.hpp>
 
 int main(int argc, const char **argv)
@@ -92,13 +93,13 @@ int main(int argc, const char **argv)
          * @brief Botoes do grupo grp_btn_direita
          * 
          */
-        nana::button btn_cadastrar{grp_btn_direita, "Cadastrar"}, btn_buscar{grp_btn_direita, "Buscar"}, btn_editar{grp_btn_direita, "Editar"}, btn_atualizar{grp_btn_direita, "Atualizar"};
+        nana::button btn_cadastrar{grp_btn_direita, "Cadastrar"}, btn_buscar{grp_btn_direita, "Buscar"}, btn_editar{grp_btn_direita, "Editar"}, btn_salvar{grp_btn_direita, "Salvar"}, btn_atualizar{grp_btn_direita, "Atualizar"};
 
         /**
          * @brief Divisao do grupo da tela de produtos e dos botoes da direita
          * 
          */
-        grp_geral_principal.div("horizontal gap=3 margin=20  < <tela_esquerda margin=20> | 30% <grupo_direita>> ");
+        grp_geral_principal.div("gap=3 margin=20 < <vert tela_esquerda margin=20> | 25% <vert grupo_direita>> ");
         grp_geral_principal["tela_esquerda"] << grp_tela_produto;
         grp_geral_principal["grupo_direita"] << grp_btn_direita;
         grp_tela_produto.div("vert gap=5 margin=3");
@@ -107,8 +108,9 @@ int main(int argc, const char **argv)
          * @brief Colocar os botoes na grp_btn_direita
          * 
          */
-        grp_btn_direita.div("vertical gap=5<botoes vertical margin=30 gap=40>");
-        grp_btn_direita["botoes"] << btn_cadastrar << btn_buscar << btn_editar << btn_atualizar;
+        grp_btn_direita.div("vertical gap=5<vert botoes_vertical arrange=[70,70,70] margin=20 gap=15> <botoes_horizontal weight=100 margin=20 gap=10>");
+        grp_btn_direita["botoes_vertical"] << btn_cadastrar << btn_buscar << btn_editar;
+        grp_btn_direita["botoes_horizontal"] << btn_salvar << btn_atualizar;
 
         /**
         * @brief Tela de cadastro,acionada assim que o btn_cadastrar for clicado
@@ -230,6 +232,22 @@ int main(int argc, const char **argv)
              * @brief Constroi um novo nana::exec objeto
              * 
              */
+        });
+
+        /**
+        * @brief Tela de buscar,acionada assim que o btn_buscar for clicado
+        * @param form fm_buscar_inicial
+        *
+        */
+        btn_buscar.events().click([&fm_init] {
+            nana::form fm_buscar_inicial{nana::API::make_center(400, 400)}, (fm_init);
+            nana::group grp_opc(fm_buscar_inicial);
+
+            /**
+             * @brief fm_buscar_inicial entra em rotina
+             * 
+             */
+            fm_buscar_inicial.modality();
         });
         plc_principal.collocate();
         fm_init.show();
