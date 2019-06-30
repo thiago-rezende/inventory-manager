@@ -1,4 +1,6 @@
 #include "Produto.hpp"
+#include <string>
+#include <cstdlib>
 
 namespace ivy
 {
@@ -87,12 +89,12 @@ std::string Produto::to_string()
 {
     std::string saida;
 
-    saida += "|ID: " + std::to_string(m_id);
-    saida += " | Nome: " + m_nome;
-    saida += " | Marca: " + m_marca;
-    saida += " | Valor: " + std::to_string(m_valor);
-    saida += " | Quantidade: " + std::to_string(m_quantidade);
-    std::string tmp_garantia = (m_garantia ? "Sim" : "Nao");
+    saida += "|ID: " + std::to_string(this->m_id);
+    saida += " | Nome: " + this->m_nome;
+    saida += " | Marca: " + this->m_marca;
+    saida += " | Valor: " + std::to_string(this->m_valor);
+    saida += " | Quantidade: " + std::to_string(this->m_quantidade);
+    std::string tmp_garantia = (this->m_garantia ? "Sim" : "Nao");
     saida += " | Garantia: " + tmp_garantia;
     saida += "|";
 
@@ -101,12 +103,12 @@ std::string Produto::to_string()
 
 bool Produto::operator==(const Produto &obj)
 {
-    return (m_id == obj.get_id()) &&
-           (m_nome == obj.get_nome()) &&
-           (m_marca == obj.get_marca()) &&
-           (m_valor == obj.get_valor()) &&
-           (m_quantidade == obj.get_quantidade()) &&
-           (m_garantia == obj.get_garantia());
+    return (this->m_id == obj.get_id()) &&
+           (this->m_nome == obj.get_nome()) &&
+           (this->m_marca == obj.get_marca()) &&
+           (this->m_valor == obj.get_valor()) &&
+           (this->m_quantidade == obj.get_quantidade()) &&
+           (this->m_garantia == obj.get_garantia());
 }
 
 std::ostream &operator<<(std::ostream &out, const Produto &obj)
@@ -123,8 +125,9 @@ std::ostream &operator<<(std::ostream &out, const Produto &obj)
 std::istream &operator>>(std::istream &in, Produto &obj)
 {
     in >> obj.m_id;
-    in >> obj.m_nome;
-    in >> obj.m_marca;
+    in.ignore();
+    std::getline(in, obj.m_nome);
+    std::getline(in, obj.m_marca);
     in >> obj.m_valor;
     in >> obj.m_quantidade;
     in >> obj.m_garantia;

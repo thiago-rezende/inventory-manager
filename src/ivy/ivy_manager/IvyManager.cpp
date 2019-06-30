@@ -1,5 +1,8 @@
 #include "IvyManager.hpp"
 
+#include <iostream>
+#include <cstdlib>
+
 namespace ivy
 {
 IvyManager::IvyManager()
@@ -152,6 +155,14 @@ void IvyManager::salvar_estoque()
 {
     std::ofstream m_outArquivo("estoque.txt");
 
+    if (!m_outArquivo)
+    {
+        std::cerr << "Arquivo nao pode ser aberto para gravacao\n";
+        exit(1);
+    }
+
+    m_outArquivo << m_estoque.get_tamanho() << std::endl;
+
     for (int i = 0; i < m_estoque.get_tamanho(); i++)
     {
         m_outArquivo << m_estoque.get(i);
@@ -163,17 +174,29 @@ void IvyManager::salvar_estoque()
 
 void IvyManager::carregar_estoque()
 {
-    std::ifstream m_inArquivo("estoque.txt");
+    IVY_WARN("W.I.P::NAO_IMPLEMENTADO");
+    /*  std::ifstream m_inArquivo("estoque.txt");
 
-    while (!m_inArquivo.eof())
+    if (!m_inArquivo)
     {
-        Produto p;
-        m_inArquivo >> p;
-        m_estoque.adicionar(p);
+        std::cerr << "Arquivo nao pode ser aberto para leitura\n";
+        exit(1);
     }
 
+    int tam;
+
+    if (!m_inArquivo.eof())
+    {
+        m_inArquivo >> tam;
+        for (int i = 0; !m_inArquivo.eof() && i < tam; i++)
+        {
+            Produto p;
+            m_inArquivo >> p;
+            m_estoque.adicionar(p);
+        }
+    }
     m_inArquivo.close();
-    IVY_INFO("IO::ARQUIVO_CARREGADO (estoque.txt)");
+    IVY_INFO("IO::ARQUIVO_CARREGADO (estoque.txt)"); */
 }
 
 } // namespace ivy

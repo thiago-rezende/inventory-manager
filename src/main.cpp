@@ -37,8 +37,8 @@ int main(int argc, const char **argv)
     }
     else
     {
-        std::cout << "A Interface GUI ainda esta em desenvolvimento.\n"
-                  << "Precione enter para contuar com a Inteface CLI." << std::endl;
+        std::cout << "\nA Interface GUI ainda esta em desenvolvimento.\n\n"
+                  << "Precione enter para contuar com a Inteface CLI..." << std::endl;
 
         std::cin.get();
 
