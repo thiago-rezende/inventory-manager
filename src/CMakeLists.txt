@@ -22,6 +22,7 @@ PUBLIC
     ${CMAKE_SOURCE_DIR}/vendor/cli/include/
     ${CMAKE_SOURCE_DIR}/vendor/spdlog/include/
     "ivy"
+    "ivy/interface"
     "ivy/log"
     "ivy/ivy_manager"
     "ivy/produto"
@@ -29,6 +30,8 @@ PUBLIC
 )
 
 target_link_libraries(ivy-manager PRIVATE nana)
+
+cotire(ivy-manager)
 
 add_custom_target(copy_resources ALL
     COMMAND cmake -E copy_directory ${CMAKE_SOURCE_DIR}/src/res ${CMAKE_BINARY_DIR}/bin/res

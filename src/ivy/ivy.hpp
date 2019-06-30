@@ -4,4 +4,5 @@
 #include "produto/Produto.hpp"
 #include "ivy_manager/IvyManager.hpp"
 #include "interface/InterfaceCLI.hpp"
+#include "interface/InterfaceGUI.hpp"
 #include "log/IvyLog.hpp"

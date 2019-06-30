@@ -1,5 +1,6 @@
 #pragma once
 #include "log/IvyLog.hpp"
+#include <fstream>
 
 namespace ivy
 {
@@ -50,13 +51,14 @@ public:
     /**
      * @brief Constroi um novo objeto de Produto
      * 
+     * @param nId id do produto
      * @param nNome nome do produto
      * @param nMarca marca do produto
      * @param nValor valor do produto
      * @param nQtd quantiade do produto
      * @param nGarantia possui garantia
      */
-    Produto(std::string nNome, std::string nMarca, float nValor, int nQtd, bool nGarantia);
+    Produto(int nId, std::string nNome, std::string nMarca, float nValor, int nQtd, bool nGarantia);
 
     /**
      * @brief Construtor
@@ -154,5 +156,39 @@ public:
      * @param nValor valor do objeto
     */
     void set_valor(float nValor);
+
+    /**
+     * @brief Retorna uma string com as informacoes do produto
+     * 
+     * @return std::string informacoes do produto
+     */
+    std::string to_string();
+
+    /**
+     * @brief Operador de comparacao
+     * 
+     * @param obj objeto a ser comparado
+     * @return true se o objeto comparado for igual
+     * @return false se o objeto comparado nao for igual
+     */
+    bool operator==(const Produto &obj);
+
+    /**
+     * @brief Operador de saida de arquivos
+     * 
+     * @param out stream de saida
+     * @param obj objeto enviado para a saida
+     * @return std::ostream& stream de saida
+     */
+    friend std::ostream &operator<<(std::ostream &out, const Produto &obj);
+
+    /**
+     * @brief Operador de entrada de arquivos
+     * 
+     * @param in stream de entradad
+     * @param obj objeto construido com a entrada
+     * @return std::istream& stream de entrada
+     */
+    friend std::istream &operator>>(std::istream &in, Produto &obj);
 };
 } // namespace ivy

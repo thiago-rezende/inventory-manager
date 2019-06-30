@@ -2,8 +2,9 @@
 
 namespace ivy
 {
-Produto::Produto(std::string nNome, std::string nMarca, float nValor, int nQtd, bool nGarantia)
+Produto::Produto(int nId, std::string nNome, std::string nMarca, float nValor, int nQtd, bool nGarantia)
 {
+    this->m_id = nId;
     this->m_nome = nNome;
     this->m_marca = nMarca;
     this->m_valor = nValor;
@@ -80,6 +81,54 @@ const float &Produto::get_valor() const
 void Produto::set_valor(float nValor)
 {
     this->m_valor = nValor;
+}
+
+std::string Produto::to_string()
+{
+    std::string saida;
+
+    saida += "|ID: " + std::to_string(m_id);
+    saida += " | Nome: " + m_nome;
+    saida += " | Marca: " + m_marca;
+    saida += " | Valor: " + std::to_string(m_valor);
+    saida += " | Quantidade: " + std::to_string(m_quantidade);
+    std::string tmp_garantia = (m_garantia ? "Sim" : "Nao");
+    saida += " | Garantia: " + tmp_garantia;
+    saida += "|";
+
+    return saida;
+}
+
+bool Produto::operator==(const Produto &obj)
+{
+    return (m_id == obj.get_id()) &&
+           (m_nome == obj.get_nome()) &&
+           (m_marca == obj.get_marca()) &&
+           (m_valor == obj.get_valor()) &&
+           (m_quantidade == obj.get_quantidade()) &&
+           (m_garantia == obj.get_garantia());
+}
+
+std::ostream &operator<<(std::ostream &out, const Produto &obj)
+{
+    out << obj.m_id << "\n"
+        << obj.m_nome << "\n"
+        << obj.m_marca << "\n"
+        << obj.m_valor << "\n"
+        << obj.m_quantidade << "\n"
+        << obj.m_garantia << std::endl;
+    return out;
+}
+
+std::istream &operator>>(std::istream &in, Produto &obj)
+{
+    in >> obj.m_id;
+    in >> obj.m_nome;
+    in >> obj.m_marca;
+    in >> obj.m_valor;
+    in >> obj.m_quantidade;
+    in >> obj.m_garantia;
+    return in;
 }
 
 } // namespace ivy

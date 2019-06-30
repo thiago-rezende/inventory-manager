@@ -1,4 +1,4 @@
 var namespaces_dup =
 [
-    [ "ivy", "namespaceivy.html", null ]
+    [ "ivy", "namespaceivy.html", "namespaceivy" ]
 ];

@@ -147,4 +147,33 @@ void IvyManager::comprar(int nId, int nQuantidade)
     else
         IVY_INFO("COMPRA::PRODUTO_NAO_ENCONTRADO");
 }
+
+void IvyManager::salvar_estoque()
+{
+    std::ofstream m_outArquivo("estoque.txt");
+
+    for (int i = 0; i < m_estoque.get_tamanho(); i++)
+    {
+        m_outArquivo << m_estoque.get(i);
+    }
+
+    m_outArquivo.close();
+    IVY_INFO("IO::ARQUIVO_GERADO (estoque.txt)");
+}
+
+void IvyManager::carregar_estoque()
+{
+    std::ifstream m_inArquivo("estoque.txt");
+
+    while (!m_inArquivo.eof())
+    {
+        Produto p;
+        m_inArquivo >> p;
+        m_estoque.adicionar(p);
+    }
+
+    m_inArquivo.close();
+    IVY_INFO("IO::ARQUIVO_CARREGADO (estoque.txt)");
+}
+
 } // namespace ivy

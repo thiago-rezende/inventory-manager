@@ -1,9 +1,14 @@
 var searchData=
 [
+  ['forms',['forms',['../namespaceivy_1_1forms.html',1,'ivy']]],
+  ['include_5fnana_2ehpp',['include_nana.hpp',['../include__nana_8hpp.html',1,'']]],
   ['init',['init',['../classivy_1_1_ivy_log.html#a951821f24020c5f3898b8eaff9c7180a',1,'ivy::IvyLog']]],
   ['interfacecli',['InterfaceCLI',['../classivy_1_1_interface_c_l_i.html',1,'ivy::InterfaceCLI'],['../classivy_1_1_interface_c_l_i.html#aef9d3a8136593e6b9441f158ca403dc6',1,'ivy::InterfaceCLI::InterfaceCLI()']]],
   ['interfacecli_2ecpp',['InterfaceCLI.cpp',['../_interface_c_l_i_8cpp.html',1,'']]],
   ['interfacecli_2ehpp',['InterfaceCLI.hpp',['../_interface_c_l_i_8hpp.html',1,'']]],
+  ['interfacegui',['InterfaceGUI',['../classivy_1_1_interface_g_u_i.html',1,'ivy::InterfaceGUI'],['../classivy_1_1_interface_g_u_i.html#ad66877ea2d6a3db0717e62a5986417fc',1,'ivy::InterfaceGUI::InterfaceGUI()']]],
+  ['interfacegui_2ecpp',['InterfaceGUI.cpp',['../_interface_g_u_i_8cpp.html',1,'']]],
+  ['interfacegui_2ehpp',['InterfaceGUI.hpp',['../_interface_g_u_i_8hpp.html',1,'']]],
   ['ivy',['ivy',['../namespaceivy.html',1,'']]],
   ['ivy_2ehpp',['ivy.hpp',['../ivy_8hpp.html',1,'']]],
   ['ivy_5fcritical',['IVY_CRITICAL',['../_ivy_log_8hpp.html#adb1941ed1b11b6e89f2ec7ed95d610b7',1,'IvyLog.hpp']]],
@@ -15,6 +20,9 @@ var searchData=
   ['ivylog',['IvyLog',['../classivy_1_1_ivy_log.html',1,'ivy']]],
   ['ivylog_2ecpp',['IvyLog.cpp',['../_ivy_log_8cpp.html',1,'']]],
   ['ivylog_2ehpp',['IvyLog.hpp',['../_ivy_log_8hpp.html',1,'']]],
+  ['ivymainform',['IvyMainForm',['../classivy_1_1forms_1_1_ivy_main_form.html',1,'ivy::forms::IvyMainForm'],['../classivy_1_1forms_1_1_ivy_main_form.html#a3946f84c55c593024a7c3ae82baa8ed9',1,'ivy::forms::IvyMainForm::IvyMainForm()']]],
+  ['ivymainform_2ecpp',['IvyMainForm.cpp',['../_ivy_main_form_8cpp.html',1,'']]],
+  ['ivymainform_2ehpp',['IvyMainForm.hpp',['../_ivy_main_form_8hpp.html',1,'']]],
   ['ivymanager',['IvyManager',['../classivy_1_1_ivy_manager.html',1,'ivy::IvyManager'],['../classivy_1_1_ivy_manager.html#a40a1420880e16e1acc2f0e53007697f5',1,'ivy::IvyManager::IvyManager()']]],
   ['ivymanager_2ecpp',['IvyManager.cpp',['../_ivy_manager_8cpp.html',1,'']]],
   ['ivymanager_2ehpp',['IvyManager.hpp',['../_ivy_manager_8hpp.html',1,'']]]

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['remover',['remover',['../classivy_1_1_vetor.html#af00ca23144d8d9eb9484d435428762a0',1,'ivy::Vetor']]],
-  ['reporterror',['reportError',['../classcli_1_1_basic_parser.html#a4a136a482a7fb263e3228b24a57523c9',1,'cli::BasicParser']]],
-  ['required',['required',['../classcli_1_1_option.html#a2c5f02f02dc357e36a835a75544d6d36',1,'cli::Option']]],
-  ['run',['run',['../classivy_1_1_interface_c_l_i.html#a1d9c84216def96675b6a60fb3ca6d201',1,'ivy::InterfaceCLI']]]
+  ['vender',['vender',['../classivy_1_1_interface_c_l_i.html#a2634dfc23bb3fb2cbacfe1bee9c04709',1,'ivy::InterfaceCLI::vender()'],['../classivy_1_1_ivy_manager.html#a8d0ee72f26e21719287003017bc3da56',1,'ivy::IvyManager::vender()']]],
+  ['vetor',['Vetor',['../classivy_1_1_vetor.html',1,'ivy::Vetor&lt; _Tipo &gt;'],['../classivy_1_1_vetor.html#aff54d4774435cd5aa8d3ce513815d1f2',1,'ivy::Vetor::Vetor()']]],
+  ['vetor_2ecpp',['Vetor.cpp',['../_vetor_8cpp.html',1,'']]],
+  ['vetor_2ehpp',['Vetor.hpp',['../_vetor_8hpp.html',1,'']]],
+  ['vetor_3c_20ivy_3a_3aproduto_20_3e',['Vetor&lt; ivy::Produto &gt;',['../classivy_1_1_vetor.html',1,'ivy']]]
 ];

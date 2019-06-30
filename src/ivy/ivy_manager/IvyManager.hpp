@@ -108,5 +108,17 @@ public:
      * @param nQuantidade quantidade do produto no estoque
      */
     void comprar(int nId, int nQuantidade);
+
+    /**
+     * @brief Salva o estoque em um arquivo
+     * 
+     */
+    void salvar_estoque();
+
+    /**
+     * @brief Carrega o estoque de um arquivo
+     * 
+     */
+    void carregar_estoque();
 };
 } // namespace ivy

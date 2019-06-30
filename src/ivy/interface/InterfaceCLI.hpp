@@ -106,5 +106,17 @@ public:
      * 
      */
     void comprar();
+
+    /**
+     * @brief Salva os dados do estoque em um arquivo
+     * 
+     */
+    void salvar();
+
+    /**
+     * @brief Carrega os dados do estoque de um arquivo
+     * 
+     */
+    void carregar();
 };
 } // namespace ivy
