@@ -1,23 +1,23 @@
 <map id="C:/Users/osyri/Desktop/inventory&#45;manager&#45;head/src/ivy/interface/InterfaceGUI.hpp" name="C:/Users/osyri/Desktop/inventory&#45;manager&#45;head/src/ivy/interface/InterfaceGUI.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="161,5,377,61"/>
-<area shape="rect" id="node2" href="$_ivy_manager_8hpp.html" title=" " alt="" coords="175,109,363,136"/>
-<area shape="rect" id="node4" href="$_ivy_log_8hpp.html" title=" " alt="" coords="150,333,254,360"/>
-<area shape="rect" id="node10" href="$_ivy_main_form_8hpp.html" title=" " alt="" coords="827,109,983,136"/>
-<area shape="rect" id="node3" href="$_produto_8hpp.html" title=" " alt="" coords="265,259,403,285"/>
-<area shape="rect" id="node9" href="$_vetor_8hpp.html" title=" " alt="" coords="214,184,323,211"/>
-<area shape="rect" id="node8" title=" " alt="" coords="1038,333,1225,360"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,415,119,442"/>
-<area shape="rect" id="node6" title=" " alt="" coords="143,415,261,442"/>
-<area shape="rect" id="node7" title=" " alt="" coords="285,408,420,449"/>
-<area shape="rect" id="node11" href="$include__nana_8hpp.html" title=" " alt="" coords="1389,184,1511,211"/>
-<area shape="rect" id="node12" title=" " alt="" coords="1903,259,2021,285"/>
-<area shape="rect" id="node13" title=" " alt="" coords="2045,259,2225,285"/>
-<area shape="rect" id="node14" title=" " alt="" coords="2250,259,2381,285"/>
-<area shape="rect" id="node15" title=" " alt="" coords="427,259,611,285"/>
-<area shape="rect" id="node16" title=" " alt="" coords="635,259,809,285"/>
-<area shape="rect" id="node17" title=" " alt="" coords="833,259,1008,285"/>
-<area shape="rect" id="node18" title=" " alt="" coords="1032,259,1223,285"/>
-<area shape="rect" id="node19" title=" " alt="" coords="1247,259,1442,285"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1466,259,1645,285"/>
-<area shape="rect" id="node21" title=" " alt="" coords="1669,259,1829,285"/>
+<area shape="rect" id="node1" title=" " alt="" coords="175,5,391,61"/>
+<area shape="rect" id="node2" href="$_ivy_manager_8hpp.html" title=" " alt="" coords="51,109,239,136"/>
+<area shape="rect" id="node4" href="$_ivy_log_8hpp.html" title=" " alt="" coords="156,333,260,360"/>
+<area shape="rect" id="node10" href="$include__nana_8hpp.html" title=" " alt="" coords="1257,109,1415,136"/>
+<area shape="rect" id="node3" href="$_produto_8hpp.html" title=" " alt="" coords="5,259,144,285"/>
+<area shape="rect" id="node9" href="$_vetor_8hpp.html" title=" " alt="" coords="85,184,195,211"/>
+<area shape="rect" id="node8" title=" " alt="" coords="42,333,107,360"/>
+<area shape="rect" id="node5" title=" " alt="" coords="11,415,125,442"/>
+<area shape="rect" id="node6" title=" " alt="" coords="149,415,267,442"/>
+<area shape="rect" id="node7" title=" " alt="" coords="291,408,426,449"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1748,184,1865,211"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1890,184,2070,211"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2095,184,2225,211"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2249,184,2433,211"/>
+<area shape="rect" id="node15" title=" " alt="" coords="320,184,493,211"/>
+<area shape="rect" id="node16" title=" " alt="" coords="518,184,693,211"/>
+<area shape="rect" id="node17" title=" " alt="" coords="717,184,907,211"/>
+<area shape="rect" id="node18" title=" " alt="" coords="932,184,1127,211"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1151,184,1329,211"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1353,184,1513,211"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1537,184,1724,211"/>
 </map>

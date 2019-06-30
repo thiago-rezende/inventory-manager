@@ -8,8 +8,6 @@ var searchData=
   ['ivy_2ehpp',['ivy.hpp',['../ivy_8hpp.html',1,'']]],
   ['ivylog_2ecpp',['IvyLog.cpp',['../_ivy_log_8cpp.html',1,'']]],
   ['ivylog_2ehpp',['IvyLog.hpp',['../_ivy_log_8hpp.html',1,'']]],
-  ['ivymainform_2ecpp',['IvyMainForm.cpp',['../_ivy_main_form_8cpp.html',1,'']]],
-  ['ivymainform_2ehpp',['IvyMainForm.hpp',['../_ivy_main_form_8hpp.html',1,'']]],
   ['ivymanager_2ecpp',['IvyManager.cpp',['../_ivy_manager_8cpp.html',1,'']]],
   ['ivymanager_2ehpp',['IvyManager.hpp',['../_ivy_manager_8hpp.html',1,'']]]
 ];

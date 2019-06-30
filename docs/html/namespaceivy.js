@@ -1,6 +1,5 @@
 var namespaceivy =
 [
-    [ "forms", "namespaceivy_1_1forms.html", "namespaceivy_1_1forms" ],
     [ "InterfaceCLI", "classivy_1_1_interface_c_l_i.html", "classivy_1_1_interface_c_l_i" ],
     [ "InterfaceGUI", "classivy_1_1_interface_g_u_i.html", "classivy_1_1_interface_g_u_i" ],
     [ "IvyLog", "classivy_1_1_ivy_log.html", "classivy_1_1_ivy_log" ],

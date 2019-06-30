@@ -1,6 +1,6 @@
 <map id="ivy::IvyManager" name="ivy::IvyManager">
-<area shape="rect" id="node1" title="Classe IvyManager." alt="" coords="73,681,223,920"/>
-<area shape="rect" id="node2" href="$classivy_1_1_vetor.html" title=" " alt="" coords="64,424,232,619"/>
-<area shape="rect" id="node3" href="$classivy_1_1_produto.html" title="Classe Produto, define um produto para o sistema de estoque Ivy." alt="" coords="5,5,136,361"/>
-<area shape="rect" id="node4" href="$classivy_1_1_vetor.html" title="Classe Vetor para manipulacao de vetores." alt="" coords="160,79,291,288"/>
+<area shape="rect" id="node1" title="Classe IvyManager." alt="" coords="73,623,223,891"/>
+<area shape="rect" id="node2" href="$classivy_1_1_vetor.html" title=" " alt="" coords="64,365,232,560"/>
+<area shape="rect" id="node3" href="$classivy_1_1_produto.html" title="Classe Produto, define um produto para o sistema de estoque Ivy." alt="" coords="5,5,136,303"/>
+<area shape="rect" id="node4" href="$classivy_1_1_vetor.html" title="Classe Vetor para manipulacao de vetores." alt="" coords="160,49,291,259"/>
 </map>
