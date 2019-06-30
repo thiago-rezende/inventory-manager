@@ -10,6 +10,7 @@ PUBLIC
     "ivy/log/IvyLog.cpp"
     "ivy/ivy_manager/IvyManager.cpp"
     "ivy/interface/InterfaceCLI.cpp"
+    "ivy/interface/InterfaceGUI.cpp"
     "ivy/produto/Produto.cpp"
     "ivy/vetor/Vetor.cpp"
     # resources

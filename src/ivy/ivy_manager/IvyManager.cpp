@@ -132,7 +132,7 @@ void IvyManager::vender(int nId, int nQuantidade)
     if (index != -1)
     {
         int tmp_qtd = this->m_estoque.get(index).get_quantidade();
-        this->m_estoque.get(index).set_garantia(tmp_qtd - nQuantidade);
+        this->m_estoque.get(index).set_quantidade(tmp_qtd - nQuantidade);
     }
     else
         IVY_INFO("VENDA::PRODUTO_NAO_ENCONTRADO");
@@ -174,8 +174,7 @@ void IvyManager::salvar_estoque()
 
 void IvyManager::carregar_estoque()
 {
-    IVY_WARN("W.I.P::NAO_IMPLEMENTADO");
-    /*  std::ifstream m_inArquivo("estoque.txt");
+    std::ifstream m_inArquivo("estoque.txt");
 
     if (!m_inArquivo)
     {
@@ -196,7 +195,7 @@ void IvyManager::carregar_estoque()
         }
     }
     m_inArquivo.close();
-    IVY_INFO("IO::ARQUIVO_CARREGADO (estoque.txt)"); */
+    IVY_INFO("IO::ARQUIVO_CARREGADO (estoque.txt)");
 }
 
 } // namespace ivy

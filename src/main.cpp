@@ -46,8 +46,8 @@ int main(int argc, const char **argv)
         ivy::InterfaceCLI cli(ivy);
         cli.run();
 
-        //ivy::InterfaceGUI gui(1080, 480, "Ivy - Inventory Manager");
-        //gui.run();
+        /* ivy::InterfaceGUI gui(1080, 480, "Ivy - Inventory Manager");
+        gui.run(); */
     }
 
     return EXIT_SUCCESS;
