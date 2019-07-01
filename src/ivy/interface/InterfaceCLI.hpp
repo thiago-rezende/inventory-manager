@@ -44,9 +44,10 @@ public:
     /**
      * @brief Constroi um objeto de InterfaceCLI
      * 
-     * @param nIvy_manager 
+     * @param nIvy_manager referencia de IvyManager
+     * @param nLocadora referencia de Locadora
      */
-    InterfaceCLI(IvyManager &nIvy_manager, locadora::Locadora nLocadora);
+    InterfaceCLI(IvyManager &nIvy_manager, locadora::Locadora &nLocadora);
 
     /**
      * @brief Destroi o objeto de InterfaceCLI

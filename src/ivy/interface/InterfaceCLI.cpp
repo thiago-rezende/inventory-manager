@@ -2,7 +2,7 @@
 
 namespace ivy
 {
-InterfaceCLI::InterfaceCLI(IvyManager &nIvy_manager, locadora::Locadora nLocadora)
+InterfaceCLI::InterfaceCLI(IvyManager &nIvy_manager, locadora::Locadora &nLocadora)
 {
     this->m_locadoraCLI = std::make_unique<locadora::LocadoraCLI>(nLocadora);
     this->ivy_manager = nIvy_manager;

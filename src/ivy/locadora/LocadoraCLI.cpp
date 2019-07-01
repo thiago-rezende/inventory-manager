@@ -44,8 +44,8 @@ void LocadoraCLI::logo()
     std::cout << R"(                                             )" << std::endl;
     std::cout << std::endl;
 
-    std::cout << "Pressione enter para iniciar ..." << std::endl;
-    std::cin.get();
+    //std::cout << "Pressione enter para iniciar ..." << std::endl;
+    //std::cin.get();
 }
 
 void LocadoraCLI::menu()
