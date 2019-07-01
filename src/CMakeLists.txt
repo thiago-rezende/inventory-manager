@@ -37,8 +37,6 @@ PUBLIC
 
 target_link_libraries(ivy-manager PRIVATE nana)
 
-cotire(ivy-manager)
-
 add_custom_target(copy_resources ALL
     COMMAND cmake -E copy_directory ${CMAKE_SOURCE_DIR}/src/res ${CMAKE_BINARY_DIR}/bin/res
     COMMAND cmake -E copy_directory ${CMAKE_SOURCE_DIR}/src/res ${CMAKE_INSTALL_PREFIX}/bin/res

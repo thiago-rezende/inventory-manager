@@ -6,9 +6,6 @@ project("Ivy - Inventory Manager"
         HOMEPAGE_URL "https://github.com/thiago-rezende/inventory-manager"
         LANGUAGES CXX)
 
-set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake")
-include(cotire)
-
 set(CMAKE_CXX_STANDARD_REQUIRED 17)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
