@@ -4,8 +4,9 @@ namespace ivy
 {
 namespace locadora
 {
-Jogo::Jogo(std::string nNome, std::string nGenero, int nFaixaEtaria, float nValor, bool nDisponivel)
+Jogo::Jogo(int nJogoID, std::string nNome, std::string nGenero, int nFaixaEtaria, float nValor, bool nDisponivel)
 {
+    this->m_jogoID = nJogoID;
     this->m_nome = nNome;
     this->m_genero = nGenero;
     this->m_valor = nValor;
@@ -31,12 +32,12 @@ const std::string &Jogo::get_nome() const
 
 const int &Jogo::get_jogoID() const
 {
-    return this->jogoID;
+    return this->m_jogoID;
 }
 
 void Jogo::set_jogoID(int nJogoID)
 {
-    this->jogoID = nJogoID;
+    this->m_jogoID = nJogoID;
 }
 
 void Jogo::set_nome(std::string nNome)
@@ -88,7 +89,7 @@ std::string Jogo::to_string()
 {
     std::string saida;
 
-    saida += "|ID: " + std::to_string(this->jogoID);
+    saida += "|ID: " + std::to_string(this->m_jogoID);
     saida += " | Nome: " + this->m_nome;
     saida += " | Genero: " + this->m_genero;
     saida += " | Valor: " + std::to_string(this->m_valor);

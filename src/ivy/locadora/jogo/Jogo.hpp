@@ -17,7 +17,7 @@ private:
      * @brief Numero de identificação do do Jogo
      * 
      */
-    int jogoID;
+    int m_jogoID;
 
     /**
      * @brief Nome do Jogo
@@ -59,7 +59,7 @@ public:
      * @param nValor valor do produto
      * @param nDisponivel disponibilidade do produto
      */
-    Jogo(std::string nNome, std::string nGenero, int nFaixaEtaria, float nValor, bool nDisponivel);
+    Jogo(int nJogoID, std::string nNome, std::string nGenero, int nFaixaEtaria, float nValor, bool nDisponivel);
 
     /**
      * @brief Construtor
