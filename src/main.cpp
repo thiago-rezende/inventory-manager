@@ -19,19 +19,21 @@ int main(int argc, const char **argv)
 
     if (use_cli)
     {
-        ivy::IvyManager ivy;
-        ivy::InterfaceCLI cli(ivy);
+        ivy::IvyManager ivy_manager;
+        ivy::locadora::Locadora ivy_locadora;
+        ivy::InterfaceCLI cli(ivy_manager, ivy_locadora);
         cli.run();
     }
     else
     {
-        std::cout << "\nA Interface GUI ainda esta em desenvolvimento.\n\n"
-                  << "Precione enter para contuar com a Inteface CLI..." << std::endl;
+        IVY_INFO("A InterfaceGUI esta em desenvolvimento.");
+        std::cout << "Precione enter para contuar com a Inteface CLI..." << std::endl;
 
         std::cin.get();
 
-        ivy::IvyManager ivy;
-        ivy::InterfaceCLI cli(ivy);
+        ivy::IvyManager ivy_manager;
+        ivy::locadora::Locadora ivy_locadora;
+        ivy::InterfaceCLI cli(ivy_manager, ivy_locadora);
         cli.run();
 
         /* ivy::InterfaceGUI gui(1080, 480, "Ivy - Inventory Manager");

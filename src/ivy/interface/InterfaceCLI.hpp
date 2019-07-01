@@ -5,6 +5,7 @@
 #include <limits>
 #include "ivy_manager/IvyManager.hpp"
 #include "log/IvyLog.hpp"
+#include "locadora/LocadoraCLI.hpp"
 
 namespace ivy
 {
@@ -20,6 +21,12 @@ private:
      * 
      */
     IvyManager ivy_manager;
+
+    /**
+     * @brief Referencia para o objeto LocadoraCLI
+     * 
+     */
+    std::unique_ptr<locadora::LocadoraCLI> m_locadoraCLI;
 
     /**
      * @brief Determina quando o programa deve sair
@@ -39,7 +46,7 @@ public:
      * 
      * @param nIvy_manager 
      */
-    InterfaceCLI(IvyManager &nIvy_manager);
+    InterfaceCLI(IvyManager &nIvy_manager, locadora::Locadora nLocadora);
 
     /**
      * @brief Destroi o objeto de InterfaceCLI
@@ -94,6 +101,12 @@ public:
      * 
      */
     void buscar();
+
+    /**
+     * @brief Abre a locadora
+     * 
+     */
+    void locadora();
 
     /**
      * @brief Vende o produto

@@ -2,7 +2,7 @@ var searchData=
 [
   ['include_5fnana_2ehpp',['include_nana.hpp',['../include__nana_8hpp.html',1,'']]],
   ['init',['init',['../classivy_1_1_ivy_log.html#a951821f24020c5f3898b8eaff9c7180a',1,'ivy::IvyLog']]],
-  ['interfacecli',['InterfaceCLI',['../classivy_1_1_interface_c_l_i.html',1,'ivy::InterfaceCLI'],['../classivy_1_1_interface_c_l_i.html#aef9d3a8136593e6b9441f158ca403dc6',1,'ivy::InterfaceCLI::InterfaceCLI()']]],
+  ['interfacecli',['InterfaceCLI',['../classivy_1_1_interface_c_l_i.html',1,'ivy::InterfaceCLI'],['../classivy_1_1_interface_c_l_i.html#a26a47c637ce5604ee2ab43ea3a623aad',1,'ivy::InterfaceCLI::InterfaceCLI()']]],
   ['interfacecli_2ecpp',['InterfaceCLI.cpp',['../_interface_c_l_i_8cpp.html',1,'']]],
   ['interfacecli_2ehpp',['InterfaceCLI.hpp',['../_interface_c_l_i_8hpp.html',1,'']]],
   ['interfacegui',['InterfaceGUI',['../classivy_1_1_interface_g_u_i.html',1,'ivy::InterfaceGUI'],['../classivy_1_1_interface_g_u_i.html#ad66877ea2d6a3db0717e62a5986417fc',1,'ivy::InterfaceGUI::InterfaceGUI()']]],

@@ -6,3 +6,7 @@
 #include "interface/InterfaceCLI.hpp"
 #include "interface/InterfaceGUI.hpp"
 #include "log/IvyLog.hpp"
+/* locadora */
+#include "locadora/jogo/Jogo.hpp"
+#include "locadora/Locadora.hpp"
+#include "locadora/LocadoraCLI.hpp"

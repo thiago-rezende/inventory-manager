@@ -2,8 +2,9 @@
 
 namespace ivy
 {
-InterfaceCLI::InterfaceCLI(IvyManager &nIvy_manager)
+InterfaceCLI::InterfaceCLI(IvyManager &nIvy_manager, locadora::Locadora nLocadora)
 {
+    this->m_locadoraCLI = std::make_unique<locadora::LocadoraCLI>(nLocadora);
     this->ivy_manager = nIvy_manager;
     this->sair = false;
 }
@@ -69,6 +70,8 @@ void InterfaceCLI::option_handler()
         this->vender();
     else if (this->opt == "comprar")
         this->comprar();
+    else if (this->opt == "locadora")
+        this->locadora();
     else if (this->opt == "salvar")
         this->salvar();
     else if (this->opt == "carregar")
@@ -92,6 +95,7 @@ void InterfaceCLI::ajuda()
     std::cout << "  buscar => Buscar um Produto." << std::endl;
     std::cout << "  vender => Vender um Produto." << std::endl;
     std::cout << "  comprar => Compror um Produto." << std::endl;
+    std::cout << "  locadora => Abre a locadora." << std::endl;
     std::cout << "  salvar => Salva o estoque em um arquivo." << std::endl;
     std::cout << "  carregar => Carrega o estoque de um arquivo." << std::endl;
     std::cout << "  sair => Sair do programa." << std::endl;
@@ -350,6 +354,11 @@ void InterfaceCLI::comprar()
     std::cin.ignore();
     this->ivy_manager.comprar(nId, nQuantidade);
     std::cout << std::endl;
+}
+
+void InterfaceCLI::locadora()
+{
+    this->m_locadoraCLI->run();
 }
 
 void InterfaceCLI::salvar()

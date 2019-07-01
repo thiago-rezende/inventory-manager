@@ -97,7 +97,7 @@ void LocadoraCLI::ajuda()
     std::cout << "  devolver => Devolver um Jogo." << std::endl;
     std::cout << "  salvar => Salva o estoque em um arquivo." << std::endl;
     std::cout << "  carregar => Carrega o estoque de um arquivo." << std::endl;
-    std::cout << "  sair => Sair do programa." << std::endl;
+    std::cout << "  sair => Sair da locadora." << std::endl;
     std::cout << std::endl;
 }
 
