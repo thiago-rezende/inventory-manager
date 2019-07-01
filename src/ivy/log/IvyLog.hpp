@@ -5,14 +5,31 @@
 
 namespace ivy
 {
-
+/**
+ * @brief Classe IvyLog
+ * Responsavel por disponibilizar funcoes de log
+ */
 class IvyLog
 {
 private:
+    /**
+     * @brief logger
+     * 
+     */
     static std::shared_ptr<spdlog::logger> s_ivyLogger;
 
 public:
+    /**
+     * @brief Inicializa o IvyLogger
+     * 
+     */
     static void init();
+
+    /**
+     * @brief Retorna o logger
+     * 
+     * @return std::shared_ptr<spdlog::logger>& logger
+     */
     inline static std::shared_ptr<spdlog::logger> &getLogger() { return s_ivyLogger; }
 };
 } // namespace ivy

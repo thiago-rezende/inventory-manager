@@ -9,6 +9,7 @@ var searchData=
   ['m_5fgenero',['m_genero',['../classivy_1_1locadora_1_1_jogo.html#ac75735ac5c6376fed9ea5133b86689e9',1,'ivy::locadora::Jogo']]],
   ['m_5fid',['m_id',['../classivy_1_1_produto.html#a3b1bcc0d35ba76eaaac04d56b07e1539',1,'ivy::Produto']]],
   ['m_5fivymanager',['m_ivyManager',['../classivy_1_1_interface_g_u_i.html#a5c4a3f0dac540a7093c544b989ecc1a7',1,'ivy::InterfaceGUI']]],
+  ['m_5fjogoid',['m_jogoID',['../classivy_1_1locadora_1_1_jogo.html#a3386acfb6147d6e71cc6e8ce25c8961f',1,'ivy::locadora::Jogo']]],
   ['m_5flocadora',['m_locadora',['../classivy_1_1locadora_1_1_locadora_c_l_i.html#aae362008e2af2c79b0110cb324a75647',1,'ivy::locadora::LocadoraCLI']]],
   ['m_5fmarca',['m_marca',['../classivy_1_1_produto.html#a1a28dfd1508946c647a58ebea46fcd44',1,'ivy::Produto']]],
   ['m_5fnome',['m_nome',['../classivy_1_1locadora_1_1_jogo.html#a2a31e6f3846cff5ea95f60bfdd24fe1e',1,'ivy::locadora::Jogo::m_nome()'],['../classivy_1_1_produto.html#ac1a4f37d11514ba9726009e0a8c86f5b',1,'ivy::Produto::m_nome()']]],

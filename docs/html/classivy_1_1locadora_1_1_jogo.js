@@ -1,6 +1,6 @@
 var classivy_1_1locadora_1_1_jogo =
 [
-    [ "Jogo", "classivy_1_1locadora_1_1_jogo.html#a11a8d8fa82e6ec439b0a149d4cd01331", null ],
+    [ "Jogo", "classivy_1_1locadora_1_1_jogo.html#adcff926428eec1cd0c9e6b2b3637b021", null ],
     [ "Jogo", "classivy_1_1locadora_1_1_jogo.html#a90699704bdd8470c839241707c059cb1", null ],
     [ "~Jogo", "classivy_1_1locadora_1_1_jogo.html#a965f18113ae543f5cc8c903d27e8f86d", null ],
     [ "get_disponivel", "classivy_1_1locadora_1_1_jogo.html#acb90ec371dd8d4e2b0a45ed94686d76f", null ],
@@ -16,10 +16,10 @@ var classivy_1_1locadora_1_1_jogo =
     [ "set_nome", "classivy_1_1locadora_1_1_jogo.html#ad78eab87ce4198c22f7d3e6cf4a301dc", null ],
     [ "set_valor", "classivy_1_1locadora_1_1_jogo.html#acba4dbe385df200f926d08b5e1f4321e", null ],
     [ "to_string", "classivy_1_1locadora_1_1_jogo.html#ae10a6b65aaa1ed6a8b65febe8fc2c6cb", null ],
-    [ "jogoID", "classivy_1_1locadora_1_1_jogo.html#ac7ec8ce321d93b481f4982e04540c487", null ],
     [ "m_disponivel", "classivy_1_1locadora_1_1_jogo.html#ac53fc05926b41be36c31bd6bb2aba945", null ],
     [ "m_faixaEtaria", "classivy_1_1locadora_1_1_jogo.html#a1d6e1e76235bed263d6a134e824a6688", null ],
     [ "m_genero", "classivy_1_1locadora_1_1_jogo.html#ac75735ac5c6376fed9ea5133b86689e9", null ],
+    [ "m_jogoID", "classivy_1_1locadora_1_1_jogo.html#a3386acfb6147d6e71cc6e8ce25c8961f", null ],
     [ "m_nome", "classivy_1_1locadora_1_1_jogo.html#a2a31e6f3846cff5ea95f60bfdd24fe1e", null ],
     [ "m_valor", "classivy_1_1locadora_1_1_jogo.html#a2384e2df914626548ecb42c7fb75d3ad", null ]
 ];

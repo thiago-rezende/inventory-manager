@@ -53,6 +53,7 @@ public:
     /**
      * @brief Constroi um novo objeto de Jogo
      * 
+     * @param nJogoID id do jogo
      * @param nNome nome do produto
      * @param nGenero genero do produto
      * @param nFaixaEtaria faixa etária do jogo
