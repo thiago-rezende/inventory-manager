@@ -1,6 +1,7 @@
 #pragma once
 #include "produto/Produto.hpp"
 #include "log/IvyLog.hpp"
+#include "locadora/jogo/Jogo.hpp"
 
 namespace ivy
 {

@@ -113,5 +113,6 @@ template class Vetor<char>;
 template class Vetor<bool>;
 template class Vetor<std::string>;
 template class Vetor<Produto>;
+template class Vetor<locadora::Jogo>;
 
 } // namespace ivy

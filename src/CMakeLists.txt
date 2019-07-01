@@ -15,6 +15,10 @@ PUBLIC
     "ivy/vetor/Vetor.cpp"
     # resources
     "CMakeSetup.rc"
+    # locadora
+    "ivy/locadora/jogo/Jogo.cpp"
+    "ivy/locadora/Locadora.cpp"
+    "ivy/locadora/LocadoraCLI.cpp"
 )
 
 target_include_directories(ivy-manager
@@ -28,6 +32,7 @@ PUBLIC
     "ivy/ivy_manager"
     "ivy/produto"
     "ivy/vetor"
+    "ivy/locadora"
 )
 
 target_link_libraries(ivy-manager PRIVATE nana)

@@ -173,16 +173,10 @@ void InterfaceCLI::editar()
     int nQuantidade;
     bool nGarantia;
 
-    std::cout << "Numero de identificacao: ";
-    /* Checa se a entrada e valida */
-    while (!(std::cin >> nId))
-    {
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        std::cout << "Somente numeros!" << std::endl;
-    }
+    std::cout << "Nome do Produto: ";
+    std::getline(std::cin, nNome);
 
-    if (this->ivy_manager.buscar_id(nId) == -1)
+    if (this->ivy_manager.buscar_nome(nNome) == -1)
     {
         IVY_WARN("EDITAR::PRODUTO_NAO_ENCONTRADO");
         std::cout << "EDITAR::PRODUTO_NAO_ENCONTRADO" << std::endl;
@@ -190,8 +184,11 @@ void InterfaceCLI::editar()
     else
     {
 
-        std::cin.ignore();
+        nId = this->ivy_manager.get_estoque().get(this->ivy_manager.buscar_nome(nNome)).get_id();
+
+        std::cout << "Descreva o novo produto." << std::endl;
         std::cout << "Nome do Produto: ";
+        std::cin.ignore();
         std::getline(std::cin, nNome);
         std::cout << "Marca do Produto: ";
         std::getline(std::cin, nMarca);

@@ -1,5 +1,6 @@
 var namespaceivy =
 [
+    [ "locadora", "namespaceivy_1_1locadora.html", "namespaceivy_1_1locadora" ],
     [ "InterfaceCLI", "classivy_1_1_interface_c_l_i.html", "classivy_1_1_interface_c_l_i" ],
     [ "InterfaceGUI", "classivy_1_1_interface_g_u_i.html", "classivy_1_1_interface_g_u_i" ],
     [ "IvyLog", "classivy_1_1_ivy_log.html", "classivy_1_1_ivy_log" ],

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['option',['Option',['../classcli_1_1_option.html',1,'cli']]]
+  ['vetor',['Vetor',['../classivy_1_1_vetor.html',1,'ivy']]],
+  ['vetor_3c_20ivy_3a_3alocadora_3a_3ajogo_20_3e',['Vetor&lt; ivy::locadora::Jogo &gt;',['../classivy_1_1_vetor.html',1,'ivy']]],
+  ['vetor_3c_20ivy_3a_3aproduto_20_3e',['Vetor&lt; ivy::Produto &gt;',['../classivy_1_1_vetor.html',1,'ivy']]]
 ];
