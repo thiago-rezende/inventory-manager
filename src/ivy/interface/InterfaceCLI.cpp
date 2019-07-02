@@ -195,7 +195,6 @@ void InterfaceCLI::editar()
 
         std::cout << "Descreva o novo produto." << std::endl;
         std::cout << "Nome do Produto: ";
-        std::cin.ignore();
         std::getline(std::cin, nNome);
         std::cout << "Marca do Produto: ";
         std::getline(std::cin, nMarca);

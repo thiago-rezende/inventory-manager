@@ -119,6 +119,7 @@ void Locadora::editar(int nJogoID, Jogo nJogo)
         this->m_estoque.get(index).set_genero(nJogo.get_genero());
         this->m_estoque.get(index).set_valor(nJogo.get_valor());
         this->m_estoque.get(index).set_faixaEtaria(nJogo.get_faixaEtaria());
+        this->m_estoque.get(index).set_disponivel(nJogo.get_disponivel());
     }
     else
         IVY_INFO("EDITAR::PRODUTO_NAO_ENCONTRADO");
