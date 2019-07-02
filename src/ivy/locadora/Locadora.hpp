@@ -103,6 +103,30 @@ public:
     void devolver(int nJogoID);
 
     /**
+     * @brief Busca varios jogos de um genero
+     * 
+     * @param nGenero genero a ser buscado
+     * @return Vetor<Jogo> vetor de jogos encontrados
+     */
+    Vetor<Jogo> buscar_variosGenero(std::string nGenero);
+
+    /**
+     * @brief Busca varios jogos alugados
+     * 
+     * @param nAlugado alugados ou nao
+     * @return Vetor<Jogo> vetor de jogos encontrados
+     */
+    Vetor<Jogo> buscar_variosAlugado(bool nAlugado);
+
+    /**
+     * @brief Busca varios jogos de uma classificacao
+     * 
+     * @param nClassificacao classificacao a ser buscada
+     * @return Vetor<Jogo> vetor de jogos encontrados
+     */
+    Vetor<Jogo> buscar_variosClassificacao(int nClassificacao);
+
+    /**
      * @brief Salva os dados do estoque em um arquivo
      * 
      */

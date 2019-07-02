@@ -146,6 +146,45 @@ void Locadora::devolver(int nJogoID)
         IVY_INFO("COMPRA::PRODUTO_NAO_ENCONTRADO");
 }
 
+Vetor<Jogo> Locadora::buscar_variosGenero(std::string nGenero)
+{
+    Vetor<Jogo> j;
+
+    for (int i = 0; i < this->m_estoque.get_tamanho(); i++)
+        if (this->m_estoque.get(i).get_genero() == nGenero)
+            j.adicionar(this->m_estoque.get(i));
+
+    if (j.get_tamanho() == 0)
+        IVY_INFO("BUSCA::NENHUM_PRODUTO_ENCONTRADO");
+    return j;
+}
+
+Vetor<Jogo> Locadora::buscar_variosAlugado(bool nAlugado)
+{
+    Vetor<Jogo> j;
+
+    for (int i = 0; i < this->m_estoque.get_tamanho(); i++)
+        if (this->m_estoque.get(i).get_disponivel() == nAlugado)
+            j.adicionar(this->m_estoque.get(i));
+
+    if (j.get_tamanho() == 0)
+        IVY_INFO("BUSCA::NENHUM_PRODUTO_ENCONTRADO");
+    return j;
+}
+
+Vetor<Jogo> Locadora::buscar_variosClassificacao(int nClassificacao)
+{
+    Vetor<Jogo> j;
+
+    for (int i = 0; i < this->m_estoque.get_tamanho(); i++)
+        if (this->m_estoque.get(i).get_faixaEtaria() == nClassificacao)
+            j.adicionar(this->m_estoque.get(i));
+
+    if (j.get_tamanho() == 0)
+        IVY_INFO("BUSCA::NENHUM_PRODUTO_ENCONTRADO");
+    return j;
+}
+
 void Locadora::salvar_estoque()
 {
     std::ofstream m_outArquivo("locadora.txt");

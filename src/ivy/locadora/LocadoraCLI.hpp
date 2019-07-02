@@ -110,6 +110,33 @@ public:
     void devolver();
 
     /**
+     * @brief Busca varios jogos de um genero
+     * 
+     * @param nGenero genero a ser buscado
+     */
+    void buscar_generoCLI(std::string nGenero);
+
+    /**
+     * @brief busca varios jogos alugados ou nao
+     * 
+     * @param nAlugado estado do jogo, alugado ou nao
+     */
+    void buscar_alugadoCLI(bool nAlugado);
+
+    /**
+     * @brief Busca varios jogos de uma classificacao
+     * 
+     * @param nClassificacao classificacao a ser buscada
+     */
+    void buscar_classificacaoCLI(int nClassificacao);
+
+    /**
+     * @brief Lista todos os jogos do estoque
+     * 
+     */
+    void listar_jogos();
+
+    /**
      * @brief Salva os dados do estoque em um arquivo
      * 
      */

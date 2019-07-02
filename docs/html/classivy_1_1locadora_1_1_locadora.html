@@ -103,7 +103,7 @@ Collaboration diagram for ivy::locadora::Locadora:</div>
 <div class="dyncontent">
 <div class="center"><img src="classivy_1_1locadora_1_1_locadora__coll__graph.png" border="0" usemap="#ivy_1_1locadora_1_1_locadora_coll__map" alt="Collaboration graph"/></div>
 <map name="ivy_1_1locadora_1_1_locadora_coll__map" id="ivy_1_1locadora_1_1_locadora_coll__map">
-<area shape="rect"  title=" " alt="" coords="70,637,225,905"/>
+<area shape="rect"  title=" " alt="" coords="70,637,225,861"/>
 <area shape="rect"  href="classivy_1_1_vetor.html" title=" " alt="" coords="67,365,227,575"/>
 <area shape="rect"  href="classivy_1_1locadora_1_1_jogo.html" title="Classe Jogo, define um jogo para o sistema de estoque Ivy." alt="" coords="5,5,135,303"/>
 <area shape="rect"  href="classivy_1_1_vetor.html" title="Classe Vetor para manipulacao de vetores." alt="" coords="159,49,290,259"/>
@@ -148,6 +148,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a53faa243073d10a96e01657c4c73ee3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1locadora_1_1_locadora.html#a53faa243073d10a96e01657c4c73ee3a">devolver</a> (int nJogoID)</td></tr>
 <tr class="memdesc:a53faa243073d10a96e01657c4c73ee3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devolucao de produto.  <a href="#a53faa243073d10a96e01657c4c73ee3a">More...</a><br /></td></tr>
 <tr class="separator:a53faa243073d10a96e01657c4c73ee3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57779b28724b9005a23a95abaf0c219"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classivy_1_1_vetor.html">Vetor</a>&lt; <a class="el" href="classivy_1_1locadora_1_1_jogo.html">Jogo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1locadora_1_1_locadora.html#ad57779b28724b9005a23a95abaf0c219">buscar_variosGenero</a> (std::string nGenero)</td></tr>
+<tr class="memdesc:ad57779b28724b9005a23a95abaf0c219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca varios jogos de um genero.  <a href="#ad57779b28724b9005a23a95abaf0c219">More...</a><br /></td></tr>
+<tr class="separator:ad57779b28724b9005a23a95abaf0c219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c69f895052f123bf4adf83e26c6879c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classivy_1_1_vetor.html">Vetor</a>&lt; <a class="el" href="classivy_1_1locadora_1_1_jogo.html">Jogo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1locadora_1_1_locadora.html#a1c69f895052f123bf4adf83e26c6879c">buscar_variosAlugado</a> (bool nAlugado)</td></tr>
+<tr class="memdesc:a1c69f895052f123bf4adf83e26c6879c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca varios jogos alugados.  <a href="#a1c69f895052f123bf4adf83e26c6879c">More...</a><br /></td></tr>
+<tr class="separator:a1c69f895052f123bf4adf83e26c6879c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b255438182c5ca606007153d1817d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classivy_1_1_vetor.html">Vetor</a>&lt; <a class="el" href="classivy_1_1locadora_1_1_jogo.html">Jogo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1locadora_1_1_locadora.html#aa1b255438182c5ca606007153d1817d8">buscar_variosClassificacao</a> (int nClassificacao)</td></tr>
+<tr class="memdesc:aa1b255438182c5ca606007153d1817d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca varios jogos de uma classificacao.  <a href="#aa1b255438182c5ca606007153d1817d8">More...</a><br /></td></tr>
+<tr class="separator:aa1b255438182c5ca606007153d1817d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef70c6ea7662c8e757541907795aa261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1locadora_1_1_locadora.html#aef70c6ea7662c8e757541907795aa261">salvar_estoque</a> ()</td></tr>
 <tr class="memdesc:aef70c6ea7662c8e757541907795aa261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Salva os dados do estoque em um arquivo.  <a href="#aef70c6ea7662c8e757541907795aa261">More...</a><br /></td></tr>
 <tr class="separator:aef70c6ea7662c8e757541907795aa261"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -358,6 +367,87 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int indice do jogo no vetor </dd></dl>
+
+</div>
+</div>
+<a id="a1c69f895052f123bf4adf83e26c6879c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c69f895052f123bf4adf83e26c6879c">&#9670;&nbsp;</a></span>buscar_variosAlugado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classivy_1_1_vetor.html">Vetor</a>&lt; <a class="el" href="classivy_1_1locadora_1_1_jogo.html">Jogo</a> &gt; ivy::locadora::Locadora::buscar_variosAlugado </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>nAlugado</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca varios jogos alugados. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nAlugado</td><td>alugados ou nao </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vetor&lt;Jogo&gt; vetor de jogos encontrados </dd></dl>
+
+</div>
+</div>
+<a id="aa1b255438182c5ca606007153d1817d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b255438182c5ca606007153d1817d8">&#9670;&nbsp;</a></span>buscar_variosClassificacao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classivy_1_1_vetor.html">Vetor</a>&lt; <a class="el" href="classivy_1_1locadora_1_1_jogo.html">Jogo</a> &gt; ivy::locadora::Locadora::buscar_variosClassificacao </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nClassificacao</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca varios jogos de uma classificacao. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nClassificacao</td><td>classificacao a ser buscada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vetor&lt;Jogo&gt; vetor de jogos encontrados </dd></dl>
+
+</div>
+</div>
+<a id="ad57779b28724b9005a23a95abaf0c219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad57779b28724b9005a23a95abaf0c219">&#9670;&nbsp;</a></span>buscar_variosGenero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classivy_1_1_vetor.html">Vetor</a>&lt; <a class="el" href="classivy_1_1locadora_1_1_jogo.html">Jogo</a> &gt; ivy::locadora::Locadora::buscar_variosGenero </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>nGenero</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca varios jogos de um genero. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nGenero</td><td>genero a ser buscado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vetor&lt;Jogo&gt; vetor de jogos encontrados </dd></dl>
 
 </div>
 </div>

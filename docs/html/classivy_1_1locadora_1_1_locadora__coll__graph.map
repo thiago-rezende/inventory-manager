@@ -1,5 +1,5 @@
 <map id="ivy::locadora::Locadora" name="ivy::locadora::Locadora">
-<area shape="rect" id="node1" title=" " alt="" coords="70,637,225,905"/>
+<area shape="rect" id="node1" title=" " alt="" coords="70,637,225,861"/>
 <area shape="rect" id="node2" href="$classivy_1_1_vetor.html" title=" " alt="" coords="67,365,227,575"/>
 <area shape="rect" id="node3" href="$classivy_1_1locadora_1_1_jogo.html" title="Classe Jogo, define um jogo para o sistema de estoque Ivy." alt="" coords="5,5,135,303"/>
 <area shape="rect" id="node4" href="$classivy_1_1_vetor.html" title="Classe Vetor para manipulacao de vetores." alt="" coords="159,49,290,259"/>

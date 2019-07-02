@@ -104,6 +104,33 @@ public:
     void buscar();
 
     /**
+     * @brief Busca varios produtos de uma marca
+     * 
+     * @param nMarca marca a ser buscada
+     */
+    void buscar_marcaCLI(std::string nMarca);
+
+    /**
+     * @brief Busca varios produtos de um valor
+     * 
+     * @param nValor valor a ser buscado
+     */
+    void buscar_valorCLI(float nValor);
+
+    /**
+     * @brief Busca varios produtos de uma quantidade
+     * 
+     * @param nQuantidade quantidade a ser buscada
+     */
+    void buscar_quantidadeCLI(int nQuantidade);
+
+    /**
+     * @brief Lista todos os produtos do estoque
+     * 
+     */
+    void listar_produtos();
+
+    /**
      * @brief Abre a locadora
      * 
      */

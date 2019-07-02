@@ -2,11 +2,23 @@ var searchData=
 [
   ['buscar',['buscar',['../classivy_1_1_interface_c_l_i.html#ab4a5ce507d934cd6d21b82ba65ba97f3',1,'ivy::InterfaceCLI::buscar()'],['../classivy_1_1locadora_1_1_locadora_c_l_i.html#a38a6367eeadd5a216b155f68f577d2aa',1,'ivy::locadora::LocadoraCLI::buscar()']]],
   ['buscar_5falugado',['buscar_alugado',['../classivy_1_1locadora_1_1_locadora.html#a019ecb9f4813b8a85317a1bf21aae25d',1,'ivy::locadora::Locadora']]],
+  ['buscar_5falugadocli',['buscar_alugadoCLI',['../classivy_1_1locadora_1_1_locadora_c_l_i.html#a872d51f1fe5eee96e2967e073e7ff3ed',1,'ivy::locadora::LocadoraCLI']]],
+  ['buscar_5fclassificacaocli',['buscar_classificacaoCLI',['../classivy_1_1locadora_1_1_locadora_c_l_i.html#acd11ff106fdfdd2cb177b7cf04b205af',1,'ivy::locadora::LocadoraCLI']]],
   ['buscar_5ffaixaetaria',['buscar_faixaEtaria',['../classivy_1_1locadora_1_1_locadora.html#ac2cf28dc6fd2a84f004aeabcba71e850',1,'ivy::locadora::Locadora']]],
   ['buscar_5fgenero',['buscar_genero',['../classivy_1_1locadora_1_1_locadora.html#a359819ff77419872d4814be65db47b82',1,'ivy::locadora::Locadora']]],
+  ['buscar_5fgenerocli',['buscar_generoCLI',['../classivy_1_1locadora_1_1_locadora_c_l_i.html#aec4d7c2bb99f5cdc92cb24625977f636',1,'ivy::locadora::LocadoraCLI']]],
   ['buscar_5fid',['buscar_id',['../classivy_1_1_ivy_manager.html#a9266231d627a49b6ff5cc1b31013d516',1,'ivy::IvyManager::buscar_id()'],['../classivy_1_1locadora_1_1_locadora.html#a308e5e7bf2a6f27cfa97754f0ed7a21e',1,'ivy::locadora::Locadora::buscar_id()']]],
   ['buscar_5fmarca',['buscar_marca',['../classivy_1_1_ivy_manager.html#aba2ece6983d610f1acd2308d820d1964',1,'ivy::IvyManager']]],
+  ['buscar_5fmarcacli',['buscar_marcaCLI',['../classivy_1_1_interface_c_l_i.html#a321acdfedbd6cf98de0c3882162a952d',1,'ivy::InterfaceCLI']]],
   ['buscar_5fnome',['buscar_nome',['../classivy_1_1_ivy_manager.html#aa6f15b794671fda4f01c9d16fd275dac',1,'ivy::IvyManager::buscar_nome()'],['../classivy_1_1locadora_1_1_locadora.html#a7397cebdf3283230a44b529004c68b96',1,'ivy::locadora::Locadora::buscar_nome()']]],
   ['buscar_5fquantidade',['buscar_quantidade',['../classivy_1_1_ivy_manager.html#a8fe8d15d8cdfd40247622a762ea51904',1,'ivy::IvyManager']]],
-  ['buscar_5fvalor',['buscar_valor',['../classivy_1_1_ivy_manager.html#aa8e2bc564a58f2a3dfc6d5f2d3fe7667',1,'ivy::IvyManager']]]
+  ['buscar_5fquantidadecli',['buscar_quantidadeCLI',['../classivy_1_1_interface_c_l_i.html#acc0b6ca8ffc826eb83c00f9cd91fd16e',1,'ivy::InterfaceCLI']]],
+  ['buscar_5fvalor',['buscar_valor',['../classivy_1_1_ivy_manager.html#aa8e2bc564a58f2a3dfc6d5f2d3fe7667',1,'ivy::IvyManager']]],
+  ['buscar_5fvalorcli',['buscar_valorCLI',['../classivy_1_1_interface_c_l_i.html#a6288636f0618e4a78c4e9ac8f00d2a39',1,'ivy::InterfaceCLI']]],
+  ['buscar_5fvariosalugado',['buscar_variosAlugado',['../classivy_1_1locadora_1_1_locadora.html#a1c69f895052f123bf4adf83e26c6879c',1,'ivy::locadora::Locadora']]],
+  ['buscar_5fvariosclassificacao',['buscar_variosClassificacao',['../classivy_1_1locadora_1_1_locadora.html#aa1b255438182c5ca606007153d1817d8',1,'ivy::locadora::Locadora']]],
+  ['buscar_5fvariosgenero',['buscar_variosGenero',['../classivy_1_1locadora_1_1_locadora.html#ad57779b28724b9005a23a95abaf0c219',1,'ivy::locadora::Locadora']]],
+  ['buscar_5fvariosmarca',['buscar_variosMarca',['../classivy_1_1_ivy_manager.html#ab37b19ff63f160eeb88df0fae4add8c8',1,'ivy::IvyManager']]],
+  ['buscar_5fvariosquantidade',['buscar_variosQuantidade',['../classivy_1_1_ivy_manager.html#a868008304f8a83590f3c04d80860bcbe',1,'ivy::IvyManager']]],
+  ['buscar_5fvariosvalor',['buscar_variosValor',['../classivy_1_1_ivy_manager.html#ac7b0412c2e42bd376b26d10414a96c2b',1,'ivy::IvyManager']]]
 ];

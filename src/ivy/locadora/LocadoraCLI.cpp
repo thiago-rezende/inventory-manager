@@ -73,6 +73,8 @@ void LocadoraCLI::option_handler()
         this->alugar();
     else if (this->opt == "devolver")
         this->devolver();
+    else if (this->opt == "listar")
+        this->listar_jogos();
     else if (this->opt == "salvar")
         this->salvar();
     else if (this->opt == "carregar")
@@ -96,6 +98,7 @@ void LocadoraCLI::ajuda()
     std::cout << "  buscar => Buscar um Jogo." << std::endl;
     std::cout << "  alugar => Alugar um Jogo." << std::endl;
     std::cout << "  devolver => Devolver um Jogo." << std::endl;
+    std::cout << "  listar => Lista todos os Jogos no estoque" << std::endl;
     std::cout << "  salvar => Salva o estoque em um arquivo." << std::endl;
     std::cout << "  carregar => Carrega o estoque de um arquivo." << std::endl;
     std::cout << "  sair => Sair da locadora." << std::endl;
@@ -181,8 +184,8 @@ void LocadoraCLI::editar()
 
     if (this->m_locadora.buscar_nome(nNome) == -1)
     {
-        IVY_WARN("EDITAR::Jogo_NAO_ENCONTRADO");
-        std::cout << "EDITAR::Jogo_NAO_ENCONTRADO" << std::endl;
+        IVY_WARN("EDITAR::JOGO_NAO_ENCONTRADO");
+        std::cout << "EDITAR::JOGO_NAO_ENCONTRADO" << std::endl;
     }
     else
     {
@@ -190,7 +193,6 @@ void LocadoraCLI::editar()
         nId = this->m_locadora.get_estoque().get(this->m_locadora.buscar_nome(nNome)).get_jogoID();
 
         std::cout << "Descreva o novo Jogo." << std::endl;
-        std::cin.ignore();
         std::cout << "Nome do Jogo: ";
         std::getline(std::cin, nNome);
         std::cout << "Genero do Jogo: ";
@@ -229,6 +231,7 @@ void LocadoraCLI::editar()
         nJogo.set_disponivel(nDisponivel);
 
         this->m_locadora.editar(nId, nJogo);
+        IVY_INFO("{} : Editado", this->m_locadora.buscar_id(nId));
         std::cout << std::endl;
     }
     std::cout << std::endl;
@@ -256,11 +259,12 @@ void LocadoraCLI::buscar()
         std::string nGenero;
         std::cout << "Informe a genero: ";
         std::getline(std::cin, nGenero);
-        int index = this->m_locadora.buscar_genero(nGenero);
+        this->buscar_generoCLI(nGenero);
+        /* int index = this->m_locadora.buscar_genero(nGenero);
         if (index != -1)
             std::cout << this->m_locadora.get_estoque().get(index).to_string() << std::endl;
         else
-            std::cout << "BUSCA::Jogo_NAO_ENCONTRADO" << std::endl;
+            std::cout << "BUSCA::Jogo_NAO_ENCONTRADO" << std::endl; */
     }
     else if (str_busca == "alugado")
     {
@@ -271,15 +275,16 @@ void LocadoraCLI::buscar()
         std::getline(std::cin, str_nDisponivel);
         std::transform(str_nDisponivel.begin(), str_nDisponivel.end(), str_nDisponivel.begin(), ::tolower);
         if (str_nDisponivel == "sim")
-            nDisponivel = false;
-        else
             nDisponivel = true;
+        else
+            nDisponivel = false;
 
-        int index = this->m_locadora.buscar_alugado(nDisponivel);
+        this->buscar_alugadoCLI(nDisponivel);
+        /* int index = this->m_locadora.buscar_alugado(nDisponivel);
         if (index != -1)
             std::cout << this->m_locadora.get_estoque().get(index).to_string() << std::endl;
         else
-            std::cout << "BUSCA::Jogo_NAO_ENCONTRADO" << std::endl;
+            std::cout << "BUSCA::Jogo_NAO_ENCONTRADO" << std::endl; */
     }
     else if (str_busca == "classificacao")
     {
@@ -293,11 +298,12 @@ void LocadoraCLI::buscar()
             std::cout << "Somente numeros!" << std::endl;
         }
         std::cin.ignore();
-        int index = this->m_locadora.buscar_faixaEtaria(nFaixaEtaria);
+        this->buscar_classificacaoCLI(nFaixaEtaria);
+        /* int index = this->m_locadora.buscar_faixaEtaria(nFaixaEtaria);
         if (index != -1)
             std::cout << this->m_locadora.get_estoque().get(index).to_string() << std::endl;
         else
-            std::cout << "BUSCA::Jogo_NAO_ENCONTRADO" << std::endl;
+            std::cout << "BUSCA::JOGO_NAO_ENCONTRADO" << std::endl; */
     }
 
     std::cout << std::endl;
@@ -317,9 +323,9 @@ void LocadoraCLI::alugar()
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::cout << "Somente numeros!" << std::endl;
     }
-
     this->m_locadora.alugar(nId);
-
+    std::cin.ignore();
+    IVY_INFO("{} : Alugado", this->m_locadora.buscar_id(nId));
     std::cout << std::endl;
 }
 
@@ -338,7 +344,42 @@ void LocadoraCLI::devolver()
         std::cout << "Somente numeros!" << std::endl;
     }
     this->m_locadora.devolver(nId);
+    std::cin.ignore();
+    IVY_INFO("{} : Devolvido", this->m_locadora.buscar_id(nId));
     std::cout << std::endl;
+}
+
+void LocadoraCLI::buscar_generoCLI(std::string nGenero)
+{
+    Vetor<Jogo> j = this->m_locadora.buscar_variosGenero(nGenero);
+    if (j.get_tamanho() != 0)
+        for (int i = 0; i < j.get_tamanho(); i++)
+            std::cout << j.get(i).to_string() << std::endl;
+}
+
+void LocadoraCLI::buscar_alugadoCLI(bool nAlugado)
+{
+    Vetor<Jogo> j = this->m_locadora.buscar_variosAlugado(nAlugado);
+    if (j.get_tamanho() != 0)
+        for (int i = 0; i < j.get_tamanho(); i++)
+            std::cout << j.get(i).to_string() << std::endl;
+}
+
+void LocadoraCLI::buscar_classificacaoCLI(int nClassificacao)
+{
+    Vetor<Jogo> j = this->m_locadora.buscar_variosClassificacao(nClassificacao);
+    if (j.get_tamanho() != 0)
+        for (int i = 0; i < j.get_tamanho(); i++)
+            std::cout << j.get(i).to_string() << std::endl;
+}
+
+void LocadoraCLI::listar_jogos()
+{
+    if (this->m_locadora.get_estoque().get_tamanho() != 0)
+        for (int i = 0; i < this->m_locadora.get_estoque().get_tamanho(); i++)
+            std::cout << this->m_locadora.get_estoque().get(i).to_string() << std::endl;
+    else
+        std::cout << "LISTAGEM::ESTOQUE_VAZIO" << std::endl;
 }
 
 void LocadoraCLI::salvar()

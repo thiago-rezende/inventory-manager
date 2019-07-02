@@ -110,6 +110,30 @@ public:
     void comprar(int nId, int nQuantidade);
 
     /**
+     * @brief Busca varios produtos de uma marca
+     * 
+     * @param nMarca marca a ser buscada
+     * @return Vetor<Produto> vetor de produtos encontrados
+     */
+    Vetor<Produto> buscar_variosMarca(std::string nMarca);
+
+    /**
+     * @brief Busca varios produtos de um valor
+     * 
+     * @param nValor valor a ser buscado
+     * @return Vetor<Produto> vetor de produtos encontrados
+     */
+    Vetor<Produto> buscar_variosValor(float nValor);
+
+    /**
+     * @brief Busca varios produtos de uma quantidade
+     * 
+     * @param nQuantidade quantidade a ser buscada
+     * @return Vetor<Produto> vetor de produtos encontrados
+     */
+    Vetor<Produto> buscar_variosQuantidade(int nQuantidade);
+
+    /**
      * @brief Salva o estoque em um arquivo
      * 
      */

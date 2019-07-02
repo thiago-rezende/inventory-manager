@@ -154,6 +154,45 @@ void IvyManager::comprar(int nId, int nQuantidade)
         IVY_INFO("COMPRA::PRODUTO_NAO_ENCONTRADO");
 }
 
+Vetor<Produto> IvyManager::buscar_variosMarca(std::string nMarca)
+{
+    Vetor<Produto> p;
+
+    for (int i = 0; i < this->m_estoque.get_tamanho(); i++)
+        if (this->m_estoque.get(i).get_marca() == nMarca)
+            p.adicionar(this->m_estoque.get(i));
+
+    if (p.get_tamanho() == 0)
+        IVY_INFO("BUSCA::NENHUM_PRODUTO_ENCONTRADO");
+    return p;
+}
+
+Vetor<Produto> IvyManager::buscar_variosValor(float nValor)
+{
+    Vetor<Produto> p;
+
+    for (int i = 0; i < this->m_estoque.get_tamanho(); i++)
+        if (this->m_estoque.get(i).get_valor() == nValor)
+            p.adicionar(this->m_estoque.get(i));
+
+    if (p.get_tamanho() == 0)
+        IVY_INFO("BUSCA::NENHUM_PRODUTO_ENCONTRADO");
+    return p;
+}
+
+Vetor<Produto> IvyManager::buscar_variosQuantidade(int nQuantidade)
+{
+    Vetor<Produto> p;
+
+    for (int i = 0; i < this->m_estoque.get_tamanho(); i++)
+        if (this->m_estoque.get(i).get_quantidade() == nQuantidade)
+            p.adicionar(this->m_estoque.get(i));
+
+    if (p.get_tamanho() == 0)
+        IVY_INFO("BUSCA::NENHUM_PRODUTO_ENCONTRADO");
+    return p;
+}
+
 void IvyManager::salvar_estoque()
 {
     std::ofstream m_outArquivo("estoque.txt");

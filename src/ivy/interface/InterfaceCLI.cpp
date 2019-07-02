@@ -70,6 +70,8 @@ void InterfaceCLI::option_handler()
         this->vender();
     else if (this->opt == "comprar")
         this->comprar();
+    else if (this->opt == "listar")
+        this->listar_produtos();
     else if (this->opt == "locadora")
         this->locadora();
     else if (this->opt == "salvar")
@@ -95,6 +97,7 @@ void InterfaceCLI::ajuda()
     std::cout << "  buscar => Buscar um Produto." << std::endl;
     std::cout << "  vender => Vender um Produto." << std::endl;
     std::cout << "  comprar => Compror um Produto." << std::endl;
+    std::cout << "  listar => Lista todos os Produtos no estoque." << std::endl;
     std::cout << "  locadora => Abre a locadora." << std::endl;
     std::cout << "  salvar => Salva o estoque em um arquivo." << std::endl;
     std::cout << "  carregar => Carrega o estoque de um arquivo." << std::endl;
@@ -255,11 +258,12 @@ void InterfaceCLI::buscar()
         std::string nMarca;
         std::cout << "Informe a marca: ";
         std::getline(std::cin, nMarca);
-        int index = this->ivy_manager.buscar_marca(nMarca);
+        this->buscar_marcaCLI(nMarca);
+        /* int index = this->ivy_manager.buscar_marca(nMarca);
         if (index != -1)
             std::cout << this->ivy_manager.get_estoque().get(index).to_string() << std::endl;
         else
-            std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+            std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl; */
     }
     else if (str_busca == "valor")
     {
@@ -273,11 +277,12 @@ void InterfaceCLI::buscar()
             std::cout << "Somente numeros!" << std::endl;
         }
         std::cin.ignore();
-        int index = this->ivy_manager.buscar_valor(nValor);
+        this->buscar_valorCLI(nValor);
+        /* int index = this->ivy_manager.buscar_valor(nValor);
         if (index != -1)
             std::cout << this->ivy_manager.get_estoque().get(index).to_string() << std::endl;
         else
-            std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+            std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl; */
     }
     else if (str_busca == "quantidade")
     {
@@ -291,11 +296,12 @@ void InterfaceCLI::buscar()
             std::cout << "Somente numeros!" << std::endl;
         }
         std::cin.ignore();
-        int index = this->ivy_manager.buscar_quantidade(nQuantidade);
+        this->buscar_quantidadeCLI(nQuantidade);
+        /* int index = this->ivy_manager.buscar_quantidade(nQuantidade);
         if (index != -1)
             std::cout << this->ivy_manager.get_estoque().get(index).to_string() << std::endl;
         else
-            std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl;
+            std::cout << "BUSCA::PRODUTO_NAO_ENCONTRADO" << std::endl; */
     }
 
     std::cout << std::endl;
@@ -354,6 +360,39 @@ void InterfaceCLI::comprar()
     std::cin.ignore();
     this->ivy_manager.comprar(nId, nQuantidade);
     std::cout << std::endl;
+}
+
+void InterfaceCLI::buscar_marcaCLI(std::string nMarca)
+{
+    Vetor<Produto> p = this->ivy_manager.buscar_variosMarca(nMarca);
+    if (p.get_tamanho() != 0)
+        for (int i = 0; i < p.get_tamanho(); i++)
+            std::cout << p.get(i).to_string() << std::endl;
+}
+
+void InterfaceCLI::buscar_valorCLI(float nValor)
+{
+    Vetor<Produto> p = this->ivy_manager.buscar_variosValor(nValor);
+    if (p.get_tamanho() != 0)
+        for (int i = 0; i < p.get_tamanho(); i++)
+            std::cout << p.get(i).to_string() << std::endl;
+}
+
+void InterfaceCLI::buscar_quantidadeCLI(int nQuantidade)
+{
+    Vetor<Produto> p = this->ivy_manager.buscar_variosQuantidade(nQuantidade);
+    if (p.get_tamanho() != 0)
+        for (int i = 0; i < p.get_tamanho(); i++)
+            std::cout << p.get(i).to_string() << std::endl;
+}
+
+void InterfaceCLI::listar_produtos()
+{
+    if (this->ivy_manager.get_estoque().get_tamanho() != 0)
+        for (int i = 0; i < this->ivy_manager.get_estoque().get_tamanho(); i++)
+            std::cout << this->ivy_manager.get_estoque().get(i).to_string() << std::endl;
+    else
+        std::cout << "LISTAGEM::ESTOQUE_VAZIO" << std::endl;
 }
 
 void InterfaceCLI::locadora()
