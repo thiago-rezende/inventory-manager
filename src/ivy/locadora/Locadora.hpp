@@ -127,6 +127,14 @@ public:
     Vetor<Jogo> buscar_variosClassificacao(int nClassificacao);
 
     /**
+     * @brief Busca varios jogos por um nome
+     * 
+     * @param nNome nome a ser buscado
+     * @return Vetor<Jogo> vetor de jogos encontrados
+     */
+    Vetor<Jogo> buscar_variosNome(std::string nNome);
+
+    /**
      * @brief Salva os dados do estoque em um arquivo
      * 
      */

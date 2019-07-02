@@ -185,6 +185,19 @@ Vetor<Jogo> Locadora::buscar_variosClassificacao(int nClassificacao)
     return j;
 }
 
+Vetor<Jogo> Locadora::buscar_variosNome(std::string nNome)
+{
+    Vetor<Jogo> j;
+
+    for (int i = 0; i < this->m_estoque.get_tamanho(); i++)
+        if (this->m_estoque.get(i).get_nome() == nNome)
+            j.adicionar(this->m_estoque.get(i));
+
+    if (j.get_tamanho() == 0)
+        IVY_INFO("BUSCA::NENHUM_PRODUTO_ENCONTRADO");
+    return j;
+}
+
 void Locadora::salvar_estoque()
 {
     std::ofstream m_outArquivo("locadora.txt");

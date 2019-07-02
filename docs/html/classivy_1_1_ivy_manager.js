@@ -8,6 +8,7 @@ var classivy_1_1_ivy_manager =
     [ "buscar_quantidade", "classivy_1_1_ivy_manager.html#a8fe8d15d8cdfd40247622a762ea51904", null ],
     [ "buscar_valor", "classivy_1_1_ivy_manager.html#aa8e2bc564a58f2a3dfc6d5f2d3fe7667", null ],
     [ "buscar_variosMarca", "classivy_1_1_ivy_manager.html#ab37b19ff63f160eeb88df0fae4add8c8", null ],
+    [ "buscar_variosNome", "classivy_1_1_ivy_manager.html#ae711e535224b51624aa2ff0a5ea3e2d6", null ],
     [ "buscar_variosQuantidade", "classivy_1_1_ivy_manager.html#a868008304f8a83590f3c04d80860bcbe", null ],
     [ "buscar_variosValor", "classivy_1_1_ivy_manager.html#ac7b0412c2e42bd376b26d10414a96c2b", null ],
     [ "cadastrar", "classivy_1_1_ivy_manager.html#acd458e0a560bcfa92445953d12f9ecc3", null ],

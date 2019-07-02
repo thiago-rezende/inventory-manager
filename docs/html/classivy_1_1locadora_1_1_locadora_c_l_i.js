@@ -8,6 +8,7 @@ var classivy_1_1locadora_1_1_locadora_c_l_i =
     [ "buscar_alugadoCLI", "classivy_1_1locadora_1_1_locadora_c_l_i.html#a872d51f1fe5eee96e2967e073e7ff3ed", null ],
     [ "buscar_classificacaoCLI", "classivy_1_1locadora_1_1_locadora_c_l_i.html#acd11ff106fdfdd2cb177b7cf04b205af", null ],
     [ "buscar_generoCLI", "classivy_1_1locadora_1_1_locadora_c_l_i.html#aec4d7c2bb99f5cdc92cb24625977f636", null ],
+    [ "buscar_nomeCLI", "classivy_1_1locadora_1_1_locadora_c_l_i.html#a5e6b5f3800693860e2a8149710a30a36", null ],
     [ "cadastrar", "classivy_1_1locadora_1_1_locadora_c_l_i.html#acdc47e0f18be5097e975ff1f5e706694", null ],
     [ "carregar", "classivy_1_1locadora_1_1_locadora_c_l_i.html#af97f0d503498c9c741fc388235bd0a47", null ],
     [ "devolver", "classivy_1_1locadora_1_1_locadora_c_l_i.html#a14c21e4305c532d35dbfc44c95d7a7d1", null ],

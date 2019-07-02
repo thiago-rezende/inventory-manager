@@ -125,6 +125,13 @@ public:
     void buscar_quantidadeCLI(int nQuantidade);
 
     /**
+     * @brief Busca varios produtos por um nome
+     * 
+     * @param nNome nome a ser buscado
+     */
+    void buscar_nomeCLI(std::string nNome);
+
+    /**
      * @brief Lista todos os produtos do estoque
      * 
      */

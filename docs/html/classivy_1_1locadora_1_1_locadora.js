@@ -11,6 +11,7 @@ var classivy_1_1locadora_1_1_locadora =
     [ "buscar_variosAlugado", "classivy_1_1locadora_1_1_locadora.html#a1c69f895052f123bf4adf83e26c6879c", null ],
     [ "buscar_variosClassificacao", "classivy_1_1locadora_1_1_locadora.html#aa1b255438182c5ca606007153d1817d8", null ],
     [ "buscar_variosGenero", "classivy_1_1locadora_1_1_locadora.html#ad57779b28724b9005a23a95abaf0c219", null ],
+    [ "buscar_variosNome", "classivy_1_1locadora_1_1_locadora.html#a29d28b736a9a4253baaf8598facaac18", null ],
     [ "cadastrar", "classivy_1_1locadora_1_1_locadora.html#a6ff73a139b09a39284d9a701efe663fd", null ],
     [ "carregar_estoque", "classivy_1_1locadora_1_1_locadora.html#a873fc096b94f2798946cb5b60adfeca4", null ],
     [ "devolver", "classivy_1_1locadora_1_1_locadora.html#a53faa243073d10a96e01657c4c73ee3a", null ],

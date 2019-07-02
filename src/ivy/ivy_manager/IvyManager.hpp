@@ -134,6 +134,14 @@ public:
     Vetor<Produto> buscar_variosQuantidade(int nQuantidade);
 
     /**
+     * @brief Busca varios produtos por um nome
+     * 
+     * @param nNome nome a ser buscado
+     * @return Vetor<Produto> Vetor de produtos encontrados
+     */
+    Vetor<Produto> buscar_variosNome(std::string nNome);
+
+    /**
      * @brief Salva o estoque em um arquivo
      * 
      */

@@ -131,6 +131,13 @@ public:
     void buscar_classificacaoCLI(int nClassificacao);
 
     /**
+     * @brief Busca varios jogos por um nome
+     * 
+     * @param nNome nome a ser buscado
+     */
+    void buscar_nomeCLI(std::string nNome);
+
+    /**
      * @brief Lista todos os jogos do estoque
      * 
      */

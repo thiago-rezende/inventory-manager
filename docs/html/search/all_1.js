@@ -11,6 +11,7 @@ var searchData=
   ['buscar_5fmarca',['buscar_marca',['../classivy_1_1_ivy_manager.html#aba2ece6983d610f1acd2308d820d1964',1,'ivy::IvyManager']]],
   ['buscar_5fmarcacli',['buscar_marcaCLI',['../classivy_1_1_interface_c_l_i.html#a321acdfedbd6cf98de0c3882162a952d',1,'ivy::InterfaceCLI']]],
   ['buscar_5fnome',['buscar_nome',['../classivy_1_1_ivy_manager.html#aa6f15b794671fda4f01c9d16fd275dac',1,'ivy::IvyManager::buscar_nome()'],['../classivy_1_1locadora_1_1_locadora.html#a7397cebdf3283230a44b529004c68b96',1,'ivy::locadora::Locadora::buscar_nome()']]],
+  ['buscar_5fnomecli',['buscar_nomeCLI',['../classivy_1_1_interface_c_l_i.html#a13de7b7c8e85d2dfed53060c69f0fe9b',1,'ivy::InterfaceCLI::buscar_nomeCLI()'],['../classivy_1_1locadora_1_1_locadora_c_l_i.html#a5e6b5f3800693860e2a8149710a30a36',1,'ivy::locadora::LocadoraCLI::buscar_nomeCLI()']]],
   ['buscar_5fquantidade',['buscar_quantidade',['../classivy_1_1_ivy_manager.html#a8fe8d15d8cdfd40247622a762ea51904',1,'ivy::IvyManager']]],
   ['buscar_5fquantidadecli',['buscar_quantidadeCLI',['../classivy_1_1_interface_c_l_i.html#acc0b6ca8ffc826eb83c00f9cd91fd16e',1,'ivy::InterfaceCLI']]],
   ['buscar_5fvalor',['buscar_valor',['../classivy_1_1_ivy_manager.html#aa8e2bc564a58f2a3dfc6d5f2d3fe7667',1,'ivy::IvyManager']]],
@@ -19,6 +20,7 @@ var searchData=
   ['buscar_5fvariosclassificacao',['buscar_variosClassificacao',['../classivy_1_1locadora_1_1_locadora.html#aa1b255438182c5ca606007153d1817d8',1,'ivy::locadora::Locadora']]],
   ['buscar_5fvariosgenero',['buscar_variosGenero',['../classivy_1_1locadora_1_1_locadora.html#ad57779b28724b9005a23a95abaf0c219',1,'ivy::locadora::Locadora']]],
   ['buscar_5fvariosmarca',['buscar_variosMarca',['../classivy_1_1_ivy_manager.html#ab37b19ff63f160eeb88df0fae4add8c8',1,'ivy::IvyManager']]],
+  ['buscar_5fvariosnome',['buscar_variosNome',['../classivy_1_1_ivy_manager.html#ae711e535224b51624aa2ff0a5ea3e2d6',1,'ivy::IvyManager::buscar_variosNome()'],['../classivy_1_1locadora_1_1_locadora.html#a29d28b736a9a4253baaf8598facaac18',1,'ivy::locadora::Locadora::buscar_variosNome()']]],
   ['buscar_5fvariosquantidade',['buscar_variosQuantidade',['../classivy_1_1_ivy_manager.html#a868008304f8a83590f3c04d80860bcbe',1,'ivy::IvyManager']]],
   ['buscar_5fvariosvalor',['buscar_variosValor',['../classivy_1_1_ivy_manager.html#ac7b0412c2e42bd376b26d10414a96c2b',1,'ivy::IvyManager']]]
 ];

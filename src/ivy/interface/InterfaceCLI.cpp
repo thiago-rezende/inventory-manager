@@ -244,16 +244,23 @@ void InterfaceCLI::buscar()
 
     while (true)
     {
-        std::cout << "Buscar por [marca/valor/quantidade]: ";
+        std::cout << "Buscar por [nome/marca/valor/quantidade]: ";
         std::getline(std::cin, str_busca);
         /* Transforma a opcao entrada em letras minusculas */
         std::transform(str_busca.begin(), str_busca.end(), str_busca.begin(), ::tolower);
-        if (str_busca != "marca" && str_busca != "valor" && str_busca != "quantidade")
+        if (str_busca != "nome" && str_busca != "marca" && str_busca != "valor" && str_busca != "quantidade")
             continue;
         else
             break;
     }
-    if (str_busca == "marca")
+    if (str_busca == "nome")
+    {
+        std::string nNome;
+        std::cout << "Informe a nome: ";
+        std::getline(std::cin, nNome);
+        this->buscar_nomeCLI(nNome);
+    }
+    else if (str_busca == "marca")
     {
         std::string nMarca;
         std::cout << "Informe a marca: ";
@@ -381,6 +388,14 @@ void InterfaceCLI::buscar_valorCLI(float nValor)
 void InterfaceCLI::buscar_quantidadeCLI(int nQuantidade)
 {
     Vetor<Produto> p = this->ivy_manager.buscar_variosQuantidade(nQuantidade);
+    if (p.get_tamanho() != 0)
+        for (int i = 0; i < p.get_tamanho(); i++)
+            std::cout << p.get(i).to_string() << std::endl;
+}
+
+void InterfaceCLI::buscar_nomeCLI(std::string nNome)
+{
+    Vetor<Produto> p = this->ivy_manager.buscar_variosNome(nNome);
     if (p.get_tamanho() != 0)
         for (int i = 0; i < p.get_tamanho(); i++)
             std::cout << p.get(i).to_string() << std::endl;

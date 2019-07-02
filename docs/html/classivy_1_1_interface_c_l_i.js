@@ -5,6 +5,7 @@ var classivy_1_1_interface_c_l_i =
     [ "ajuda", "classivy_1_1_interface_c_l_i.html#ab1945cf30996bef4223bad7b733583d5", null ],
     [ "buscar", "classivy_1_1_interface_c_l_i.html#ab4a5ce507d934cd6d21b82ba65ba97f3", null ],
     [ "buscar_marcaCLI", "classivy_1_1_interface_c_l_i.html#a321acdfedbd6cf98de0c3882162a952d", null ],
+    [ "buscar_nomeCLI", "classivy_1_1_interface_c_l_i.html#a13de7b7c8e85d2dfed53060c69f0fe9b", null ],
     [ "buscar_quantidadeCLI", "classivy_1_1_interface_c_l_i.html#acc0b6ca8ffc826eb83c00f9cd91fd16e", null ],
     [ "buscar_valorCLI", "classivy_1_1_interface_c_l_i.html#a6288636f0618e4a78c4e9ac8f00d2a39", null ],
     [ "cadastrar", "classivy_1_1_interface_c_l_i.html#a494550d9c35c5f1ce1efd68cac0a6080", null ],
