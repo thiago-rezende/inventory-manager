@@ -101,5 +101,28 @@ std::string Jogo::to_string()
     return saida;
 }
 
+std::ostream &operator<<(std::ostream &out, const Jogo &obj)
+{
+    out << obj.m_jogoID << "\n"
+        << obj.m_nome << "\n"
+        << obj.m_genero << "\n"
+        << obj.m_valor << "\n"
+        << obj.m_disponivel << "\n"
+        << obj.m_faixaEtaria << std::endl;
+    return out;
+}
+
+std::istream &operator>>(std::istream &in, Jogo &obj)
+{
+    in >> obj.m_jogoID;
+    in.ignore();
+    std::getline(in, obj.m_nome);
+    std::getline(in, obj.m_genero);
+    in >> obj.m_valor;
+    in >> obj.m_disponivel;
+    in >> obj.m_faixaEtaria;
+    return in;
+}
+
 } // namespace locadora
 } // namespace ivy

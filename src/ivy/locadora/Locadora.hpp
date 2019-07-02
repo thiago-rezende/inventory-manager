@@ -2,6 +2,7 @@
 #include "jogo/Jogo.hpp"
 #include "vetor/Vetor.hpp"
 #include "log/IvyLog.hpp"
+#include <iostream>
 
 namespace ivy
 {

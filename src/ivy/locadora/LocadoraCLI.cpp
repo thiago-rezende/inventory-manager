@@ -25,6 +25,7 @@ void LocadoraCLI::run()
         this->menu();
         this->option_handler();
     }
+    this->sair = false;
 }
 
 void LocadoraCLI::logo()
@@ -154,6 +155,7 @@ void LocadoraCLI::cadastrar()
 
     nJogo.set_jogoID(nId);
     nJogo.set_nome(nNome);
+    nJogo.set_genero(nGenero);
     nJogo.set_valor(nValor);
     nJogo.set_faixaEtaria(nFaixaEtaria);
     nJogo.set_disponivel(nDisponivel);
@@ -221,6 +223,7 @@ void LocadoraCLI::editar()
 
         nJogo.set_jogoID(nId);
         nJogo.set_nome(nNome);
+        nJogo.set_genero(nGenero);
         nJogo.set_valor(nValor);
         nJogo.set_faixaEtaria(nFaixaEtaria);
         nJogo.set_disponivel(nDisponivel);
@@ -264,14 +267,13 @@ void LocadoraCLI::buscar()
         std::string str_nDisponivel;
         bool nDisponivel;
 
-        std::cin.ignore();
         std::cout << "Jogo disponivel [sim/nao]: ";
         std::getline(std::cin, str_nDisponivel);
         std::transform(str_nDisponivel.begin(), str_nDisponivel.end(), str_nDisponivel.begin(), ::tolower);
         if (str_nDisponivel == "sim")
-            nDisponivel = true;
-        else
             nDisponivel = false;
+        else
+            nDisponivel = true;
 
         int index = this->m_locadora.buscar_alugado(nDisponivel);
         if (index != -1)

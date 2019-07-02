@@ -164,6 +164,24 @@ public:
      * @return std::string informacoes do jogo
      */
     std::string to_string();
+
+    /**
+     * @brief Operador de saida de arquivos
+     * 
+     * @param out stream de saida
+     * @param obj objeto enviado para a saida
+     * @return std::ostream& stream de saida
+     */
+    friend std::ostream &operator<<(std::ostream &out, const Jogo &obj);
+
+    /**
+     * @brief Operador de entrada de arquivos
+     * 
+     * @param in stream de entradad
+     * @param obj objeto construido com a entrada
+     * @return std::istream& stream de entrada
+     */
+    friend std::istream &operator>>(std::istream &in, Jogo &obj);
 };
 } // namespace locadora
 } // namespace ivy

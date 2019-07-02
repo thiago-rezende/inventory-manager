@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('classivy_1_1locadora_1_1_jogo.html',''
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classivy_1_1locadora_1_1_jogo-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ivy::locadora::Jogo Class Reference</div>  </div>
@@ -181,6 +182,15 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a1d6e1e76235bed263d6a134e824a6688"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1locadora_1_1_jogo.html#a1d6e1e76235bed263d6a134e824a6688">m_faixaEtaria</a></td></tr>
 <tr class="memdesc:a1d6e1e76235bed263d6a134e824a6688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Faixa etária do <a class="el" href="classivy_1_1locadora_1_1_jogo.html" title="Classe Jogo, define um jogo para o sistema de estoque Ivy.">Jogo</a>.  <a href="#a1d6e1e76235bed263d6a134e824a6688">More...</a><br /></td></tr>
 <tr class="separator:a1d6e1e76235bed263d6a134e824a6688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:abbf65f90bcc1814b851a605528706b13"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1locadora_1_1_jogo.html#abbf65f90bcc1814b851a605528706b13">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classivy_1_1locadora_1_1_jogo.html">Jogo</a> &amp;obj)</td></tr>
+<tr class="memdesc:abbf65f90bcc1814b851a605528706b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operador de saida de arquivos.  <a href="#abbf65f90bcc1814b851a605528706b13">More...</a><br /></td></tr>
+<tr class="separator:abbf65f90bcc1814b851a605528706b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a8ba39f01d66a3098c3303d0ad8542"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivy_1_1locadora_1_1_jogo.html#a74a8ba39f01d66a3098c3303d0ad8542">operator&gt;&gt;</a> (std::istream &amp;in, <a class="el" href="classivy_1_1locadora_1_1_jogo.html">Jogo</a> &amp;obj)</td></tr>
+<tr class="memdesc:a74a8ba39f01d66a3098c3303d0ad8542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operador de entrada de arquivos.  <a href="#a74a8ba39f01d66a3098c3303d0ad8542">More...</a><br /></td></tr>
+<tr class="separator:a74a8ba39f01d66a3098c3303d0ad8542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Classe <a class="el" href="classivy_1_1locadora_1_1_jogo.html" title="Classe Jogo, define um jogo para o sistema de estoque Ivy.">Jogo</a>, define um jogo para o sistema de estoque Ivy. </p>
@@ -582,6 +592,99 @@ Private Attributes</h2></td></tr>
 
 <p>Retorna uma string com as informacoes do jogo. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::string informacoes do jogo </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="abbf65f90bcc1814b851a605528706b13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf65f90bcc1814b851a605528706b13">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classivy_1_1locadora_1_1_jogo.html">Jogo</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Operador de saida de arquivos. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>stream de saida </td></tr>
+    <tr><td class="paramname">obj</td><td>objeto enviado para a saida </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::ostream&amp; stream de saida </dd></dl>
+
+</div>
+</div>
+<a id="a74a8ba39f01d66a3098c3303d0ad8542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a8ba39f01d66a3098c3303d0ad8542">&#9670;&nbsp;</a></span>operator&gt;&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classivy_1_1locadora_1_1_jogo.html">Jogo</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Operador de entrada de arquivos. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>stream de entradad </td></tr>
+    <tr><td class="paramname">obj</td><td>objeto construido com a entrada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::istream&amp; stream de entrada </dd></dl>
 
 </div>
 </div>

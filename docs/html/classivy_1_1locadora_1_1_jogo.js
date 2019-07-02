@@ -16,6 +16,8 @@ var classivy_1_1locadora_1_1_jogo =
     [ "set_nome", "classivy_1_1locadora_1_1_jogo.html#ad78eab87ce4198c22f7d3e6cf4a301dc", null ],
     [ "set_valor", "classivy_1_1locadora_1_1_jogo.html#acba4dbe385df200f926d08b5e1f4321e", null ],
     [ "to_string", "classivy_1_1locadora_1_1_jogo.html#ae10a6b65aaa1ed6a8b65febe8fc2c6cb", null ],
+    [ "operator<<", "classivy_1_1locadora_1_1_jogo.html#abbf65f90bcc1814b851a605528706b13", null ],
+    [ "operator>>", "classivy_1_1locadora_1_1_jogo.html#a74a8ba39f01d66a3098c3303d0ad8542", null ],
     [ "m_disponivel", "classivy_1_1locadora_1_1_jogo.html#ac53fc05926b41be36c31bd6bb2aba945", null ],
     [ "m_faixaEtaria", "classivy_1_1locadora_1_1_jogo.html#a1d6e1e76235bed263d6a134e824a6688", null ],
     [ "m_genero", "classivy_1_1locadora_1_1_jogo.html#ac75735ac5c6376fed9ea5133b86689e9", null ],

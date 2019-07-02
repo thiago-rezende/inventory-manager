@@ -148,10 +148,53 @@ void Locadora::devolver(int nJogoID)
 
 void Locadora::salvar_estoque()
 {
+    std::ofstream m_outArquivo("locadora.txt");
+
+    if (!m_outArquivo)
+    {
+        IVY_CRITICAL("Arquivo nao encontrado");
+        std::cerr << "Arquivo nao pode ser aberto para gravacao\n";
+    }
+    else
+    {
+        m_outArquivo << m_estoque.get_tamanho() << std::endl;
+
+        for (int i = 0; i < m_estoque.get_tamanho(); i++)
+        {
+            m_outArquivo << m_estoque.get(i);
+        }
+
+        m_outArquivo.close();
+        IVY_INFO("IO::ARQUIVO_GERADO (locadora.txt)");
+    }
 }
 
 void Locadora::carregar_estoque()
 {
+    std::ifstream m_inArquivo("locadora.txt");
+
+    if (!m_inArquivo)
+    {
+        IVY_CRITICAL("Arquivo nao encontrado");
+        std::cerr << "Arquivo nao pode ser aberto para leitura\n";
+    }
+    else
+    {
+        int tam;
+
+        if (!m_inArquivo.eof())
+        {
+            m_inArquivo >> tam;
+            for (int i = 0; !m_inArquivo.eof() && i < tam; i++)
+            {
+                Jogo j;
+                m_inArquivo >> j;
+                m_estoque.adicionar(j);
+            }
+        }
+        m_inArquivo.close();
+        IVY_INFO("IO::ARQUIVO_CARREGADO (locadora.txt)");
+    }
 }
 
 } // namespace locadora
