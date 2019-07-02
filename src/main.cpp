@@ -26,8 +26,9 @@ int main(int argc, const char **argv)
     }
     else
     {
-        IVY_INFO("A InterfaceGUI esta em desenvolvimento.");
-        std::cout << "Precione enter para contuar com a Inteface CLI..." << std::endl;
+        IVY_INFO("A InterfaceGUI foi desativada para a correcao de uma falha critica");
+        IVY_INFO("Novas versoes serao disponibilizadas no repositorio do projeto no GitHub");
+        std::cout << "\nPrecione enter para contuar com a Inteface CLI..." << std::endl;
 
         std::cin.get();
 

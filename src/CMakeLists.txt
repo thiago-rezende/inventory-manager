@@ -10,7 +10,7 @@ PUBLIC
     "ivy/log/IvyLog.cpp"
     "ivy/ivy_manager/IvyManager.cpp"
     "ivy/interface/InterfaceCLI.cpp"
-    "ivy/interface/InterfaceGUI.cpp"
+    #"ivy/interface/InterfaceGUI.cpp"
     "ivy/produto/Produto.cpp"
     "ivy/vetor/Vetor.cpp"
     # resources
@@ -35,7 +35,7 @@ PUBLIC
     "ivy/locadora"
 )
 
-target_link_libraries(ivy-manager PRIVATE nana)
+#target_link_libraries(ivy-manager PRIVATE nana)
 
 add_custom_target(copy_resources ALL
     COMMAND cmake -E copy_directory ${CMAKE_SOURCE_DIR}/src/res ${CMAKE_BINARY_DIR}/bin/res

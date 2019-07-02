@@ -1,32 +1,19 @@
 <map id="C:/Users/osyri/Desktop/inventory&#45;manager&#45;head/src/ivy/ivy.hpp" name="C:/Users/osyri/Desktop/inventory&#45;manager&#45;head/src/ivy/ivy.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="2462,5,2624,61"/>
-<area shape="rect" id="node2" href="$_vetor_8hpp.html" title=" " alt="" coords="2498,333,2607,360"/>
-<area shape="rect" id="node3" href="$_produto_8hpp.html" title=" " alt="" coords="2234,408,2372,435"/>
-<area shape="rect" id="node4" href="$_ivy_log_8hpp.html" title=" " alt="" coords="2459,483,2563,509"/>
-<area shape="rect" id="node9" href="$_jogo_8hpp.html" title=" " alt="" coords="2548,408,2703,435"/>
-<area shape="rect" id="node11" href="$_ivy_manager_8hpp.html" title=" " alt="" coords="2234,259,2422,285"/>
-<area shape="rect" id="node12" href="$_interface_c_l_i_8hpp.html" title=" " alt="" coords="2812,109,2980,136"/>
-<area shape="rect" id="node16" href="$_locadora_c_l_i_8hpp.html" title=" " alt="" coords="3010,184,3182,211"/>
-<area shape="rect" id="node17" href="$_locadora_8hpp.html" title=" " alt="" coords="2733,259,2833,285"/>
-<area shape="rect" id="node18" href="$_interface_g_u_i_8hpp.html" title=" " alt="" coords="2335,184,2506,211"/>
-<area shape="rect" id="node8" title=" " alt="" coords="2270,483,2336,509"/>
-<area shape="rect" id="node5" title=" " alt="" coords="2314,565,2428,591"/>
-<area shape="rect" id="node6" title=" " alt="" coords="2452,565,2570,591"/>
-<area shape="rect" id="node7" title=" " alt="" coords="2594,557,2729,599"/>
-<area shape="rect" id="node10" title=" " alt="" coords="3172,483,3226,509"/>
-<area shape="rect" id="node13" title=" " alt="" coords="2835,333,2907,360"/>
-<area shape="rect" id="node14" title=" " alt="" coords="2908,259,2983,285"/>
-<area shape="rect" id="node15" title=" " alt="" coords="3007,259,3060,285"/>
-<area shape="rect" id="node19" href="$include__nana_8hpp.html" title=" " alt="" coords="1142,259,1301,285"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1076,333,1194,360"/>
-<area shape="rect" id="node21" title=" " alt="" coords="1218,333,1398,360"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1423,333,1554,360"/>
-<area shape="rect" id="node23" title=" " alt="" coords="1578,333,1762,360"/>
-<area shape="rect" id="node24" title=" " alt="" coords="1786,333,1959,360"/>
-<area shape="rect" id="node25" title=" " alt="" coords="1984,333,2158,360"/>
-<area shape="rect" id="node26" title=" " alt="" coords="45,333,236,360"/>
-<area shape="rect" id="node27" title=" " alt="" coords="260,333,455,360"/>
-<area shape="rect" id="node28" title=" " alt="" coords="479,333,658,360"/>
-<area shape="rect" id="node29" title=" " alt="" coords="682,333,842,360"/>
-<area shape="rect" id="node30" title=" " alt="" coords="866,333,1052,360"/>
+<area shape="rect" id="node1" title=" " alt="" coords="292,5,455,61"/>
+<area shape="rect" id="node2" href="$_vetor_8hpp.html" title=" " alt="" coords="228,333,338,360"/>
+<area shape="rect" id="node3" href="$_produto_8hpp.html" title=" " alt="" coords="46,408,184,435"/>
+<area shape="rect" id="node4" href="$_ivy_log_8hpp.html" title=" " alt="" coords="287,483,391,509"/>
+<area shape="rect" id="node9" href="$_jogo_8hpp.html" title=" " alt="" coords="463,408,618,435"/>
+<area shape="rect" id="node11" href="$_ivy_manager_8hpp.html" title=" " alt="" coords="97,259,285,285"/>
+<area shape="rect" id="node12" href="$_interface_c_l_i_8hpp.html" title=" " alt="" coords="491,109,659,136"/>
+<area shape="rect" id="node16" href="$_locadora_c_l_i_8hpp.html" title=" " alt="" coords="689,184,861,211"/>
+<area shape="rect" id="node17" href="$_locadora_8hpp.html" title=" " alt="" coords="412,259,512,285"/>
+<area shape="rect" id="node8" title=" " alt="" coords="82,483,148,509"/>
+<area shape="rect" id="node5" title=" " alt="" coords="142,565,256,591"/>
+<area shape="rect" id="node6" title=" " alt="" coords="280,565,398,591"/>
+<area shape="rect" id="node7" title=" " alt="" coords="422,557,557,599"/>
+<area shape="rect" id="node10" title=" " alt="" coords="901,483,956,509"/>
+<area shape="rect" id="node13" title=" " alt="" coords="514,333,586,360"/>
+<area shape="rect" id="node14" title=" " alt="" coords="587,259,662,285"/>
+<area shape="rect" id="node15" title=" " alt="" coords="686,259,739,285"/>
 </map>
