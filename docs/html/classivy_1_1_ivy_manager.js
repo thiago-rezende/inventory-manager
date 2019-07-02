@@ -17,6 +17,7 @@ var classivy_1_1_ivy_manager =
     [ "editar", "classivy_1_1_ivy_manager.html#ad0e743c6bf2fad8fd1a6647441ad2229", null ],
     [ "get_estoque", "classivy_1_1_ivy_manager.html#a8bba050a38b7ce47833722d6b055e5ca", null ],
     [ "salvar_estoque", "classivy_1_1_ivy_manager.html#ac78aafc1d199f439aeb43fccaf9067b8", null ],
+    [ "salvar_estoquePrecoLimite", "classivy_1_1_ivy_manager.html#a0c53facca0918129ef904bb2c4b6f0dd", null ],
     [ "vender", "classivy_1_1_ivy_manager.html#a8d0ee72f26e21719287003017bc3da56", null ],
     [ "m_estoque", "classivy_1_1_ivy_manager.html#a8f7d90a81e49c07063f6e4cff151a324", null ]
 ];

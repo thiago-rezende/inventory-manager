@@ -141,6 +141,13 @@ public:
     void salvar_estoque();
 
     /**
+     * @brief Salva os dados do estoque disponiveis ou nao
+     * 
+     * @param nDisponivel disponibilidade do jogo
+     */
+    void salvar_estoqueDisponivel(bool nDisponivel);
+
+    /**
      * @brief Carregar o estoque de um arquivo
      * 
      */

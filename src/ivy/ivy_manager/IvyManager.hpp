@@ -148,6 +148,12 @@ public:
     void salvar_estoque();
 
     /**
+     * @brief Salva o etoque com um preco limite
+     * 
+     */
+    void salvar_estoquePrecoLimite(float nValor);
+
+    /**
      * @brief Carrega o estoque de um arquivo
      * 
      */

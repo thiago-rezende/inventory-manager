@@ -229,6 +229,36 @@ void IvyManager::salvar_estoque()
     }
 }
 
+void IvyManager::salvar_estoquePrecoLimite(float nValor)
+{
+    std::ofstream m_outArquivo("estoque.txt");
+
+    if (!m_outArquivo)
+    {
+        IVY_CRITICAL("Arquivo nao encontrado");
+        std::cerr << "Arquivo nao pode ser aberto para gravacao\n";
+    }
+    else
+    {
+        Vetor<Produto> p;
+
+        for (int i = 0; i < m_estoque.get_tamanho(); i++)
+            if (m_estoque.get(i).get_valor() <= nValor)
+                p.adicionar(m_estoque.get(i));
+
+        if (p.get_tamanho() != 0)
+        {
+            m_outArquivo << p.get_tamanho() << std::endl;
+            for (int i = 0; i < p.get_tamanho(); i++)
+            {
+                m_outArquivo << p.get(i);
+            }
+        }
+        m_outArquivo.close();
+        IVY_INFO("IO::ARQUIVO_GERADO (estoque.txt)");
+    }
+}
+
 void IvyManager::carregar_estoque()
 {
     std::ifstream m_inArquivo("estoque.txt");

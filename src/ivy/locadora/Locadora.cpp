@@ -221,6 +221,38 @@ void Locadora::salvar_estoque()
     }
 }
 
+void Locadora::salvar_estoqueDisponivel(bool nDisponivel)
+{
+    std::ofstream m_outArquivo("locadora.txt");
+
+    if (!m_outArquivo)
+    {
+        IVY_CRITICAL("Arquivo nao encontrado");
+        std::cerr << "Arquivo nao pode ser aberto para gravacao\n";
+    }
+    else
+    {
+        Vetor<Jogo> j;
+
+        for (int i = 0; i < m_estoque.get_tamanho(); i++)
+            if (m_estoque.get(i).get_disponivel() == nDisponivel)
+                j.adicionar(m_estoque.get(i));
+
+        if (j.get_tamanho() != 0)
+        {
+            m_outArquivo << j.get_tamanho() << std::endl;
+
+            for (int i = 0; i < j.get_tamanho(); i++)
+            {
+                m_outArquivo << j.get(i);
+            }
+        }
+
+        m_outArquivo.close();
+        IVY_INFO("IO::ARQUIVO_GERADO (locadora.txt)");
+    }
+}
+
 void Locadora::carregar_estoque()
 {
     std::ifstream m_inArquivo("locadora.txt");

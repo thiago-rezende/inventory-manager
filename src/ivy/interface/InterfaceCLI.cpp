@@ -417,7 +417,33 @@ void InterfaceCLI::locadora()
 
 void InterfaceCLI::salvar()
 {
-    ivy_manager.salvar_estoque();
+    std::string str_opt;
+    bool opt_salvar;
+    float nValor;
+
+    std::cout << "Salvar Produtos com filtro de preco maximo [sim/nao]: ";
+    std::getline(std::cin, str_opt);
+    std::transform(str_opt.begin(), str_opt.end(), str_opt.begin(), ::tolower);
+    if (str_opt == "sim")
+        opt_salvar = true;
+    else
+        opt_salvar = false;
+
+    if (opt_salvar)
+    {
+        std::cout << "Informe o valor: ";
+        /* Checa se a entrada e valida */
+        while (!(std::cin >> nValor))
+        {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Somente numeros!" << std::endl;
+        }
+        std::cin.ignore();
+        ivy_manager.salvar_estoquePrecoLimite(nValor);
+    }
+    else
+        ivy_manager.salvar_estoque();
 }
 
 void InterfaceCLI::carregar()

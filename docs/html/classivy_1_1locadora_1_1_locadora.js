@@ -18,5 +18,6 @@ var classivy_1_1locadora_1_1_locadora =
     [ "editar", "classivy_1_1locadora_1_1_locadora.html#a00a1a672fb0772e17511dc9394404ac3", null ],
     [ "get_estoque", "classivy_1_1locadora_1_1_locadora.html#ade7157ff1e8f6378b4eaaee49f51daa4", null ],
     [ "salvar_estoque", "classivy_1_1locadora_1_1_locadora.html#aef70c6ea7662c8e757541907795aa261", null ],
+    [ "salvar_estoqueDisponivel", "classivy_1_1locadora_1_1_locadora.html#a6b70e957d8ffc4858abe66dd174ae6f1", null ],
     [ "m_estoque", "classivy_1_1locadora_1_1_locadora.html#a4665e78c02bdc4cc395de3d01341761e", null ]
 ];

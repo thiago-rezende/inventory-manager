@@ -399,7 +399,31 @@ void LocadoraCLI::listar_jogos()
 
 void LocadoraCLI::salvar()
 {
-    m_locadora.salvar_estoque();
+    std::string str_opt;
+    bool opt_salvar, nDisponivel;
+
+    std::cout << "Salvar Produtos com filtro de disponibilidade [sim/nao]: ";
+    std::getline(std::cin, str_opt);
+    std::transform(str_opt.begin(), str_opt.end(), str_opt.begin(), ::tolower);
+    if (str_opt == "sim")
+        opt_salvar = true;
+    else
+        opt_salvar = false;
+
+    if (opt_salvar)
+    {
+        std::cout << "Informe a disponibilidade [sim/nao]: ";
+        std::getline(std::cin, str_opt);
+        std::transform(str_opt.begin(), str_opt.end(), str_opt.begin(), ::tolower);
+        if (str_opt == "sim")
+            nDisponivel = true;
+        else
+            nDisponivel = false;
+
+        this->m_locadora.salvar_estoqueDisponivel(nDisponivel);
+    }
+    else
+        this->m_locadora.salvar_estoque();
 }
 
 void LocadoraCLI::carregar()
