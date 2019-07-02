@@ -7,7 +7,7 @@ namespace ivy
 {
 /**
  * @brief Classe IvyManager
- * 
+ * Responsavel por gerenciar o estoque da loja de informatica
  */
 class IvyManager
 {

@@ -8,6 +8,10 @@ namespace ivy
 {
 namespace locadora
 {
+/**
+ * @brief Classe Locadora
+ * Responsavel por gerenciar o estoque da locadora de jogos
+ */
 class Locadora
 {
 private:
