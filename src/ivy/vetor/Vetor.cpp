@@ -109,9 +109,8 @@ Vetor<_Tipo> &Vetor<_Tipo>::operator=(const Vetor<_Tipo> &other)
         _Tipo **nDados = new _Tipo *[other.m_capacidade];
         std::copy(other.m_dados, other.m_dados + other.m_tamanho, nDados);
 
-        if (this->m_tamanho != 0)
-            for (int i = 0; i < this->m_tamanho; i++)
-                delete this->m_dados[i];
+        for (int i = 0; i < this->m_tamanho; i++)
+            delete this->m_dados[i];
 
         delete[] this->m_dados;
 
