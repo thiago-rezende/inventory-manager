@@ -35,6 +35,11 @@ void Vetor<_Tipo>::expandir()
 
     this->m_dados = tmp_dados;
 
+    for (int i = 0; i < this->m_tamanho; i++)
+        delete tmp_dados[i];
+
+    delete[] tmp_dados;
+
     IVY_INFO("Vetor Expandido : capacidade -> {}", this->m_capacidade);
 }
 
@@ -73,6 +78,11 @@ void Vetor<_Tipo>::remover(int indice)
 
     this->m_dados = rmv_dados;
 
+    for (int i = 0; i < this->m_tamanho + 1; i++)
+        delete rmv_dados[i];
+
+    delete[] rmv_dados;
+
     IVY_INFO("{} : Removido", indice);
 }
 
@@ -98,7 +108,13 @@ Vetor<_Tipo> &Vetor<_Tipo>::operator=(const Vetor<_Tipo> &other)
     {
         _Tipo **nDados = new _Tipo *[other.m_capacidade];
         std::copy(other.m_dados, other.m_dados + other.m_tamanho, nDados);
+
+        if (this->m_tamanho != 0)
+            for (int i = 0; i < this->m_tamanho; i++)
+                delete this->m_dados[i];
+
         delete[] this->m_dados;
+
         this->m_dados = nDados;
         this->m_tamanho = other.m_tamanho;
     }
