@@ -16,6 +16,18 @@
         "maintenance",
         "bug"
       ]
+    },
+    {
+      "login": "Novout",
+      "name": "Giovane Cardoso",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/41403842?v=4",
+      "profile": "https://novout.github.io/html/index.html",
+      "contributions": [
+        "code",
+        "test",
+        "review",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
