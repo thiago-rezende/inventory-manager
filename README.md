@@ -1,5 +1,5 @@
 # Ivy - Inventory Manager ![](https://img.shields.io/badge/W.I.P--red.svg)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 ![](https://img.shields.io/badge/build-passing-green.svg) ![](https://img.shields.io/badge/C++-17-orange.svg) ![](https://img.shields.io/badge/CMake-3.14.0-blue.svg) ![](https://img.shields.io/badge/Doxygen-1.8.15-9cf.svg) ![](https://img.shields.io/badge/Nana-1.7.1-turquoise.svg)
 
@@ -42,6 +42,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://thiago-rezende.github.io/"><img src="https://avatars2.githubusercontent.com/u/47676234?v=4" width="100px;" alt="Thiago Rezende"/><br /><sub><b>Thiago Rezende</b></sub></a><br /><a href="https://github.com/thiago-rezende/inventory-manager/commits?author=thiago-rezende" title="Code">💻</a> <a href="https://github.com/thiago-rezende/inventory-manager/commits?author=thiago-rezende" title="Documentation">📖</a> <a href="#maintenance-thiago-rezende" title="Maintenance">🚧</a> <a href="https://github.com/thiago-rezende/inventory-manager/issues?q=author%3Athiago-rezende" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://novout.github.io/html/index.html"><img src="https://avatars3.githubusercontent.com/u/41403842?v=4" width="100px;" alt="Giovane Cardoso"/><br /><sub><b>Giovane Cardoso</b></sub></a><br /><a href="https://github.com/thiago-rezende/inventory-manager/commits?author=Novout" title="Code">💻</a> <a href="https://github.com/thiago-rezende/inventory-manager/commits?author=Novout" title="Tests">⚠️</a> <a href="#review-Novout" title="Reviewed Pull Requests">👀</a> <a href="#design-Novout" title="Design">🎨</a></td>
   </tr>
 </table>
 
