@@ -16,6 +16,19 @@
         "review",
         "design"
       ]
+    },
+    {
+      "login": "thiago-rezende",
+      "name": "Thiago Rezende",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/47676234?v=4",
+      "profile": "http://thiago-rezende.github.io/",
+      "contributions": [
+        "code",
+        "doc",
+        "maintenance",
+        "bug",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
