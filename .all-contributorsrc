@@ -6,18 +6,6 @@
   "commit": false,
   "contributors": [
     {
-      "login": "Novout",
-      "name": "Giovane Cardoso",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/41403842?v=4",
-      "profile": "https://novout.github.io/html/index.html",
-      "contributions": [
-        "code",
-        "test",
-        "review",
-        "design"
-      ]
-    },
-    {
       "login": "thiago-rezende",
       "name": "Thiago Rezende",
       "avatar_url": "https://avatars2.githubusercontent.com/u/47676234?v=4",
@@ -28,6 +16,18 @@
         "maintenance",
         "bug",
         "ideas"
+      ]
+    },
+    {
+      "login": "Novout",
+      "name": "Giovane Cardoso",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/41403842?v=4",
+      "profile": "https://novout.github.io/html/index.html",
+      "contributions": [
+        "code",
+        "test",
+        "review",
+        "design"
       ]
     }
   ],
