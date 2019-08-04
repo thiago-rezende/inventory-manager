@@ -41,7 +41,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore -->
 <table>
   <tr>
-    <td align="center"><a href="http://thiago-rezende.github.io/"><img src="https://avatars2.githubusercontent.com/u/47676234?v=4" width="100px;" alt="Thiago Rezende"/><br /><sub><b>Thiago Rezende</b></sub></a><br /><a href="https://github.com/thiago-rezende/inventory-manager/commits?author=thiago-rezende" title="Code">💻</a> <a href="https://github.com/thiago-rezende/inventory-manager/commits?author=thiago-rezende" title="Documentation">📖</a> <a href="#maintenance-thiago-rezende" title="Maintenance">🚧</a> <a href="https://github.com/thiago-rezende/inventory-manager/issues?q=author%3Athiago-rezende" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="http://thiago-rezende.github.io/"><img src="https://avatars2.githubusercontent.com/u/47676234?v=4" width="100px;" alt="Thiago Rezende"/><br /><sub><b>Thiago Rezende</b></sub></a><br /><a href="https://github.com/thiago-rezende/inventory-manager/commits?author=thiago-rezende" title="Code">💻</a> <a href="https://github.com/thiago-rezende/inventory-manager/commits?author=thiago-rezende" title="Documentation">📖</a> <a href="#maintenance-thiago-rezende" title="Maintenance">🚧</a> <a href="https://github.com/thiago-rezende/inventory-manager/issues?q=author%3Athiago-rezende" title="Bug reports">🐛</a> <a href="#ideas-thiago-rezende" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
